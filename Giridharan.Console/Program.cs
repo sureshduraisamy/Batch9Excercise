@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Giridharan.Console
+namespace GiridharanConsole
 {
     class Program
     {
