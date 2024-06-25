@@ -6,7 +6,7 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("magudees");
+            Console.WriteLine("Apple");
         }
     }
 }
