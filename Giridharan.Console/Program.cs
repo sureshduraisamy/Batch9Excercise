@@ -6,7 +6,7 @@ namespace Giridharan.Console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hai");
+            Console.WriteLine("Hello");
         }
     }
 }
