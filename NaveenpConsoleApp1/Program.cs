@@ -6,7 +6,7 @@ namespace NaveenpConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" done done  !");
+            Console.WriteLine(" done for the day  !");
         }
     }
 }
