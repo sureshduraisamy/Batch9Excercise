@@ -6,7 +6,7 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("ranjith");
+            Console.WriteLine("pranesh");
         }
     }
 }
