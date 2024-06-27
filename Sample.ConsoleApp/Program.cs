@@ -1,12 +1,16 @@
 ﻿using System;
-
 namespace Sample.ConsoleApp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Arithmetic ovj = new Arithmetic();
+            ovj.Addtiion();
+
         }
+
+       
     }
 }
