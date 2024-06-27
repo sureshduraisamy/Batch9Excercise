@@ -6,9 +6,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("first commit");
-             Console.WriteLine("first commit in pull");
+            Arithmetic obj = new Arithmetic();
+            obj.multiplication();
         }
     }
 }
