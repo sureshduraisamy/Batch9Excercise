@@ -1,4 +1,5 @@
 ﻿using System;
+using Calculator;
 
 namespace kaviyarasu__r
 {
@@ -6,7 +7,8 @@ namespace kaviyarasu__r
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hai");
+            Arithmetic Add = new Arithmetic();
+                Add.Addition();
         }
     }
 }
