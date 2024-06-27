@@ -1,4 +1,5 @@
 ﻿using System;
+using calculator;
 
 namespace NaveenpConsoleApp1
 {
@@ -6,7 +7,19 @@ namespace NaveenpConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" done for the day 25 !");
+            arthematic add = new arthematic();
+            add.addition();
+
+            arthematic sub = new arthematic();
+            sub.subtraction();
+
+            arthematic div = new arthematic();
+            div.divide();
+            
         }
+       
+        
+
+        
     }
-}
+}       
