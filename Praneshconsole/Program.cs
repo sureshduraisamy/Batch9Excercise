@@ -1,4 +1,5 @@
 ﻿using System;
+using Praneshconsole;
 
 namespace Praneshconsole
 {
@@ -6,9 +7,12 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Name.Pranes");
-            Console.WriteLine("Age.20");
-            Console.WriteLine("problam.Fiver");
+            Departement info = new Departement();
+            info.Informationtechnology();
+
+
+
+
         }
     }
 }
