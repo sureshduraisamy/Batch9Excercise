@@ -14,6 +14,7 @@ namespace Praneshconsole
             Console.WriteLine("Name.Pranesh");
             Console.WriteLine("Age.20");
             Console.WriteLine("problem.Fiver");
+
         
         }
 
