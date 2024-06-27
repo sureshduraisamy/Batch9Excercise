@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.ConsoleApp", "Sample
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.MvcApplication", "Sample.MvcApplication\Sample.MvcApplication.csproj", "{85F34CB1-2BA7-45D3-8FD1-808D5B66769A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.WebAPI", "Sample.WebAPI\Sample.WebAPI.csproj", "{8CD6B864-FFDC-4D03-B266-A1620825BAD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.WebAPI\Sample.WebAPI.csproj", "{8CD6B864-FFDC-4D03-B266-A1620825BAD4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "naveendevi.consol", "naveendevi.consol\naveendevi.consol.csproj", "{7EB91F26-0E3E-4228-98D1-4DA3011C9463}"
 EndProject
