@@ -6,8 +6,9 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Name.Pranes")
-            Console.WriteLine("Age.20") 
+            Console.WriteLine("Name.Pranes");
+            Console.WriteLine("Age.20");
+            Console.WriteLine("problam.Fiver");
         }
     }
 }
