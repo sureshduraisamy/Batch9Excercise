@@ -1,12 +1,15 @@
 ﻿using System;
 
-namespace Vikram.console
+namespace cricket
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hii");
+            IndiaTeam ovj = new IndiaTeam();
+            ovj.Rohit();
+            
+            
         }
     }
 }

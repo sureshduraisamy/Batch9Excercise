@@ -7,7 +7,7 @@ namespace Sample.ConsoleApp
         {
 
             Arithmetic ovj = new Arithmetic();
-            ovj.Addtiion();
+            ovj.addition();
 
         }
 

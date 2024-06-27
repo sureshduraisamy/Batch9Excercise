@@ -5,9 +5,9 @@ namespace Sample.ConsoleApp
     class Arithmetic
     {
 
-        public void Addtiion()
+        public void addition()
         {
-           Console.WriteLine(5 + 10 + 10); 
+           Console.WriteLine(5+10+10); 
             
         }
 
