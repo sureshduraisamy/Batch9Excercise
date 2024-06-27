@@ -6,7 +6,8 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            PatientDetails Ovj = new PatientDetails();
+            Ovj.Name();
         }
     }
 }
