@@ -6,7 +6,8 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("magudees!");
+            Arithmetic_operations ovj = new Arithmetic_operations();
+            ovj.Multiplication();
         }
     }
 }
