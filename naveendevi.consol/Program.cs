@@ -6,7 +6,24 @@ namespace naveendevi.consol
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hai!");
+            //Console.WriteLine("Hai!");
+
+
+            new student_report().CalculateTotal();
+                
+
+
+
+
+
+
+
+
+                    }
+
         }
+  
     }
-}
+    
+
+

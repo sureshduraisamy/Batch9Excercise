@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace Hospictal
+namespace H
 {
-    class DoctorCaseHistory
+    class Doctorreport
     {
-      void methodsname()
+      public void nil()
+
         {
             Console.WriteLine("Name:name");
             Console.WriteLine("Fever");
@@ -12,4 +13,5 @@ namespace Hospictal
             Console.WriteLine("NIL");
         }
     }
+
 }
