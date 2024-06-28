@@ -7,8 +7,18 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            Departement info = new Departement();
-            info.Informationtechnology();
+            new StudentRepoarts().CalculaTetotal();
+
+
+
+
+
+
+
+
+
+              // / Departement info = new Departement();
+            // /info.Informationtechnology();
 
 
 
