@@ -6,8 +6,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Arithmetic obj = new Arithmetic();
-            obj.multiplication();
+            //Arithmetic obj = new Arithmetic();
+            //obj.multiplication();
+
+            new ClassMarkTotal().MarkCalculation();
         }
     }
 }
