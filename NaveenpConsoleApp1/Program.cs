@@ -1,9 +1,11 @@
 ﻿using System;
 using calculator;
+using StudentName;
 
 namespace NaveenpConsoleApp1
 {
-    class Program
+
+    /*class Program
     {
         static void Main(string[] args)
         {
@@ -21,5 +23,16 @@ namespace NaveenpConsoleApp1
         
 
         
+    }*/
+
+    class Program
+    {
+        static void Main(string [] args)
+        {
+            Studenttotal marks = new Studenttotal();
+            marks.Totalmark();
+
+        }
     }
-}       
+
+}    
