@@ -6,8 +6,17 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            PatientDetails Ovj = new PatientDetails();
-            Ovj.Name();
+            StudentReport ovj = new StudentReport();
+            ovj.CalculateTotal();
+
+            
+
+
+
+
+            // PatientDetails Ovj = new PatientDetails();
+            //Ovj.Name();
+            
         }
     }
 }
