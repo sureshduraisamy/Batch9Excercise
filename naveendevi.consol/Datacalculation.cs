@@ -9,6 +9,7 @@ namespace naveendevi.consol
     class Datacalculation1
     {
         public string name = "naveen";
+        
         public int age = 24;
         
        public void topic1()

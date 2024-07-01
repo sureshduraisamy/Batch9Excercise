@@ -13,12 +13,12 @@ namespace naveendevi.consol
         public void calci()
         {
             age = age + 40;
-            Console.WriteLine(age);
+            //Console.WriteLine(age);
 
         }
-        
 
 
-        
+
+
     }
 }
