@@ -1,5 +1,5 @@
 ﻿using System;
-using Praneshconsole;
+using praneshconsole;
 
 namespace Praneshconsole
 {
@@ -7,12 +7,15 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            new StudentRepoarts().CalculaTetotal();
+           // new StudentRepoarts().CalculaTetotal();
 
 
 
 
-
+            variable obj = new  ();
+            obj.M2();
+            obj.m1();
+            obj.m3();
 
 
 
