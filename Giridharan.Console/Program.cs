@@ -6,8 +6,20 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            StudentReport ovj = new StudentReport();
-            ovj.CalculateTotal();
+            PersonAge obj = new PersonAge();
+            PersonName obj1 = new PersonName();
+            obj.age = obj1.total;
+            Console.WriteLine(obj.age);
+            Console.WriteLine(obj1.total + 7);
+            obj.AgeDetails();
+            obj1.PersonDetails2();
+
+
+
+
+
+           // StudentReport ovj = new StudentReport();
+            //ovj.CalculateTotal();
 
             
 
