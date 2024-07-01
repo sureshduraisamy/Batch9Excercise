@@ -6,10 +6,22 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-            StudentReport ovj = new StudentReport();
-            ovj.CalculateTotal();
+            variables obj = new  ();
+            obj.M2();
+            obj.M1();
+
+            
             
 
+
+
+
+
+
+
+
+            // StudentReport ovj = new StudentReport();
+            // ovj.CalculateTotal();
 
             //Arithmetic_operations ovj = new Arithmetic_operations();
             //ovj.Multiplication();
