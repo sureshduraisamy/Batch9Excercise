@@ -7,11 +7,12 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            new StudentMarksheet().calculateTotal();
+            Exchange obj = new();
+            obj.report();
 
 
 
-
+        
         }
 
     }

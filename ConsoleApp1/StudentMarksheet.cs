@@ -20,5 +20,13 @@ namespace ConsoleApp1
 
 
         }
+        public int age = 50;
+
+        public void read()
+        {
+            age = 50;
+            int total = 360;
+            Console.WriteLine(total = 100);
+        }
             }
 }
