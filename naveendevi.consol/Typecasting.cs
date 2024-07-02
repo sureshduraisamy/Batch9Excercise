@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using  System.Threading.Tasks;
 
 namespace naveendevi.consol
 {
-    class Typecasting
+    class Typecasting 
     { 
         public int a = 10;
         public int b = 20;
