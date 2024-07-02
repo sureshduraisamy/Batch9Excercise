@@ -23,8 +23,12 @@ namespace ConsoleApp
               new A().task2();*/
 
             //switching value
-            SwitchingValue obj = new SwitchingValue();
-            obj.switchingValue();
+            /*  SwitchingValue obj = new SwitchingValue();
+              obj.switchingValue();*/
+
+            TypeCasting obj = new TypeCasting();
+            obj.typeCastingImplicit();
+            obj.typeCastingExplicit();
 
         }
     }

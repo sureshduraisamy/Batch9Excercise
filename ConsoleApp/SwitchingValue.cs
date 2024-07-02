@@ -12,6 +12,7 @@ namespace ConsoleApp
         public int b = 50;
         public int c;
 
+       
         public void switchingValue()
         {
             Console.WriteLine("A="+a);
