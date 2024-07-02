@@ -6,9 +6,17 @@ namespace naveendevi.consol
     {
         static void Main(string[] args)
         {
-            Datacalculation1 obj = new Datacalculation1();
+            Typecasting obj = new Typecasting();
+            obj.report();
 
-            obj.topic1();
+
+
+
+
+
+           // Datacalculation1 obj = new Datacalculation1();
+
+            //  obj.topic1();
             //Console.WriteLine(name);
             //age = age + 40;
         }
