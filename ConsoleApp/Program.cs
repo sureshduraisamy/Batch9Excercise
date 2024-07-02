@@ -28,6 +28,7 @@ namespace ConsoleApp
 
             TypeCasting obj = new TypeCasting();
             obj.typeCastingImplicit();
+
             obj.typeCastingExplicit();
 
         }
