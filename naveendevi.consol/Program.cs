@@ -7,7 +7,7 @@ namespace naveendevi.consol
         static void Main(string[] args)
         {
             Typecasting obj = new Typecasting();
-            obj.report();
+            obj.report(); 
 
 
 
