@@ -6,13 +6,26 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            PersonAge obj = new PersonAge();
-            PersonName obj1 = new PersonName();
-            obj.age = obj1.total;
-            Console.WriteLine(obj.age);
-            Console.WriteLine(obj1.total + 7);
-            obj.AgeDetails();
-            obj1.PersonDetails2();
+            StudentMarklist obj = new StudentMarklist();
+            obj.Report();
+
+
+
+
+
+
+
+
+
+
+
+            // PersonAge obj = new PersonAge();
+            //PersonName obj1 = new PersonName();
+            //obj.age = obj1.total;
+            //Console.WriteLine(obj.age);
+            //Console.WriteLine(obj1.total + 7);
+            //obj.AgeDetails();
+            //obj1.PersonDetails2();
 
 
 
