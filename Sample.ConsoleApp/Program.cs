@@ -5,9 +5,13 @@ namespace Sample.ConsoleApp
     {
         static void Main(string[] args)
         {
+            int a = 50;
 
-            Arithmetic ovj = new Arithmetic();
-            ovj.Addtiion();
+            ReadData obj = new ReadData();
+            obj.GetData();
+            obj.PrintData();
+            //Arithmetic ovj = new Arithmetic();
+            //ovj.Addtiion();
 
         }
 
