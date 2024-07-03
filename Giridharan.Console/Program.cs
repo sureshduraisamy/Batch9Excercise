@@ -6,8 +6,13 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            StudentMarklist obj = new StudentMarklist();
-            obj.Report();
+            InterestCalculation obj = new();
+            obj.GetData();
+            obj.Interest();
+
+
+           // StudentMarklist obj = new StudentMarklist();
+            //obj.Report();
 
 
 
