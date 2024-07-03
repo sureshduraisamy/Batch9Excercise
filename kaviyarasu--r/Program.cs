@@ -1,6 +1,7 @@
 ﻿using System;
 using Calculator;
 using studentMark;
+using LoanInterestcalculation;
 
 namespace kaviyarasu__r
 {
@@ -13,12 +14,13 @@ namespace kaviyarasu__r
         }
     }*/
 
-    class program
+    class bankloan
     {
         static void Main(string[] args)
         {
-            student_Mark total = new student_Mark();
-            total.Totalmark();
+            calculation_interest data = new calculation_interest();
+            data.Interest();
+            data.Compoundinterest();
 
         }
 
