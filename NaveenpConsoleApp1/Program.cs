@@ -4,6 +4,7 @@ using StudentName;
 using collegestrength;
 using Typocasting;
 using Typeconverting;
+using LoanInterestcalculation;
 
 namespace NaveenpConsoleApp1
 {
@@ -66,18 +67,19 @@ namespace NaveenpConsoleApp1
    //         data.changing();
 
    //     }//
-        class conversion
+
+
+        class bankloan
+    {
+        static void Main(string[] args)
         {
-            static void Main(string[] args)
-            {
-                Typoconvert datas = new Typoconvert();
-                datas.Implicit();
-            datas.Lowerhigher();
-            datas.Higherlower();
+            Interestcalculation data = new Interestcalculation();
+                data.Interest();
+            data.Compoundinterest();
 
 
-            }
         }
+    }
     
 }
     
