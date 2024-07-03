@@ -3,9 +3,10 @@ namespace Sample.ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+       
+         public void Addtiion()
 
+        { 
             Arithmetic ovj = new Arithmetic();
             ovj.Addtiion();
 

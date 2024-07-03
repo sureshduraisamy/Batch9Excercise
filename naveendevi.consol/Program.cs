@@ -6,15 +6,32 @@ namespace naveendevi.consol
     {
         static void Main(string[] args)
         {
-            Typecasting obj = new Typecasting();
-            obj.report(); 
+            Intrest_calculator obj = new();
+            obj.GetData();
+            obj.compoundintrest();
 
 
 
 
 
 
-           // Datacalculation1 obj = new Datacalculation1();
+
+
+
+
+
+
+
+
+           // Typecasting obj = new Typecasting();
+           // obj.report(); 
+
+
+
+
+
+
+            // Datacalculation1 obj = new Datacalculation1();
 
             //  obj.topic1();
             //Console.WriteLine(name);
