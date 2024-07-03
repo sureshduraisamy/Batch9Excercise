@@ -6,8 +6,9 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //Arithmetic obj = new Arithmetic();
-            //obj.multiplication();
+            //  Arithmetic obj = new Arithmetic();
+            //  obj.multiplication();
+
 
             //   new ClassMarkTotal().MarkCalculation();
 
@@ -26,10 +27,15 @@ namespace ConsoleApp
             /*  SwitchingValue obj = new SwitchingValue();
               obj.switchingValue();*/
 
-            TypeCasting obj = new TypeCasting();
-            obj.typeCastingImplicit();
+            /// TypeCasting obj = new TypeCasting();
+            // obj.typeCastingImplicit();
 
-            obj.typeCastingExplicit();
+            //  obj.typeCastingExplicit();
+
+            //InterestCalculation
+            InterestCalculation obj = new InterestCalculation();
+            obj.GetData();
+            obj.TotalAmount();
 
         }
     }

@@ -8,6 +8,7 @@ namespace ConsoleApp
 {
     class Arithmetic
     {
+        public int age = 0;
        public void multiplication()
         {
             Console.WriteLine("performing multiplication"+" "+5*10);

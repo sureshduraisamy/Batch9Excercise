@@ -8,6 +8,7 @@ namespace ConsoleApp
 {
     class ClassMarkTotal
     {
+        char k = 'h';
         public String name  = "manikandan";
         public int subject1 = 99;
         public int subject2 = 99;
