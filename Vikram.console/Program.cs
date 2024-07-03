@@ -6,8 +6,27 @@ namespace cricket
     {
         static void Main(string[] args)
         {
-            TypeCasting obj = new TypeCasting();
-            obj.report();
+            IntrestCalculation obj = new();
+            obj.GetData();
+            obj.Intrest();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           // TypeCasting obj = new TypeCasting();
+            //obj.report();
 
 
 
