@@ -7,8 +7,13 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            Exchange obj = new();
-            obj.report();
+            //Exchange obj = new();
+            //obj.report();
+
+            Interest_calculation obj = new();
+            obj.calculate();
+            obj.Interest();
+
 
 
 
