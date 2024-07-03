@@ -6,15 +6,13 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-            Exchange obj = new();
-            obj.report();
+            Interest_calculation obj = new();
+            obj.interest();
+            obj.calculate();
 
 
-
-
-
-
-
+           // Exchange obj = new();
+            //obj.report();
 
             // variables obj = new  ();
             //obj.M2();
