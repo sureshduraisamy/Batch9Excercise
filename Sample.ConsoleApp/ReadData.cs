@@ -16,7 +16,7 @@ namespace Sample.ConsoleApp
             Console.WriteLine("Enter your name");
             name = Console.ReadLine();
             Console.WriteLine("Enter your Age");
-            int age =  Convert.ToInt16( Console.ReadLine());
+            int age = Convert.ToInt16(Console.ReadLine();
             Console.WriteLine(age);
         }
         public void PrintData()
