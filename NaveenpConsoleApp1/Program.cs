@@ -6,6 +6,7 @@ using Typocasting;
 using Typeconverting;
 using LoanInterestcalculation;
 using Conditionalstatement;
+using Operators;
 
 namespace NaveenpConsoleApp1
 {
@@ -82,16 +83,29 @@ namespace NaveenpConsoleApp1
     //    }
 
     //}
-    class Ifprogram
+    //class Ifprogram
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Conditions data = new Conditions();
+    //        //data.ifcondition();
+    //        //data.Evenorodd();
+    //        //data.Simple();
+    //        data.Leapyear();
+    //    }
+
+    class operating 
     {
         static void Main(string[] args)
         {
-            Conditions data = new Conditions();
-            //data.ifcondition();
-            //data.Evenorodd();
-            //data.Simple();
-            data.Leapyear();
+            Operatorfun data = new Operatorfun();
+            //data.arthematicopp(20,30);
+            //data.conditonopp(10,20);
+            //data.Logicalopp(10, 20);
+            data.unaryopp(10);
         }
+
+
     }
     
 }
