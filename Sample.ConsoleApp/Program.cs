@@ -1,15 +1,13 @@
-﻿using System;
-namespace Sample.ConsoleApp
+﻿namespace Sample.ConsoleApp
 {
+
     class Program
     {
         static void Main(string[] args)
         {
-            int a = 50;
-
-            BiggestNumber big = new BiggestNumber();
-            big.BiggestNumb();
-
+            biggernumber obj = new();
+            obj.number();
+            
             //ReadData obj = new ReadData();
             //obj.GetData();
             //obj.PrintData();

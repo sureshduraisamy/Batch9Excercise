@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sample.ConsoleApp
 {
-    class BiggestNumber
+    class biggernumber
     {
 
         public void BiggestNumb()
@@ -28,5 +28,9 @@ namespace Sample.ConsoleApp
 
         }
 
+        internal void number()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
