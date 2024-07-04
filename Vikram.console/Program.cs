@@ -6,9 +6,18 @@ namespace cricket
     {
         static void Main(string[] args)
         {
-            IntrestCalculation obj = new();
-            obj.GetData();
-            obj.Intrest();
+            BiggerNumber big = new();
+            big.BiggestNum();
+
+
+
+
+
+
+
+           // IntrestCalculation obj = new();
+            //bj.GetData();
+            //obj.Intrest();
 
 
 
