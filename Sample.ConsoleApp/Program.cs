@@ -7,9 +7,12 @@ namespace Sample.ConsoleApp
         {
             int a = 50;
 
-            ReadData obj = new ReadData();
-            obj.GetData();
-            obj.PrintData();
+            BiggestNumber big = new BiggestNumber();
+            big.BiggestNumb();
+
+            //ReadData obj = new ReadData();
+            //obj.GetData();
+            //obj.PrintData();
             //Arithmetic ovj = new Arithmetic();
             //ovj.Addtiion();
 
