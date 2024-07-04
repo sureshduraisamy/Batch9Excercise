@@ -18,10 +18,11 @@ namespace kaviyarasu__r
     {
         static void Main(string[] args)
         {
-            calculation_interest data = new calculation_interest();
-            data.Interest();
-            data.Compoundinterest();
-
+            Biggestnumber data = new Biggestnumber();
+            //data.ifcondition();
+            data.Evenorodd();
+            //data.Simple();
+            
         }
 
     }
