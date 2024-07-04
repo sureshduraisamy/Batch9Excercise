@@ -13,7 +13,9 @@ namespace ConsoleApp1
 
         public void bigger()
         {
+            Console.WriteLine("Maths=");
             maths = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Tamil=");
             tamil = Convert.ToInt32(Console.ReadLine());
         }
 
@@ -21,13 +23,14 @@ namespace ConsoleApp1
         {
             if (maths > tamil)
             {
+                Console.WriteLine("The Biggest Mark is Maths");
                 Console.WriteLine(maths);
             }
-            else 
+            else
             {
                 
-                Console.WriteLine(b);
-
+                Console.WriteLine("The Biggest Mark is Tamil");
+                Console.WriteLine(tamil);
 
             }
             

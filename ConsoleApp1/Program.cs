@@ -14,9 +14,18 @@ namespace ConsoleApp1
             //obj.calculate();
             //obj.Interest();
 
-            BiggestNumber obj = new();
-            obj.bigger();
-            obj.greatnumber();
+            //BiggestNumber obj = new();
+            //obj.bigger();
+            //obj.greatnumber();
+
+            //Odd_Or_Even obj = new();
+            //obj.findvalue();
+            //obj.Value();
+
+            Leap_year obj = new();
+            obj.Leap();
+            obj.visit();
+
 
 
 
