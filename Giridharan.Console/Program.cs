@@ -6,9 +6,18 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            InterestCalculation obj = new();
-            obj.GetData();
-            obj.Interest();
+
+            BiggestNumber obj = new();
+            obj.BiggestNum();
+            obj.Add_Or_Even();
+            obj.LeapYear();
+           
+
+
+
+           // InterestCalculation obj = new();
+            //obj.GetData();
+            //obj.Interest();
 
 
            // StudentMarklist obj = new StudentMarklist();
@@ -47,6 +56,6 @@ namespace GiridharanConsole
             // PatientDetails Ovj = new PatientDetails();
             //Ovj.Name();
             
-        }
+         }
     }
 }
