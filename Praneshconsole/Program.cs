@@ -7,10 +7,18 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
+
+
+
+
+
+
+
+
             
-            Calculation obj = new();
-            obj.Amount();
-            obj.Print();
+           // Calculation obj = new();
+           // obj.Amount();
+          //  obj.Print();
 
 
 

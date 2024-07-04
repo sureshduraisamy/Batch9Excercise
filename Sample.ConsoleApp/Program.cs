@@ -6,9 +6,9 @@ namespace Sample.ConsoleApp
         static void Main(string[] args)
         {
 
-            calculation obj = new();
-            obj.Amount();
-            obj.Print();
+            //calculation obj = new();
+            //obj.Amount();
+            //obj.Print();
       
 
 
