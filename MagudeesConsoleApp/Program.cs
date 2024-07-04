@@ -6,20 +6,28 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-            Interest_calculation obj = new();
-            obj.interest();
-            obj.calculate();
+            OddorEvenNumber obj = new();
+            obj.Odd_Or_Even();
 
 
-           // Exchange obj = new();
+            //BiggestNumber obj = new ();
+            //obj.Biggest();
+
+
+            // Interest_calculation obj = new();
+            //obj.interest();
+            //obj.calculate();
+
+
+            // Exchange obj = new();
             //obj.report();
 
             // variables obj = new  ();
             //obj.M2();
             // obj.M1();
 
-            
-             // StudentReport ovj = new StudentReport();
+
+            // StudentReport ovj = new StudentReport();
             // ovj.CalculateTotal();
 
             //Arithmetic_operations ovj = new Arithmetic_operations();
