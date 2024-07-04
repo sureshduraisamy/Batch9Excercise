@@ -8,6 +8,12 @@ namespace Praneshconsole
         static void Main(string[] args)
         {
 
+            OddorEvenNumber obj = new();
+            obj.OdderEven();
+
+
+           // BiggestNumber obj = new BiggestNumber();
+            //obj.biggest();
 
 
 
@@ -26,12 +32,6 @@ namespace Praneshconsole
             //obj.report();
 
 
-
-
-
-
-
-           
 
 
 
