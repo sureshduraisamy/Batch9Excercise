@@ -9,26 +9,26 @@ namespace ConsoleApp
     class InterestCalculation
     {
         string name;
-        int interestRate;
-        int amount;
-        int time;
+       decimal interestRate;
+        decimal amount;
+        decimal time;
 
         public void GetData()
         {
             Console.WriteLine("enter ur name");
             name= Console.ReadLine();
             Console.WriteLine("interest rate");
-            interestRate = Convert.ToInt32(Console.ReadLine());
+            interestRate = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("enter the amount");
-            amount =Convert.ToInt32(Console.ReadLine());
+            amount =Convert.ToDecimal(Console.ReadLine());
        
-            time = Convert.ToInt32(Console.ReadLine());
+            time = Convert.ToDecimal(Console.ReadLine());
         }
 
         public void TotalAmount()
         {
-            int si;
-            si = (amount * interestRate*(time))/100;
+            decimal si;
+            si = (amount * interestRate*(time/12))/100;
             Console.WriteLine(si);
            
         }

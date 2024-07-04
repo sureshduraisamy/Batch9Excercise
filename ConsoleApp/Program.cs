@@ -33,9 +33,19 @@ namespace ConsoleApp
             //  obj.typeCastingExplicit();
 
             //InterestCalculation
-            InterestCalculation obj = new InterestCalculation();
-            obj.GetData();
-            obj.TotalAmount();
+            // InterestCalculation obj = new InterestCalculation();
+            // obj.GetData();
+            // obj.TotalAmount();
+
+            //4/7/2024
+            // BiggestNumber obj = new BiggestNumber();
+            // obj.FindBigNo();
+
+            // OddEven obj = new OddEven();
+            // obj.PrintOddEven();
+
+            LeapYear obj = new LeapYear();
+            obj.PrintLeapYr();
 
         }
     }
