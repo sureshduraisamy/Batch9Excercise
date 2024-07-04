@@ -5,6 +5,7 @@ using collegestrength;
 using Typocasting;
 using Typeconverting;
 using LoanInterestcalculation;
+using Conditionalstatement;
 
 namespace NaveenpConsoleApp1
 {
@@ -69,15 +70,27 @@ namespace NaveenpConsoleApp1
    //     }//
 
 
-        class bankloan
+    //    class bankloan
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Interestcalculation data = new Interestcalculation();
+    //            data.Interest();
+    //        data.Compoundinterest();
+
+
+    //    }
+
+    //}
+    class Ifprogram
     {
         static void Main(string[] args)
         {
-            Interestcalculation data = new Interestcalculation();
-                data.Interest();
-            data.Compoundinterest();
-
-
+            Conditions data = new Conditions();
+            //data.ifcondition();
+            //data.Evenorodd();
+            //data.Simple();
+            data.Leapyear();
         }
     }
     
