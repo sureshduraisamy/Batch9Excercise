@@ -10,9 +10,13 @@ namespace ConsoleApp1
             //Exchange obj = new();
             //obj.report();
 
-            Interest_calculation obj = new();
-            obj.calculate();
-            obj.Interest();
+            //Interest_calculation obj = new();
+            //obj.calculate();
+            //obj.Interest();
+
+            BiggestNumber obj = new();
+            obj.bigger();
+            obj.greatnumber();
 
 
 

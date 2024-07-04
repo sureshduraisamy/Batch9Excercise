@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.Web
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kaviconsole", "Kaviconsole", "{2B855E71-76A3-4656-B4FA-94D1561B8190}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{35C3273A-559E-4108-A3F2-DD933E931188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{35C3273A-559E-4108-A3F2-DD933E931188}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
