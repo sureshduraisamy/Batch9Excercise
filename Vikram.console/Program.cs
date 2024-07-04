@@ -6,8 +6,15 @@ namespace cricket
     {
         static void Main(string[] args)
         {
-            BiggerNumber big = new();
-            big.BiggestNum();
+            Add_or_Even ovj = new();
+            ovj.Value();
+
+
+
+
+
+           // BiggerNumber big = new();
+            //big.BiggestNum();
 
 
 
