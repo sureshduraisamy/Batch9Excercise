@@ -5,35 +5,14 @@ namespace Sample.ConsoleApp
     {
         static void Main(string[] args)
         {
+            int a = 50;
 
-            //calculation obj = new();
-            //obj.Amount();
-            //obj.Print();
-      
+            BiggestNumber big = new BiggestNumber();
+            big.BiggestNumb();
 
-
-
-
-
-
-
-
-
-
-
-
-
-           //int a = 50;
-            
-           
-
-
-
-
-
-           // ReadData obj = new ReadData();
-           // obj.GetData();
-           // obj.PrintData();
+            //ReadData obj = new ReadData();
+            //obj.GetData();
+            //obj.PrintData();
             //Arithmetic ovj = new Arithmetic();
             //ovj.Addtiion();
 
