@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace kavivarman.console
 {
-    class Class1
+    class Class3
     {
-        public void addition()
-        {
-            Console.WriteLine(2+7);
-            
-        }
+
     }
 }
