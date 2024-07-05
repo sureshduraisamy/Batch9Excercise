@@ -18,9 +18,8 @@ namespace praneshconsole
             value1 = Convert.ToInt32(Console.ReadLine());
 
 
-        }
-        public void stat()
-        {
+
+
             if (value1 % 2 == 0)
             {
                 Console.WriteLine("Enter number is an Even number");
