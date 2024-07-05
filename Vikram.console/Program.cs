@@ -6,8 +6,16 @@ namespace cricket
     {
         static void Main(string[] args)
         {
-            LeapYear ovj = new();
-            ovj.year();
+            StudentGrade ovj = new();
+            
+            ovj.Grade();
+
+
+
+
+
+            //LeapYear ovj = new();
+            //ovj.year();
 
             
             
