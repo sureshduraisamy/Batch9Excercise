@@ -6,8 +6,26 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-            LeepYear obj = new();
-            obj.leepyear();
+            StudentGrade obj = new();
+            obj.studentmarks();
+            
+           
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+           // LeepYear obj = new();
+           // obj.leepyear();
 
 
 
