@@ -6,9 +6,19 @@ namespace Vicky
     {
         static void Main(string[] args)
         {
-            Bignumber obj = new();
-            obj.large();
-            obj.big();
+            studentgrade obj = new();
+            obj.totalmark();
+
+
+
+
+
+
+
+
+           // Bignumber obj = new();
+            //obj.large();
+            //obj.big();
         }
     }
 }
