@@ -6,11 +6,16 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
+            StudentGrade obj = new();
+            obj.Grade();
 
-            BiggestNumber obj = new();
-            obj.BiggestNum();
-            obj.Add_Or_Even();
-            obj.LeapYear();
+
+
+
+           // BiggestNumber obj = new();
+            //obj.BiggestNum();
+            //obj.Add_Or_Even();
+            //obj.LeapYear();
            
 
 
