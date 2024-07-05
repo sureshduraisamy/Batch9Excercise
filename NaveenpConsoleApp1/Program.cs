@@ -6,6 +6,7 @@ using Typocasting;
 using Typeconverting;
 using LoanInterestcalculation;
 using Conditionalstatement;
+using GradeSystem;
 using Operators;
 
 namespace NaveenpConsoleApp1
@@ -94,18 +95,28 @@ namespace NaveenpConsoleApp1
     //        data.Leapyear();
     //    }
 
-    class operating 
+    //class operating 
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Operatorfun data = new Operatorfun();
+    //        //data.arthematicopp(20,30);
+    //        //data.conditonopp(10,20);
+    //        //data.Logicalopp(10, 20);
+    //        //data.unaryopp(10);
+    //    }
+
+
+    //}
+
+    class Gradeoperate
     {
         static void Main(string[] args)
         {
-            Operatorfun data = new Operatorfun();
-            //data.arthematicopp(20,30);
-            //data.conditonopp(10,20);
-            //data.Logicalopp(10, 20);
-            data.unaryopp(10);
+            StudentGrade data = new StudentGrade();
+            data.TotalMark();
+            data.Markcheck();
         }
-
-
     }
     
 }
