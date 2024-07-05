@@ -6,8 +6,13 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-            OddorEvenNumber obj = new();
-            obj.Odd_Or_Even();
+            LeepYear obj = new();
+            obj.leepyear();
+
+
+
+            //OddorEvenNumber obj = new();
+            //obj.Odd_Or_Even();
 
 
             //BiggestNumber obj = new ();
