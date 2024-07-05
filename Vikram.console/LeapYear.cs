@@ -14,12 +14,12 @@ namespace Vikram.console
             int year = Convert.ToInt32(Console.ReadLine());
             if (year % 4 == 0) 
             {
-                Console.WriteLine("Enter the Leap year ");
+                Console.WriteLine(year+"is the Leap year ");
 
             }
             else
             {
-                Console.WriteLine("Enter the Not Leap year");
+                Console.WriteLine(year+"is the Not Leap year");
 
             }
         }
