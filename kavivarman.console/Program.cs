@@ -1,4 +1,5 @@
 ﻿using System;
+using GradeSystem;
 
 namespace kavivarman.console
 {
@@ -13,8 +14,11 @@ namespace kavivarman.console
             // obj.multiplication();
             // Biggest_Number obj = new Biggest_Number();
             //obj.BiggestNumber();
-            OddorEven obj = new OddorEven();
-            obj.OddEven();
+            // OddorEven obj = new OddorEven();
+            //obj.OddEven();
+            Grade obj = new Grade();
+            obj.GetStudentData();
+            obj.PopulateGrade();
         }
     }
 }
