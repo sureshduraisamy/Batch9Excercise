@@ -6,8 +6,27 @@ namespace cricket
     {
         static void Main(string[] args)
         {
-            Add_or_Even ovj = new();
-            ovj.Value();
+            LeapYear ovj = new();
+            ovj.year();
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+           //Add_or_Even ovj = new();
+            //ovj.Value();
 
 
 
