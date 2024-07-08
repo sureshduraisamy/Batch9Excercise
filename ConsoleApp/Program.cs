@@ -44,8 +44,11 @@ namespace ConsoleApp
             // OddEven obj = new OddEven();
             // obj.PrintOddEven();
 
-            LeapYear obj = new LeapYear();
-            obj.PrintLeapYr();
+            // LeapYear obj = new LeapYear();
+            //  obj.PrintLeapYr();
+
+            GradingForClass obj = new GradingForClass();
+            obj.Grading();
 
         }
     }
