@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.MvcApplication", "Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.WebAPI\Sample.WebAPI.csproj", "{8CD6B864-FFDC-4D03-B266-A1620825BAD4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{35C3273A-559E-4108-A3F2-DD933E931188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kavi.console", "ConsoleApp1\Kavi.console.csproj", "{35C3273A-559E-4108-A3F2-DD933E931188}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

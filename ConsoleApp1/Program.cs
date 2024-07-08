@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace Kavi.console
 {
     class A
     {
@@ -22,9 +22,20 @@ namespace ConsoleApp1
             //obj.findvalue();
             //obj.Value();
 
-            Leap_year obj = new();
-            obj.Leap();
-            obj.visit();
+            //Leap_year obj = new();
+            //obj.Leap();
+            //obj.visit();
+
+            //Grade obj = new();
+            //obj.marks();
+            //obj.markcheck();
+
+            Parameter obj = new();
+            obj.method1();
+            obj.method2(55,98,71);
+           Console.WriteLine(obj.method3());
+
+             
 
 
 
