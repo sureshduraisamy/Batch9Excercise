@@ -8,9 +8,24 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            StudentReport obj = new StudentReport();
-            obj.totalmark();
-            obj.markcheck();
+            Vowel obj = new Vowel();
+            obj.VowelFinder();
+
+
+
+
+       //     ParameterRetunType obj = new ParameterRetunType();
+          //  obj.method1();
+            //obj.method2(55,65,75,"total" ,55,75,85 );
+        // Console.WriteLine(obj.method3());
+
+
+
+
+
+           //StudentReport obj = new StudentReport();
+            //obj.totalmark();
+           // obj.markcheck();
         }
 
 
