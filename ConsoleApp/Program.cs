@@ -47,9 +47,19 @@ namespace ConsoleApp
             // LeapYear obj = new LeapYear();
             //  obj.PrintLeapYr();
 
-            GradingForClass obj = new GradingForClass();
-            obj.Grading();
+            //GradingForClass obj = new GradingForClass();
+            //obj.Grading();
 
+            /*  ParamaterAndReturnType obj = new ParamaterAndReturnType();
+              obj.EmptyReturnType();
+              obj.MethodWithParameter(21,'M',"Karthick");
+            int pr=  obj.MethodWithParamterAndReturnType(999,777);
+             int r= obj.MethodWithReturnType();
+              Console.WriteLine(pr);
+              Console.WriteLine(r);*/
+
+            VowelFinder obj = new VowelFinder();
+            obj.Vowel();
         }
     }
 }
