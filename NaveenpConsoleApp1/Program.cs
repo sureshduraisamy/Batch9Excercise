@@ -8,6 +8,8 @@ using LoanInterestcalculation;
 using Conditionalstatement;
 using GradeSystem;
 using Operators;
+using parameterandreturntype;
+using Alphabetvowels;
 
 namespace NaveenpConsoleApp1
 {
@@ -62,14 +64,14 @@ namespace NaveenpConsoleApp1
 
 
 }*/
-   //// class programs
-   // {
-   //     static void Main(string[] args)
-   //     {
-   //         Casting data = new Casting();
-   //         data.changing();
+    //// class programs
+    // {
+    //     static void Main(string[] args)
+    //     {
+    //         Casting data = new Casting();
+    //         data.changing();
 
-   //     }//
+    //     }//
 
 
     //    class bankloan
@@ -109,15 +111,54 @@ namespace NaveenpConsoleApp1
 
     //}
 
-    class Gradeoperate
+    //class Gradeoperate
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        StudentGrade data = new StudentGrade();
+    //        data.TotalMark();
+    //        data.Markcheck();
+    //    }
+    //}
+
+    /*class Programreturn
     {
         static void Main(string[] args)
         {
-            StudentGrade data = new StudentGrade();
-            data.TotalMark();
-            data.Markcheck();
+            Nonreturntype data = new Nonreturntype();
+            data.Nonreturn();
+            
+            Returntype data1 = new Returntype();
+            data1.Addition();
+            Console.WriteLine(data1.Addition());
+           
+            
+            Nonreturnpara data2 = new Nonreturnpara();
+            data2.num(10,10,10);
+            
+
+            returnpara data3 = new returnpara();
+               
+            Console.WriteLine(data3.Add(10, 20, 30));
+            Console.WriteLine(data3.Add(30, 30, 30));
+            Console.WriteLine(data3.Add(50, 30, 50));
+
+
+            returnparaex data4 = new returnparaex();
+            Console.WriteLine(data4.details(10, "naveen",'m'));
+            
+        }
+    }*/
+
+    class program
+    {
+        static void Main (string[] args)
+        {
+            vowels data = new vowels();
+            data.vowelcheck();
         }
     }
+   
     
 }
     
