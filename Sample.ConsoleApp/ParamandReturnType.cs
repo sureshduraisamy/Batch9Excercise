@@ -8,7 +8,7 @@ namespace Sample.ConsoleApp
 
         public void Addition()
         {
-            int a = 10;
+            int A= 10;
             Console.WriteLine("Hai");
         }
 
