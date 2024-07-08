@@ -1,7 +1,7 @@
 ﻿using System;
 using GradeSystem;
 
-namespace kavivarman.console
+namespace ParameterReturntype
 {
     class Program
     {
@@ -16,9 +16,31 @@ namespace kavivarman.console
             //obj.BiggestNumber();
             // OddorEven obj = new OddorEven();
             //obj.OddEven();
-            Grade obj = new Grade();
-            obj.GetStudentData();
-            obj.PopulateGrade();
+            // Grade obj = new Grade();
+            //  obj.GetStudentData();
+            // obj.PopulateGrade();
+            ParameterReturnType obj = new ParameterReturnType();
+            obj.Addition();
+            obj.Addition(35, 45);
+            string K =obj.Addition(21, 'm', "kavi");
+            Console.WriteLine(K);
+
+
+
+
+                
+
+              
+        
+
+
+
+                }
+            
+
+
+
+
         }
     }
-}
+

@@ -28,17 +28,17 @@ namespace GradeSystem
         {
 			Console.WriteLine("student name"  + studentname );
 			Console.WriteLine("total mark"  + studentmark );
-			if(studentmark> 489 && studentmark<501)
+			if(studentmark>= 490 && studentmark<=500)
             {
 				Console.WriteLine("Grade A");
 
             }
-             else if(studentmark>449 && studentmark<490)
+             else if(studentmark>=450 && studentmark<490)
             {
 				Console.WriteLine("Grade B");
 
             }
-			else if (studentmark>399 && studentmark<450)
+			else if (studentmark>=400 && studentmark<450)
 			{
 				Console.WriteLine("grade c");
        
