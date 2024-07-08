@@ -6,9 +6,21 @@ namespace cricket
     {
         static void Main(string[] args)
         {
-            StudentGrade ovj = new();
+            ParamterandReturntype obj = new();
+            obj.Addition();
+            obj.Details( 22,'M',"Giri");
+            Console.WriteLine(obj.MethodwithReturnType());
+
+
+
+
+
+
+
+
+           // StudentGrade ovj = new();
             
-            ovj.Grade();
+            //ovj.Grade();
 
 
 
