@@ -10,6 +10,8 @@ using GradeSystem;
 using Operators;
 using parameterandreturntype;
 using Alphabetvowels;
+using Constructor;
+using Loopingstate;
 
 namespace NaveenpConsoleApp1
 {
@@ -150,12 +152,39 @@ namespace NaveenpConsoleApp1
         }
     }*/
 
+    //class program
+    //{
+    //    static void Main (string[] args)
+    //    {
+    //        vowels data = new vowels();
+    //        data.vowelcheck();
+    //    }
+    //}
+    //class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Constructorexe data = new Constructorexe();
+    //        Constructorexe data1 = new Constructorexe(10,10);
+    //        Constructorexe data2 = new Constructorexe(70);
+    //        Constructorexe data3 = new Constructorexe(22,"naveen");
+    //    }
+    //}
+
     class program
     {
-        static void Main (string[] args)
+        static void Main(string[] args)
         {
-            vowels data = new vowels();
-            data.vowelcheck();
+            //Console.WriteLine("these are the even number between 0 to 50");
+            //Forlooping data = new Forlooping();
+            //Console.WriteLine("these are the odd number between 0 to 50");
+            //Oddlooping data1 = new Oddlooping();
+            //Console.WriteLine("two table");
+            //Twotable data2 = new Twotable();
+            Examples data3 = new Examples();
+            //data3.Loopexamples();
+            data3.Naturalnumber();
+
         }
     }
    
