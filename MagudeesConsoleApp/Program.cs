@@ -6,11 +6,6 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-            StudentGrade obj = new();
-            obj.studentmarks();
-            
-           
- 
 
 
 
@@ -19,13 +14,19 @@ namespace MagudeesConsoleApp
 
 
 
+            Vowel obj = new Vowel();
+            obj.VowelFind();
+
+
+
+           // StudentGrade obj = new();
+           // obj.studentmarks();
 
 
 
 
-
-           // LeepYear obj = new();
-           // obj.leepyear();
+            // LeepYear obj = new();
+            // obj.leepyear();
 
 
 
