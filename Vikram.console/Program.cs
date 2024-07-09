@@ -6,10 +6,12 @@ namespace cricket
     {
         static void Main(string[] args)
         {
-            ParamterandReturntype obj = new();
-            obj.Addition();
-            obj.Details( 22,'M',"Giri");
-            Console.WriteLine(obj.MethodwithReturnType());
+            CheckVowels obj = new();
+            obj.Vowel();
+           // ParamterandReturntype obj = new();
+            //obj.Addition();
+            //obj.Details( 22,'M',"Giri");
+            //Console.WriteLine(obj.MethodwithReturnType());
 
 
 
