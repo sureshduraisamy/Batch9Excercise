@@ -1,5 +1,6 @@
 ﻿using System;
 using GradeSystem;
+using kavivarman.console;
 
 namespace ParameterReturntype
 {
@@ -7,6 +8,9 @@ namespace ParameterReturntype
     {
         static void Main(string[] args)
         {
+
+
+
 
             // Class1 obj = new Class1();
             // obj.addition();
@@ -19,13 +23,13 @@ namespace ParameterReturntype
             // Grade obj = new Grade();
             //  obj.GetStudentData();
             // obj.PopulateGrade();
-            ParameterReturnType obj = new ParameterReturnType();
-            obj.Addition();
-            obj.Addition(35, 45);
-            string K =obj.Addition(21, 'm', "kavi");
-            Console.WriteLine(K);
-
-
+            // ParameterReturnType obj = new ParameterReturnType();
+            //obj.Addition();
+            //obj.Addition(35, 45);
+            //string K =obj.Addition(21, 'm', "kavi");
+            //Console.WriteLine(K);
+            ForLooping obj = new ForLooping();
+            ForLooping data= new ForLooping(1);
 
 
                 
