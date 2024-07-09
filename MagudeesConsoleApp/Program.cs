@@ -8,14 +8,15 @@ namespace MagudeesConsoleApp
         {
 
 
+            OddOrEven obj = new();
+            
 
 
 
 
 
-
-            Vowel obj = new Vowel();
-            obj.VowelFind();
+            // Vowel obj = new Vowel();
+            //obj.VowelFind();
 
 
 
