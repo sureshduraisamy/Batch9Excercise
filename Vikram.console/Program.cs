@@ -6,9 +6,21 @@ namespace cricket
     {
         static void Main(string[] args)
         {
-            CheckVowels obj = new();
-            obj.Vowel();
-           // ParamterandReturntype obj = new();
+            Odd_or_Even obj = new();
+            
+
+
+
+
+
+
+
+
+
+
+            //CheckVowels obj = new();
+            //obj.Vowel();
+            // ParamterandReturntype obj = new();
             //obj.Addition();
             //obj.Details( 22,'M',"Giri");
             //Console.WriteLine(obj.MethodwithReturnType());
@@ -20,8 +32,8 @@ namespace cricket
 
 
 
-           // StudentGrade ovj = new();
-            
+            // StudentGrade ovj = new();
+
             //ovj.Grade();
 
 
@@ -31,30 +43,30 @@ namespace cricket
             //LeapYear ovj = new();
             //ovj.year();
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-           //Add_or_Even ovj = new();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //Add_or_Even ovj = new();
             //ovj.Value();
 
 
 
 
 
-           // BiggerNumber big = new();
+            // BiggerNumber big = new();
             //big.BiggestNum();
 
 
@@ -63,7 +75,7 @@ namespace cricket
 
 
 
-           // IntrestCalculation obj = new();
+            // IntrestCalculation obj = new();
             //bj.GetData();
             //obj.Intrest();
 
@@ -82,13 +94,13 @@ namespace cricket
 
 
 
-           // TypeCasting obj = new TypeCasting();
+            // TypeCasting obj = new TypeCasting();
             //obj.report();
 
 
 
 
-          //  MarkDetails obj = new MarkDetails();
+            //  MarkDetails obj = new MarkDetails();
             //MarkDetails2 obj1 = new MarkDetails2();
             //obj1.age = obj.total;
             //Console.WriteLine(obj1.age);
@@ -104,15 +116,15 @@ namespace cricket
 
 
 
-           // StudentReport ovj = new StudentReport();
-          //  ovj.CalculateTotal();
+            // StudentReport ovj = new StudentReport();
+            //  ovj.CalculateTotal();
 
 
 
-           // IndiaTeam ovj = new IndiaTeam();
+            // IndiaTeam ovj = new IndiaTeam();
             //ovj.Rohit();
-            
-            
+
+
         }
     }
 }
