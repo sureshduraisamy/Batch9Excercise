@@ -6,8 +6,11 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            StudentGrade obj = new();
-            obj.Grade();
+            Odd_OR_Even obj= new();
+
+
+           // StudentGrade obj = new();
+           // obj.Grade();
 
 
 
