@@ -8,8 +8,14 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            Vowel obj = new Vowel();
-            obj.VowelFinder();
+            EvenorOdd obj = new ();
+            
+
+
+
+
+         //   Vowel obj = new Vowel();
+           // obj.VowelFinder();
 
 
 

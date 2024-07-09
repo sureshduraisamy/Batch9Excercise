@@ -11,7 +11,7 @@ namespace praneshconsole
         char a;
         public void VowelFinder() 
         {
-            Console.WriteLine("enter alphabet letter");
+            Console.WriteLine("enter alphabet letter"); 
             
             a =Convert.ToChar(Console.ReadLine());
             if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u')
