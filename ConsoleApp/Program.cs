@@ -61,8 +61,11 @@ namespace ConsoleApp
             // VowelFinder obj = new VowelFinder();
             //obj.Vowel();
 
-            PrintingEvenAndOddNo obj = new PrintingEvenAndOddNo();
-            PrintingEvenAndOddNo obj1 = new PrintingEvenAndOddNo(50);
+            // PrintingEvenAndOddNo obj = new PrintingEvenAndOddNo();
+            //PrintingEvenAndOddNo obj1 = new PrintingEvenAndOddNo(50);
+
+            ArrayValues obj = new ArrayValues();
+            Console.WriteLine(obj.Array());
         }
     }
 }
