@@ -1,12 +1,20 @@
 ﻿using System;
 using Vikram.console;
-namespace cricket
+namespace Vikram.console
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Odd_or_Even obj = new();
+            Array obj = new Array();
+
+
+
+
+
+
+
+           // Odd_or_Even obj = new();
             
 
 
