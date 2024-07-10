@@ -4,11 +4,26 @@ using praneshconsole;
 
 namespace Praneshconsole
 {
+
     class Program
-    {
+    { 
         static void Main(string[] args)
         {
-            EvenorOdd obj = new ();
+
+
+            Array obj = new Array ();
+        
+
+
+    
+    
+
+
+
+        
+
+
+          //  EvenorOdd obj = new ();
             
 
 
