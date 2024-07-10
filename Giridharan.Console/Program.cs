@@ -6,7 +6,8 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Odd_OR_Even obj= new();
+            Array obj = new Array();
+           // Odd_OR_Even obj= new();
 
 
            // StudentGrade obj = new();
