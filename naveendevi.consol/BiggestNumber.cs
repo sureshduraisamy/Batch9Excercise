@@ -10,7 +10,7 @@ namespace naveendevi.consol
     {
         public void Biggestnum()
         {
-            int firstvalue=Convert.ToInt32()
+            int firstvalue = Convert.ToInt32(Console.ReadLine());
 
 
 

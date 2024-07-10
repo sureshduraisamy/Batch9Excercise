@@ -6,9 +6,15 @@ namespace naveendevi.consol
     {
         static void Main(string[] args)
         {
-            Intrest_calculator obj = new();
-            obj.GetData();
-            obj.compoundintrest();
+            Array obj = new Array();
+
+
+
+
+
+            //Intrest_calculator obj = new();
+            // obj.GetData();
+            // obj.compoundintrest();
 
 
 
@@ -23,8 +29,8 @@ namespace naveendevi.consol
 
 
 
-           // Typecasting obj = new Typecasting();
-           // obj.report(); 
+            // Typecasting obj = new Typecasting();
+            // obj.report(); 
 
 
 
