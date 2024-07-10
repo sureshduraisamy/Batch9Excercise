@@ -7,9 +7,9 @@ namespace Vicky
         static void Main(string[] args)
         {
 
+            Array obj = new Array();
 
-
-            EvenOrOdd obj = new EvenOrOdd();
+            //EvenOrOdd obj = new EvenOrOdd();
 
 
 
