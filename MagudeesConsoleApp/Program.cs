@@ -6,8 +6,9 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
+            Array obj = new();
 
-            Statements obj = new Statements(); 
+           // Statements obj = new Statements(); 
 
 
            // OddOrEven obj = new();
