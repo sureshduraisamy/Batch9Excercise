@@ -2,7 +2,7 @@
 using GradeSystem;
 using kavivarman.console;
 
-namespace ParameterReturntype
+namespace kavivarman.console
 {
     class Program
     {
@@ -28,14 +28,16 @@ namespace ParameterReturntype
             //obj.Addition(35, 45);
             //string K =obj.Addition(21, 'm', "kavi");
             //Console.WriteLine(K);
-            ForLooping obj = new ForLooping();
-            ForLooping data= new ForLooping(1);
+            // ForLooping obj = new ForLooping();
+            //ForLooping data= new ForLooping(1);
+            Array obj = new Array();
+            
 
 
-                
 
-              
-        
+
+
+
 
 
 
