@@ -12,6 +12,7 @@ using parameterandreturntype;
 using Alphabetvowels;
 using Constructor;
 using Loopingstate;
+using Arrayfunction;
 
 namespace NaveenpConsoleApp1
 {
@@ -123,34 +124,35 @@ namespace NaveenpConsoleApp1
     //    }
     //}
 
-    /*class Programreturn
-    {
-        static void Main(string[] args)
-        {
-            Nonreturntype data = new Nonreturntype();
-            data.Nonreturn();
-            
-            Returntype data1 = new Returntype();
-            data1.Addition();
-            Console.WriteLine(data1.Addition());
-           
-            
-            Nonreturnpara data2 = new Nonreturnpara();
-            data2.num(10,10,10);
-            
+    //class Programreturn
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        //Nonreturntype data = new Nonreturntype();
+    //        //data.Nonreturn();
 
-            returnpara data3 = new returnpara();
-               
-            Console.WriteLine(data3.Add(10, 20, 30));
-            Console.WriteLine(data3.Add(30, 30, 30));
-            Console.WriteLine(data3.Add(50, 30, 50));
+    //        Returntype data1 = new Returntype();
+            
+    //        Console.WriteLine(data1.Addition());
 
 
-            returnparaex data4 = new returnparaex();
-            Console.WriteLine(data4.details(10, "naveen",'m'));
-            
-        }
-    }*/
+
+            //Nonreturnpara data2 = new Nonreturnpara();
+            //data2.num(10,10,10);
+
+
+            //returnpara data3 = new returnpara();
+
+            //Console.WriteLine(data3.Add(10, 20, 30));
+            //Console.WriteLine(data3.Add(30, 30, 30));
+            //Console.WriteLine(data3.Add(50, 30, 50));
+
+
+            //returnparaex data4 = new returnparaex();
+            //Console.WriteLine(data4.details(10, "naveen",'m'));
+
+       // }
+    //}
 
     //class program
     //{
@@ -171,23 +173,37 @@ namespace NaveenpConsoleApp1
     //    }
     //}
 
-    class program
+    //class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        //Console.WriteLine("these are the even number between 0 to 50");
+    //        //Forlooping data = new Forlooping();
+    //        //Console.WriteLine("these are the odd number between 0 to 50");
+    //        //Oddlooping data1 = new Oddlooping();
+    //        //Console.WriteLine("two table");
+    //        //Twotable data2 = new Twotable();
+    //        Examples data3 = new Examples();
+    //        //data3.Loopexamples();
+    //        data3.Naturalnumber();
+
+    //    }
+    //}
+   class Arrayprogram
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("these are the even number between 0 to 50");
-            //Forlooping data = new Forlooping();
-            //Console.WriteLine("these are the odd number between 0 to 50");
-            //Oddlooping data1 = new Oddlooping();
-            //Console.WriteLine("two table");
-            //Twotable data2 = new Twotable();
-            Examples data3 = new Examples();
-            //data3.Loopexamples();
-            data3.Naturalnumber();
+            //Arraycondition data = new Arraycondition();
+            //data.Arrayfun();
+            //Studentdetails data1 = new Studentdetails();
+            //data1.StudentData();
+            Summing data2 = new Summing();
+            Console.WriteLine(data2.Addition(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+                
+
 
         }
     }
-   
     
 }
     

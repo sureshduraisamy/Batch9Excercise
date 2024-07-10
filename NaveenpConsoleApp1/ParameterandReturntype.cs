@@ -25,7 +25,12 @@ namespace parameterandreturntype
             int a = 10;
             int b = 20;
             int c = a + b;
-            return (c);
+        
+            int d = 100;
+            int e = 200;
+            int z = d + e;
+            return (z);
+            
 
         }
     }
