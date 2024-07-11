@@ -6,7 +6,14 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            Array obj = new Array();
+            Userdefind obj = new();
+            obj.StudentCalculation();
+
+
+
+           // for_loop obj =new();
+
+           // Array obj = new Array();
 
 
 
