@@ -1,6 +1,10 @@
 ﻿using System;
-using praneshconsole;
 
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using praneshconsole;
 
 namespace Praneshconsole
 {
@@ -9,44 +13,45 @@ namespace Praneshconsole
     { 
         static void Main(string[] args)
         {
+            LoopingStatement obj = new LoopingStatement();
 
 
-            Array obj = new Array ();
-        
-
-
-    
-    
-
-
-
-        
-
-
-          //  EvenorOdd obj = new ();
-            
+         //   ArrayValue obj = new();
 
 
 
 
-         //   Vowel obj = new Vowel();
-           // obj.VowelFinder();
 
 
 
 
-       //     ParameterRetunType obj = new ParameterRetunType();
-          //  obj.method1();
+
+
+
+            //  EvenorOdd obj = new ();
+
+
+
+
+
+            //   Vowel obj = new Vowel();
+            // obj.VowelFinder();
+
+
+
+
+            //     ParameterRetunType obj = new ParameterRetunType();
+            //  obj.method1();
             //obj.method2(55,65,75,"total" ,55,75,85 );
-        // Console.WriteLine(obj.method3());
+            // Console.WriteLine(obj.method3());
 
 
 
 
 
-           //StudentReport obj = new StudentReport();
+            //StudentReport obj = new StudentReport();
             //obj.totalmark();
-           // obj.markcheck();
+            // obj.markcheck();
         }
 
 

@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace praneshconsole
 {
-    class Array
+    class ArrayValue
     {
         int[] value = new int[5];
-        public Array() 
+        public ArrayValue() 
         {
            
-
-
-
-
-            
-            {
+           
                 for (int i = 1; i < 5; i++)
                 {
                     value[i] = Convert.ToInt32(Console.ReadLine());
@@ -38,10 +33,6 @@ namespace praneshconsole
                 Console.WriteLine(temp);
 
 
-
-
-            }
-           
         
         }
 
