@@ -30,8 +30,9 @@ namespace kavivarman.console
             //Console.WriteLine(K);
             // ForLooping obj = new ForLooping();
             //ForLooping data= new ForLooping(1);
-            Array obj = new Array();
-            
+            // Array obj = new Array();
+            MarkCalculation obj = new MarkCalculation();
+            obj.Calculation();
 
 
 
