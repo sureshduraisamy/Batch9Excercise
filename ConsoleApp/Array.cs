@@ -28,10 +28,10 @@ namespace ConsoleApp
         public int[] ReturnInData(int [] v)
         {
 
-            int temp = 0;
+            int temp = 1;
             for (int i = 0; i < 5; i++)
             {
-                temp = temp + v[i];
+                temp = temp * v[i];
             }
             Console.WriteLine(temp);
 

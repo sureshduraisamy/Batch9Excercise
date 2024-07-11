@@ -64,8 +64,11 @@ namespace ConsoleApp
             // PrintingEvenAndOddNo obj = new PrintingEvenAndOddNo();
             //PrintingEvenAndOddNo obj1 = new PrintingEvenAndOddNo(50);
 
-            ArrayValues obj = new ArrayValues();
-            Console.WriteLine(obj.Array());
+            //  ArrayValues obj = new ArrayValues();
+            // int[] var= obj.Array();
+            // Console.WriteLine(var[0]);
+            MarkCalculation obj = new MarkCalculation();
+            obj.Calculation();
         }
     }
 }
