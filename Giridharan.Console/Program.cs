@@ -6,30 +6,35 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Array obj = new Array();
-           // Odd_OR_Even obj= new();
+            Marklist obj = new Marklist();
+            obj.Calculation();
+            
 
 
-           // StudentGrade obj = new();
-           // obj.Grade();
+            // Array obj = new Array();
+            // Odd_OR_Even obj= new();
+
+
+            // StudentGrade obj = new();
+            // obj.Grade();
 
 
 
 
-           // BiggestNumber obj = new();
+            // BiggestNumber obj = new();
             //obj.BiggestNum();
             //obj.Add_Or_Even();
             //obj.LeapYear();
-           
 
 
 
-           // InterestCalculation obj = new();
+
+            // InterestCalculation obj = new();
             //obj.GetData();
             //obj.Interest();
 
 
-           // StudentMarklist obj = new StudentMarklist();
+            // StudentMarklist obj = new StudentMarklist();
             //obj.Report();
 
 
@@ -54,17 +59,17 @@ namespace GiridharanConsole
 
 
 
-           // StudentReport ovj = new StudentReport();
+            // StudentReport ovj = new StudentReport();
             //ovj.CalculateTotal();
 
-            
+
 
 
 
 
             // PatientDetails Ovj = new PatientDetails();
             //Ovj.Name();
-            
-         }
+
+        }
     }
 }
