@@ -13,7 +13,15 @@ namespace Praneshconsole
     { 
         static void Main(string[] args)
         {
-            LoopingStatement obj = new LoopingStatement();
+            StudentMark obj = new StudentMark();
+
+
+
+          //    StudentMark obj = new();
+
+
+
+          //  LoopingStatement obj = new LoopingStatement();
 
 
          //   ArrayValue obj = new();
