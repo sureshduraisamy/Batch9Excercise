@@ -60,4 +60,43 @@ namespace Arrayfunction
             return(sum);
         }
     }
+    class Productsales
+
+    {
+        int sum = 0;
+        public void Monthlysales()
+        {
+            string[] months = new string[4];
+            Console.WriteLine("enter the months");
+            for (int i = 0; i<4; i++)
+            {
+                
+                months[i] = Console.ReadLine();
+
+            }
+            int[] sales = new int[4];
+                Console.WriteLine("enter the salesamount");
+            for (int i = 0; i < 4; i++)
+            {
+                
+                sales[i] = Convert.ToInt32(Console.ReadLine());
+                
+            }
+            for(int i = 0; i < 4; i++)
+            {
+                var total = months[i] +"="+ sales[i];
+                Console.WriteLine(total);
+               
+            }
+            Console.WriteLine("total revenue =");
+            for (int i = 0; i < 4; i++)
+            {
+                
+                
+                sum = sum + sales[i];
+                
+            }
+            Console.WriteLine(sum);
+        }
+    }
 }

@@ -13,6 +13,7 @@ using Alphabetvowels;
 using Constructor;
 using Loopingstate;
 using Arrayfunction;
+using Userdefinedfun;
 
 namespace NaveenpConsoleApp1
 {
@@ -197,8 +198,17 @@ namespace NaveenpConsoleApp1
             //data.Arrayfun();
             //Studentdetails data1 = new Studentdetails();
             //data1.StudentData();
-            Summing data2 = new Summing();
-            Console.WriteLine(data2.Addition(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+            //Summing data2 = new Summing();
+            //Console.WriteLine(data2.Addition(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+            //Productsales data = new Productsales();
+            //data.Monthlysales();
+            Markdetails data = new Markdetails();
+            data.Calculation();
+
+            
+            
+            
+                
                 
 
 
