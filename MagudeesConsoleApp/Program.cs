@@ -6,9 +6,9 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-
-
-            LoopingStatement obj = new();
+            calculation obj = new ();
+            obj.Total();
+           // LoopingStatement obj = new();
 
            // Array obj = new();
 
