@@ -6,7 +6,11 @@ namespace MagudeesConsoleApp
     {
         static void Main(string[] args)
         {
-            Array obj = new();
+
+
+            LoopingStatement obj = new();
+
+           // Array obj = new();
 
            // Statements obj = new Statements(); 
 
