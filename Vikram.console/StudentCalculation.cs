@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Vikram.console
 {
-    class Userdefind
+    class StudentCalculation
     {
         int count;
-        public void StudentCalculation()
+        public void Calculation()
         {
             count = Convert.ToInt32(Console.ReadLine());
             StudentMark[] students = new StudentMark[count];

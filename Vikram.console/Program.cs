@@ -6,10 +6,10 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            Userdefind obj = new();
-            obj.StudentCalculation();
-
-
+            StudentCalculation obj=new ();
+            obj.Calculation();
+          Console.WriteLine("gh");
+            
 
            // for_loop obj =new();
 
