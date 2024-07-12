@@ -22,17 +22,24 @@ namespace MagudeesConsoleApp
 
                 StudentMarks sm = new();
                 sm.Name = Console.ReadLine();
+
+
                 sm.Tamil = Convert.ToInt32(Console.ReadLine());
-                
-                
-                
                 sm.English = Convert.ToInt32(Console.ReadLine());
                 sm.Maths = Convert.ToInt32(Console.ReadLine());
                 sm.Science = Convert.ToInt32(Console.ReadLine());
                 sm.SocialScience = Convert.ToInt32(Console.ReadLine());
 
                 students[i] = sm;
+
+
+
+
+
             }
+
+       
+
 
             for (int i = 0; i <= 2; i++)
             {
