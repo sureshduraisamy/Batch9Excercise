@@ -8,29 +8,29 @@ namespace praneshconsole
 {
     class StudentMark
     {
-      public   String Name;
-     public    int Tamil1 = 90;
-    public     int English2 = 90;
-    public    int Maths3 = 75;
-   public      int Science4 = 65;
-   public      int Social5 = 55;
+        public String Name;
+        public int Tamil;
+        public int English;
+        public int Maths;
+        public int Science;
+        public int SocialScience;
 
         public StudentMark()
         {
 
             Name = " ";
             Tamil = 0;
-            English 0;
-            Maths 0;
-            Science 0;
+            English = 0;
+            Maths = 0;
+            Science = 0;
             SocialScience = 0;
 
         }
 
 
-        
+    }
 
-
+}
         
 
            

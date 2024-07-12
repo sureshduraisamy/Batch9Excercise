@@ -22,7 +22,7 @@ namespace praneshconsole
                 sm.Name =Console .ReadLine ();
             
             
-            
+                
             int Tamil = Convert.ToInt32(Console.ReadLine());
             
             int English = Convert.ToInt32(Console.ReadLine());
@@ -38,7 +38,8 @@ namespace praneshconsole
                     Console.WriteLine(studen[i].Name);
                     Console.WriteLine(studen[i].Tamil);
                     Console.WriteLine(studen[i].English);
-                    Console.WriteLine(studen[i].scince);
+                    Console.WriteLine(studen[i].Maths);
+                    Console.WriteLine(studen[i].Science);
                     Console.WriteLine(studen[i].SocialScience);
 
                 }

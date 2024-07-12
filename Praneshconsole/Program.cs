@@ -13,7 +13,14 @@ namespace Praneshconsole
     { 
         static void Main(string[] args)
         {
-            StudentMark obj = new StudentMark();
+
+            Constitution obj = new Constitution();
+         //   StudentCalculation obj = new StudentCalculation();
+
+
+
+
+       //     StudentMark obj = new StudentMark();
 
 
 
