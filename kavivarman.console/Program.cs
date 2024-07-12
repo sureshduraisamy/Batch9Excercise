@@ -31,8 +31,19 @@ namespace kavivarman.console
             // ForLooping obj = new ForLooping();
             //ForLooping data= new ForLooping(1);
             // Array obj = new Array();
-            MarkCalculation obj = new MarkCalculation();
-            obj.Calculation();
+            //  MarkCalculation obj = new MarkCalculation();
+            //obj.Calculation();
+           
+            Candidate obj = new Candidate();
+            CandidateDetails obj1 = new CandidateDetails();
+            Candidate[] l= obj1.Detail(obj);
+            for (int i = 0; i < obj1.count; i++){
+                Console.WriteLine(l[i].name);
+                Console.WriteLine(l[i].constitution);
+                Console.WriteLine(l[i].age);
+
+            }
+        
 
 
 
@@ -42,7 +53,13 @@ namespace kavivarman.console
 
 
 
-                }
+
+
+
+
+
+
+        }
             
 
 
