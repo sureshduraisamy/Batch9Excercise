@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vicky", "Vicky\Vicky.csproj", "{720CCABF-7B77-413B-842A-E7E48DCE563E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "studentgrade.cs", "studentgrade.cs\studentgrade.cs.csproj", "{E9C016C0-36DB-4AFC-BA32-C65A22CDE781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "studentgrade.cs", "studentgrade.cs\studentgrade.cs.csproj", "{E9C016C0-36DB-4AFC-BA32-C65A22CDE781}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AEA8ADDC-CB30-49DC-9296-0D3A83297A31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
