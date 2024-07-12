@@ -14,6 +14,7 @@ using Constructor;
 using Loopingstate;
 using Arrayfunction;
 using Userdefinedfun;
+using Electioncandidate;
 
 namespace NaveenpConsoleApp1
 {
@@ -202,14 +203,28 @@ namespace NaveenpConsoleApp1
             //Console.WriteLine(data2.Addition(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
             //Productsales data = new Productsales();
             //data.Monthlysales();
-            Markdetails data = new Markdetails();
-            data.Calculation();
+            //Markdetails data = new Markdetails();
+            //data.Calculation();
+            Detailelection datanew = new Detailelection();
+            Detailfetch datas = new Detailfetch();
+            Detailelection[] dd = datas.Details();
+            for (int i = 0; i < datas.count; i++)
+            {
+                Console.WriteLine("these are the candidate details");
+                Console.WriteLine(dd[i].name);
+                Console.WriteLine(dd[i].constitution);
+                Console.WriteLine(dd[i].age);
+            }
 
-            
-            
-            
-                
-                
+
+
+
+
+
+
+
+
+
 
 
         }
