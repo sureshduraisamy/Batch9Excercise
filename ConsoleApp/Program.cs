@@ -67,8 +67,21 @@ namespace ConsoleApp
             //  ArrayValues obj = new ArrayValues();
             // int[] var= obj.Array();
             // Console.WriteLine(var[0]);
-            MarkCalculation obj = new MarkCalculation();
-            obj.Calculation();
+            // MarkCalculation obj = new MarkCalculation();
+            // obj.Calculation();
+            Candidate obj = new Candidate();
+            obj.name = "karthick";
+            CandidateDetails obj1 = new CandidateDetails();
+           Candidate[] l=obj1.EnterDetails(obj);
+            
+
+            for (int i = 0; i < obj1.count; i++)
+            {
+                Console.WriteLine(l[i].name);
+                Console.WriteLine(l[i].ConstitutionName);
+                Console.WriteLine(l[i].age);
+            }
+
         }
     }
 }
