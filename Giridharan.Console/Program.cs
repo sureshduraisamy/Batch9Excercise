@@ -6,8 +6,27 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Marklist obj = new Marklist();
-            obj.Calculation();
+            Candidate obj = new Candidate();
+            obj.name = Console.ReadLine();
+          
+            Details s = new Details();
+
+            Candidate[] b = s.EnterDetails(obj);
+
+
+            for(int i=0;i<s.count;i++)
+            {
+                Console.WriteLine(b[i].name);
+                Console.WriteLine(b[i].constitution);
+                Console.WriteLine(b[i].age);
+               
+            }
+
+
+
+
+           // Marklist obj = new Marklist();
+            //obj.Calculation();
             
 
 
