@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Sample.ConsoleApp
 {
@@ -19,10 +15,11 @@ namespace Sample.ConsoleApp
                 string b = "hai";
                 return b;
             }
-            set {
+            set
+            {
 
-                if(value!= null)
-                  Age = Convert.ToInt32(value);
+                if (value != null)
+                    Age = Convert.ToInt32(value);
             }
         }
 
