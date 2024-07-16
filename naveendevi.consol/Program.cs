@@ -6,7 +6,22 @@ namespace naveendevi.consol
     {
         static void Main(string[] args)
         {
-            Array obj = new Array();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          //  Array obj = new Array();
 
 
 
