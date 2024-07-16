@@ -10,7 +10,7 @@ namespace naveendevi.consol
     {
         public int count;
 
-        {
+        
             public int counts;
 
             
@@ -21,4 +21,4 @@ namespace naveendevi.consol
 
 
     }
-}
+
