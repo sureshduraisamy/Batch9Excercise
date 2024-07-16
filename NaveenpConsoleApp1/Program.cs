@@ -15,6 +15,7 @@ using Loopingstate;
 using Arrayfunction;
 using Userdefinedfun;
 using Electioncandidate;
+using Propertycheck;
 
 namespace NaveenpConsoleApp1
 {
@@ -191,10 +192,10 @@ namespace NaveenpConsoleApp1
 
     //    }
     //}
-   class Arrayprogram
-    {
-        static void Main(string[] args)
-        {
+   //class Arrayprogram
+   // {
+   //     static void Main(string[] args)
+   //     {
             //Arraycondition data = new Arraycondition();
             //data.Arrayfun();
             //Studentdetails data1 = new Studentdetails();
@@ -205,28 +206,46 @@ namespace NaveenpConsoleApp1
             //data.Monthlysales();
             //Markdetails data = new Markdetails();
             //data.Calculation();
-            Detailelection datanew = new Detailelection();
-            Detailfetch datas = new Detailfetch();
-            Detailelection[] dd = datas.Details();
-            for (int i = 0; i < datas.count; i++)
+            //Detailelection datanew = new Detailelection();
+            //Detailfetch datas = new Detailfetch();
+            //Detailelection[] dd = datas.Details();
+            //for (int i = 0; i < datas.count; i++)
+            //{
+            //    Console.WriteLine("these are the candidate details");
+            //    Console.WriteLine(dd[i].name);
+            //    Console.WriteLine(dd[i].constitution);
+            //    Console.WriteLine(dd[i].age);
+            //}
+
+
+
+
+
+
+
+
+
+
+
+
+    //    }
+    //}
+    class program
+    {
+        static void Main(string[] args)
+        {
+            string[] names = new string[] { "naveen", "magesh", "pranesh", "dinesh", "rakesh" };
+            Hospitaldetails source = new Hospitaldetails();
+            Property[] sd = (source.Details(names));
+            for (int i = 0; i < sd.Length; i++)
             {
-                Console.WriteLine("these are the candidate details");
-                Console.WriteLine(dd[i].name);
-                Console.WriteLine(dd[i].constitution);
-                Console.WriteLine(dd[i].age);
+               
+                Console.WriteLine(sd[i].DoctorName);
+                
+                Console.WriteLine(sd[i].Qualification);
+                
+                Console.WriteLine(sd[i].Docage);
             }
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
     
