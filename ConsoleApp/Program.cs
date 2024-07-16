@@ -6,8 +6,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //  Arithmetic obj = new Arithmetic();
-            //  obj.multiplication();
+          //  Arithmetic obj = new Arithmetic();
+           // obj.multiplication();
 
 
             //   new ClassMarkTotal().MarkCalculation();
@@ -69,7 +69,7 @@ namespace ConsoleApp
             // Console.WriteLine(var[0]);
             // MarkCalculation obj = new MarkCalculation();
             // obj.Calculation();
-            Candidate obj = new Candidate();
+         /*  Candidate obj = new Candidate();
             obj.name = "karthick";
             CandidateDetails obj1 = new CandidateDetails();
            Candidate[] l=obj1.EnterDetails(obj);
@@ -81,6 +81,7 @@ namespace ConsoleApp
                 Console.WriteLine(l[i].ConstitutionName);
                 Console.WriteLine(l[i].age);
             }
+         */
 
         }
     }
