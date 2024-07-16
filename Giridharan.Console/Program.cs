@@ -6,21 +6,23 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Candidate obj = new Candidate();
-            obj.name = Console.ReadLine();
+            Course obj = new Course();
+            obj.Details();
+           // Candidate obj = new Candidate();
+            //obj.name = Console.ReadLine();
           
-            Details s = new Details();
+            //Details s = new Details();
 
-            Candidate[] b = s.EnterDetails(obj);
+          //  Candidate[] b = s.EnterDetails(obj);
 
 
-            for(int i=0;i<s.count;i++)
-            {
-                Console.WriteLine(b[i].name);
-                Console.WriteLine(b[i].constitution);
-                Console.WriteLine(b[i].age);
+           // for(int i=0;i<s.count;i++)
+          //  {
+            //    Console.WriteLine(b[i].name);
+            //    Console.WriteLine(b[i].constitution);
+           //     Console.WriteLine(b[i].age);
                
-            }
+          //  }
 
 
 
