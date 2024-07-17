@@ -6,9 +6,14 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Iterate obj = new Iterate();
-           obj.RowsandColums();
-            obj.RowsandColumn1();
+            constuct obj = new constuct();
+            constuct obj1 = new constuct( 10);
+
+
+
+           // Iterate obj = new Iterate();
+           //obj.RowsandColums();
+            //obj.RowsandColumn1();
 
 
 
