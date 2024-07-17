@@ -7,21 +7,30 @@ namespace Vicky
         static void Main(string[] args)
         {
 
-            Canditate obj = new Canditate();
-            obj.name = Console.ReadLine();
+            Loopstatement obj = new();
+
+
+
+
+
+
+
+
+           // Canditate obj = new Canditate();
+            //obj.name = Console.ReadLine();
 
             
-            Constitution s = new Constitution();
-            Canditate[] c = s.Enterdetails(obj);
+            //Constitution s = new Constitution();
+            //Canditate[] c = s.Enterdetails(obj);
 
        
 
-            for (int i = 0; i < s.count; i++)
-            {
-                Console.WriteLine(c[i].name);
-                Console.WriteLine(c[i].constitution);
-                Console.WriteLine(c[i].age);
-            }
+            //for (int i = 0; i < s.count; i++)
+            //{
+              //  Console.WriteLine(c[i].name);
+                //Console.WriteLine(c[i].constitution);
+                //Console.WriteLine(c[i].age);
+            //}
 
 
 
