@@ -16,6 +16,8 @@ using Arrayfunction;
 using Userdefinedfun;
 using Electioncandidate;
 using Propertycheck;
+using Programque;
+using Statictype;
 
 namespace NaveenpConsoleApp1
 {
@@ -135,26 +137,26 @@ namespace NaveenpConsoleApp1
     //        //data.Nonreturn();
 
     //        Returntype data1 = new Returntype();
-            
+
     //        Console.WriteLine(data1.Addition());
 
 
 
-            //Nonreturnpara data2 = new Nonreturnpara();
-            //data2.num(10,10,10);
+    //Nonreturnpara data2 = new Nonreturnpara();
+    //data2.num(10,10,10);
 
 
-            //returnpara data3 = new returnpara();
+    //returnpara data3 = new returnpara();
 
-            //Console.WriteLine(data3.Add(10, 20, 30));
-            //Console.WriteLine(data3.Add(30, 30, 30));
-            //Console.WriteLine(data3.Add(50, 30, 50));
+    //Console.WriteLine(data3.Add(10, 20, 30));
+    //Console.WriteLine(data3.Add(30, 30, 30));
+    //Console.WriteLine(data3.Add(50, 30, 50));
 
 
-            //returnparaex data4 = new returnparaex();
-            //Console.WriteLine(data4.details(10, "naveen",'m'));
+    //returnparaex data4 = new returnparaex();
+    //Console.WriteLine(data4.details(10, "naveen",'m'));
 
-       // }
+    // }
     //}
 
     //class program
@@ -192,30 +194,30 @@ namespace NaveenpConsoleApp1
 
     //    }
     //}
-   //class Arrayprogram
-   // {
-   //     static void Main(string[] args)
-   //     {
-            //Arraycondition data = new Arraycondition();
-            //data.Arrayfun();
-            //Studentdetails data1 = new Studentdetails();
-            //data1.StudentData();
-            //Summing data2 = new Summing();
-            //Console.WriteLine(data2.Addition(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-            //Productsales data = new Productsales();
-            //data.Monthlysales();
-            //Markdetails data = new Markdetails();
-            //data.Calculation();
-            //Detailelection datanew = new Detailelection();
-            //Detailfetch datas = new Detailfetch();
-            //Detailelection[] dd = datas.Details();
-            //for (int i = 0; i < datas.count; i++)
-            //{
-            //    Console.WriteLine("these are the candidate details");
-            //    Console.WriteLine(dd[i].name);
-            //    Console.WriteLine(dd[i].constitution);
-            //    Console.WriteLine(dd[i].age);
-            //}
+    //class Arrayprogram
+    // {
+    //     static void Main(string[] args)
+    //     {
+    //Arraycondition data = new Arraycondition();
+    //data.Arrayfun();
+    //Studentdetails data1 = new Studentdetails();
+    //data1.StudentData();
+    //Summing data2 = new Summing();
+    //Console.WriteLine(data2.Addition(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+    //Productsales data = new Productsales();
+    //data.Monthlysales();
+    //Markdetails data = new Markdetails();
+    //data.Calculation();
+    //Detailelection datanew = new Detailelection();
+    //Detailfetch datas = new Detailfetch();
+    //Detailelection[] dd = datas.Details();
+    //for (int i = 0; i < datas.count; i++)
+    //{
+    //    Console.WriteLine("these are the candidate details");
+    //    Console.WriteLine(dd[i].name);
+    //    Console.WriteLine(dd[i].constitution);
+    //    Console.WriteLine(dd[i].age);
+    //}
 
 
 
@@ -230,25 +232,42 @@ namespace NaveenpConsoleApp1
 
     //    }
     //}
+    //class program
+    //{
+    //static void Main(string[] args)
+    //{
+    //    string[] names = new string[] { "naveen", "magesh", "pranesh", "dinesh", "rakesh" };
+    //    Hospitaldetails source = new Hospitaldetails();
+    //    Property[] sd = (source.Details(names));
+    //    for (int i = 0; i < sd.Length; i++)
+    //    {
+
+    //            Console.WriteLine(sd[i].DoctorName);
+
+    //            Console.WriteLine(sd[i].Qualification);
+
+    //            Console.WriteLine(sd[i].Docage);
+    //        }
+    //    }
+    //}
     class program
     {
         static void Main(string[] args)
         {
-            string[] names = new string[] { "naveen", "magesh", "pranesh", "dinesh", "rakesh" };
-            Hospitaldetails source = new Hospitaldetails();
-            Property[] sd = (source.Details(names));
-            for (int i = 0; i < sd.Length; i++)
-            {
-               
-                Console.WriteLine(sd[i].DoctorName);
+            //Printingque data = new Printingque();
+            //data.Question();
+            //Staticclasstype data = new Staticclasstype();
+            ////data.name = "naveen";
+            //Staticclasstype.count = 10;
+            //Console.WriteLine(data.name );
+            //Console.WriteLine(Staticclasstype.count);
+            //source.details();
+            A obj = new A();
+            A obj1 = new A(10, 20);
+
                 
-                Console.WriteLine(sd[i].Qualification);
-                
-                Console.WriteLine(sd[i].Docage);
-            }
         }
     }
-    
 }
     
 
