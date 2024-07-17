@@ -6,8 +6,15 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Course obj = new Course();
-            obj.Details();
+            Iterate obj = new Iterate();
+           obj.RowsandColums();
+            obj.RowsandColumn1();
+
+
+
+
+            //Course obj = new Course();
+            //obj.Details();
            // Candidate obj = new Candidate();
             //obj.name = Console.ReadLine();
           
