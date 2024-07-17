@@ -10,28 +10,32 @@ namespace Praneshconsole
 {
 
     class Program
-    { 
+    {
         static void Main(string[] args)
         {
+            Forloop data = new Forloop();
+            data.method();
 
-            Constitution obj = new Constitution();
-         //   StudentCalculation obj = new StudentCalculation();
-
-
-
-
-       //     StudentMark obj = new StudentMark();
+            //Constitution obj = new Constitution();
 
 
-
-          //    StudentMark obj = new();
+            //   StudentCalculation obj = new StudentCalculation();
 
 
 
-          //  LoopingStatement obj = new LoopingStatement();
+
+            //     StudentMark obj = new StudentMark();
 
 
-         //   ArrayValue obj = new();
+
+            //    StudentMark obj = new();
+
+
+
+            //  LoopingStatement obj = new LoopingStatement();
+
+
+            //   ArrayValue obj = new();
 
 
 
@@ -74,28 +78,12 @@ namespace Praneshconsole
 
 
 
-            //OddorEvenNumber obj = new();
-            //obj.OdderEven();
+        //OddorEvenNumber obj = new();
+        //obj.OdderEven();
 
 
-           // BiggestNumber obj = new BiggestNumber();
-            //obj.biggest();
-
-
-
-
-
-
-
-            
-           // Calculation obj = new();
-           // obj.Amount();
-          //  obj.Print();
-
-
-
-            //Exchange obj=new();
-            //obj.report();
+        // BiggestNumber obj = new BiggestNumber();
+        //obj.biggest();
 
 
 
@@ -104,6 +92,22 @@ namespace Praneshconsole
 
 
 
-        
+        // Calculation obj = new();
+        // obj.Amount();
+        //  obj.Print();
+
+
+
+        //Exchange obj=new();
+        //obj.report();
+
+
+
+
+
+
+
+
+
     }
 }

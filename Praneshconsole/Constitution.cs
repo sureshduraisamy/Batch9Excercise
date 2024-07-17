@@ -8,17 +8,17 @@ namespace praneshconsole
 {
     class Constitution
     {
-        int count ;
+        int count;
 
         public Constitution()
         {
-            count = Convert.ToInt32(Console.ReadLine());
+            count= Convert.ToInt32(Console.ReadLine());
             Candidates[] Arr = new Candidates[count];
 
 
 
             int i = 0;
-            for ( i = 0; i < count ; i++) 
+            for ( i = 0; i < 10 ; i++) 
             {
                 Candidates c  = new Candidates();
                 c.Name = Console.ReadLine();
