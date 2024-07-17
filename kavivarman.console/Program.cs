@@ -10,7 +10,8 @@ namespace kavivarman.console
         {
 
 
-
+            ProgramQuestion obj = new ProgramQuestion();
+            obj.Program();
 
             // Class1 obj = new Class1();
             // obj.addition();
@@ -33,16 +34,16 @@ namespace kavivarman.console
             // Array obj = new Array();
             //  MarkCalculation obj = new MarkCalculation();
             //obj.Calculation();
-           
-            Candidate obj = new Candidate();
-            CandidateDetails obj1 = new CandidateDetails();
-            Candidate[] l= obj1.Detail(obj);
-            for (int i = 0; i < obj1.count; i++){
-                Console.WriteLine(l[i].name);
-                Console.WriteLine(l[i].constitution);
-                Console.WriteLine(l[i].age);
 
-            }
+            // Candidate obj = new Candidate();
+            //CandidateDetails obj1 = new CandidateDetails();
+            //Candidate[] l= obj1.Detail(obj);
+            //for (int i = 0; i < obj1.count; i++){
+            //  Console.WriteLine(l[i].name);
+            //Console.WriteLine(l[i].constitution);
+            //Console.WriteLine(l[i].age);
+
+        }
         
 
 
@@ -66,5 +67,5 @@ namespace kavivarman.console
 
 
         }
-    }
+    
 
