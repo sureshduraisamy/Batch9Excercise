@@ -25,7 +25,7 @@ namespace MagudeesConsoleApp
                 Console.WriteLine("letter is not vowel");
             }
 
-
+           
 
 
 

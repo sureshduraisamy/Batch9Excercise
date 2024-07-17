@@ -22,6 +22,9 @@ namespace MagudeesConsoleApp
             Console.WriteLine("Total:"+Total);
             decimal percentage = (Total / 400 * 100);
             Console.WriteLine(percentage);
+
+            string Replace =studentName. Replace("vicky", "tharun");
+
         }
 
         

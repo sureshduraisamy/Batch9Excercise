@@ -5,24 +5,35 @@ namespace MagudeesConsoleApp
     
     class Program
     {
+
+        
         static void Main(string[] args)
         {
-            Candidates obj = new Candidates();
-            obj.Name = Console.ReadLine();
-           
-            Constitution s = new Constitution();
-            Candidates[] c = s.EnterDetails(obj);
-
-
-            for (int i = 0; i < s.count; i++)
-            {
-                Console.WriteLine(c[i].Name);
-                Console.WriteLine(c[i].Constitution);
-                Console.WriteLine(c[i].Constitution);
 
 
 
-            }
+
+
+
+
+
+            Constructor obj = new();
+            Constructor obj2 = new();
+            
+
+
+          //  LoopStatement obj = new LoopStatement();
+            
+            // Candidates obj = new Candidates();
+            //obj.Name = Console.ReadLine();          
+            // Constitution s = new Constitution();
+            // Candidates[] c = s.EnterDetails(obj);
+            //for (int i = 0; i < s.count; i++)
+
+
+
+
+        }
 
 
 
@@ -91,4 +102,4 @@ namespace MagudeesConsoleApp
                 //ovj.Multiplication();
         }
     }
-}
+
