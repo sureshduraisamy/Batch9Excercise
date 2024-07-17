@@ -6,23 +6,29 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            StudentCalculation obj=new ();
-            obj.Calculation();
-          Console.WriteLine("gh");
-            
-
-           // for_loop obj =new();
-
-           // Array obj = new Array();
+            Iterate obj = new();
+            obj.RowsandColumns();
+            obj.RowsandColumns1();
 
 
 
+           // StudentCalculation obj=new ();
+           //obj.Calculation();
+           //Console.WriteLine("gh");
+
+
+            // for_loop obj =new();
+
+            // Array obj = new Array();
 
 
 
 
-           // Odd_or_Even obj = new();
-            
+
+
+
+            // Odd_or_Even obj = new();
+
 
 
 
