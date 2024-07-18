@@ -6,24 +6,26 @@ namespace MagudeesConsoleApp
     class Program
     {
 
-        
+
         static void Main(string[] args)
         {
+         
 
-
-
-
-
-
-
-
-            Constructor obj = new();
-            Constructor obj2 = new();
+            Statics.detail();
             
 
 
-          //  LoopStatement obj = new LoopStatement();
-            
+
+
+
+
+            //  Constructor obj = new();
+            //Constructor obj2 = new();
+
+
+
+            //  LoopStatement obj = new LoopStatement();
+
             // Candidates obj = new Candidates();
             //obj.Name = Console.ReadLine();          
             // Constitution s = new Constitution();
@@ -33,7 +35,6 @@ namespace MagudeesConsoleApp
 
 
 
-        }
 
 
 
@@ -41,65 +42,73 @@ namespace MagudeesConsoleApp
 
 
 
-           // calculation obj = new ();
-           // obj.Total(); 
 
-                // LoopingStatement obj = new();
+            // calculation obj = new ();
+            // obj.Total(); 
 
-                // Array obj = new();
+            // LoopingStatement obj = new();
 
-                // Statements obj = new Statements(); 
+            // Array obj = new();
 
-
-                // OddOrEven obj = new();
+            // Statements obj = new Statements(); 
 
 
-
-
-
-
-                // Vowel obj = new Vowel();
-                //obj.VowelFind();
-
-
-
-                // StudentGrade obj = new();
-                // obj.studentmarks();
+            // OddOrEven obj = new();
 
 
 
 
-                // LeepYear obj = new();
-                // obj.leepyear();
+
+
+            // Vowel obj = new Vowel();
+            //obj.VowelFind();
 
 
 
-                //OddorEvenNumber obj = new();
-                //obj.Odd_Or_Even();
+            // StudentGrade obj = new();
+            // obj.studentmarks();
 
 
-                //BiggestNumber obj = new ();
-                //obj.Biggest();
 
 
-                // Interest_calculation obj = new();
-                //obj.interest();
-                //obj.calculate();
+            // LeepYear obj = new();
+            // obj.leepyear();
 
 
-                // Exchange obj = new();
-                //obj.report();
 
-                // variables obj = new  ();
-                //obj.M2();
-                // obj.M1();
+            //OddorEvenNumber obj = new();
+            //obj.Odd_Or_Even();
 
 
-                // StudentReport ovj = new StudentReport();
-                // ovj.CalculateTotal();
+            //BiggestNumber obj = new ();
+            //obj.Biggest();
 
-                //Arithmetic_operations ovj = new Arithmetic_operations();
-                //ovj.Multiplication();
-        }
+
+            // Interest_calculation obj = new();
+            //obj.interest();
+            //obj.calculate();
+
+
+            // Exchange obj = new();
+            //obj.report();
+
+            // variables obj = new  ();
+            //obj.M2();
+            // obj.M1();
+
+
+            // StudentReport ovj = new StudentReport();
+            // ovj.CalculateTotal();
+
+            //Arithmetic_operations ovj = new Arithmetic_operations();
+            //ovj.Multiplication();
+
+
+
+           }
+        }  
     }
+
+
+
 
