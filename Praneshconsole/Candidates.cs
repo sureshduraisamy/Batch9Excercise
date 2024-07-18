@@ -19,6 +19,7 @@ namespace praneshconsole
             Name = " ";
             constitution = " ";
             Age = 0;
+            
 
 
         } 

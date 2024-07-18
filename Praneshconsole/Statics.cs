@@ -19,9 +19,13 @@ namespace praneshconsole
         {
             Console.WriteLine("hello");
         }
-        public Statics(int a)
+        public Statics( int a)
         {
-            Console.WriteLine("parameter" + a);
+          
+
+
+
+            Console.WriteLine("parameter+ a ");
         }
     }
 }

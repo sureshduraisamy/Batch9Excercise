@@ -13,12 +13,18 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            Statics obj = new Statics();
-            Statics obj1 = new Statics(10);
+            
 
 
 
-           // Forloop data = new Forloop();
+
+          //  Statics obj = new Statics();
+         //  Statics obj1 = new Statics(10);
+
+            // string str = "ljj";
+            //   str.Isvaluepan();
+
+            // Forloop data = new Forloop();
             //data.method();
 
             //Constitution obj = new Constitution();
