@@ -7,6 +7,8 @@ namespace naveendevi.consol
         static void Main(string[] args)
         {
 
+            Console.WriteLine(college.CollegeMethod());
+            Console.WriteLine(college.CollegeMethod());
 
 
 
@@ -21,7 +23,10 @@ namespace naveendevi.consol
 
 
 
-          //  Array obj = new Array();
+
+
+
+            //  Array obj = new Array();
 
 
 
