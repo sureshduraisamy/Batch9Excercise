@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 namespace Statictype
 {
-    class Staticclasstype
+     class Staticclasstype
     {
 
-        public string name { get; set; }
+        public  string name { get; set; }
         public static int count { get; set; }
     }
     public static class source

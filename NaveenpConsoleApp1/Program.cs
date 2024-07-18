@@ -18,6 +18,8 @@ using Electioncandidate;
 using Propertycheck;
 using Programque;
 using Statictype;
+using Extension;
+
 
 namespace NaveenpConsoleApp1
 {
@@ -250,22 +252,30 @@ namespace NaveenpConsoleApp1
     //        }
     //    }
     //}
-    class program
-    {
-        static void Main(string[] args)
-        {
-            //Printingque data = new Printingque();
-            //data.Question();
-            //Staticclasstype data = new Staticclasstype();
-            ////data.name = "naveen";
-            //Staticclasstype.count = 10;
-            //Console.WriteLine(data.name );
-            //Console.WriteLine(Staticclasstype.count);
-            //source.details();
-            A obj = new A();
-            A obj1 = new A(10, 20);
+    //class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        //Printingque data = new Printingque();
+    //        //data.Question();
+    //        Staticclasstype data = new Staticclasstype();
+    //        data.name = "naveen";
+    //        Staticclasstype.count = 10;
+    //        Console.WriteLine(data.name);
+    //        Console.WriteLine(Staticclasstype.count);
+    //        source.details();
+    //        A obj = new A();
+    //        A obj1 = new A(10, 20);
 
                 
+    //    }
+    //}
+    class Addingexten
+    {
+        static void Main(String[] args)
+        {
+            TestExtension data = new TestExtension();
+            data.Testing();
         }
     }
 }
