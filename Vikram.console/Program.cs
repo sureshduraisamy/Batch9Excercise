@@ -6,9 +6,10 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            Iterate obj = new();
-            obj.RowsandColumns();
-            obj.RowsandColumns1();
+            statics.Details();
+           // Iterate obj = new();
+            //obj.RowsandColumns();
+            //obj.RowsandColumns1();
 
 
 
