@@ -6,8 +6,12 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            constuct obj = new constuct();
-            constuct obj1 = new constuct( 10);
+            Statics.Details();
+       
+
+
+           // constuct obj = new constuct();
+            //constuct obj1 = new constuct( 10);
 
 
 
