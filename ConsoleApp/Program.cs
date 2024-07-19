@@ -1,4 +1,5 @@
 ﻿using System;
+using KarthickBusinessLayer;
 
 namespace ConsoleApp
 {
@@ -6,6 +7,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            IndividuallVowel obj = new();
+            obj.print();
             //  Arithmetic obj = new Arithmetic();
             // obj.multiplication();
 
@@ -82,9 +85,10 @@ namespace ConsoleApp
                    Console.WriteLine(l[i].age);
                }
             */
-            Test obj = new Test();
-            obj.call();
+          //  Test obj = new Test();
+          //  obj.call();
 
+            
         }
     }
 }
