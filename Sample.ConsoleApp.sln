@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.MvcApplication", "Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.WebAPI\Sample.WebAPI.csproj", "{8CD6B864-FFDC-4D03-B266-A1620825BAD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagudeesConsoleApp", "MagudeesConsoleApp\MagudeesConsoleApp.csproj", "{A48CF809-D214-4490-A301-0AB809112C62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagudeesConsoleApp", "MagudeesConsoleApp\MagudeesConsoleApp.csproj", "{A48CF809-D214-4490-A301-0AB809112C62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagudeesBusinessLayer", "MagudeesBusinessLayer\MagudeesBusinessLayer.csproj", "{5FFE832E-0E63-4D51-A785-13EF010DB199}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A48CF809-D214-4490-A301-0AB809112C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A48CF809-D214-4490-A301-0AB809112C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A48CF809-D214-4490-A301-0AB809112C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFE832E-0E63-4D51-A785-13EF010DB199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFE832E-0E63-4D51-A785-13EF010DB199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFE832E-0E63-4D51-A785-13EF010DB199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFE832E-0E63-4D51-A785-13EF010DB199}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

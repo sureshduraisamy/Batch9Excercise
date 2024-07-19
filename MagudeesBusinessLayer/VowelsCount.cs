@@ -4,33 +4,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MagudeesConsoleApp
+namespace MagudeesBusinessLayer
 {
     class VowelsCount
     {
-       
+
+
+
+
 
         public void count()
         {
             string s = "i am rohit";
-            string voewl = "a,e,i,o,u";
+            string b = "aeiou";
             int count = 0;
 
-            for(int i = 0; i < voewl.Length; i++)
+            for (int i = 0; i < b.Length; i++)
             {
-                count = 0;
+             
                 for (int k = 0; k < s.Length; k++)
                 {
-                    if (s[k] == voewl[i])
+                    if (s[k] == b[i])
                     {
                         count++;
                     }
-
-
-
                 }
-                Console.WriteLine(voewl[i] + "," + count);
-               
+
+                Console.WriteLine(b[i] + " " + count);
+                count = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,42 +60,7 @@ namespace MagudeesConsoleApp
 
 
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 

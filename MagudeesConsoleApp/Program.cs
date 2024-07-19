@@ -1,4 +1,5 @@
 ﻿using System;
+using MagudeesBusinessLayer;
 
 namespace MagudeesConsoleApp
 {
@@ -9,10 +10,14 @@ namespace MagudeesConsoleApp
 
         static void Main(string[] args)
         {
-         
+            VowelsCount obj = new ();
+            obj.count();
 
-            Statics.detail();
-            
+
+
+
+            //Statics.detail();
+
 
 
 
@@ -105,8 +110,8 @@ namespace MagudeesConsoleApp
 
 
 
-           }
-        }  
+        }
+    }  
     }
 
 
