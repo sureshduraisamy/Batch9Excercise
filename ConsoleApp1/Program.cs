@@ -30,12 +30,20 @@ namespace Kavi.console
             //obj.marks();
             //obj.markcheck();
 
-            Parameter obj = new();
-            obj.method1();
-            obj.method2(55,98,71);
-           Console.WriteLine(obj.method3());
+            // Parameter obj = new();
+            // obj.method1();
+            // obj.method2(55,98,71);
+            // Console.WriteLine(obj.method3());
 
-             
+            // property obj = new();
+            //obj.method();
+
+            //Pattern obj()= new;
+
+
+            Vowelsopt obj = new();
+            obj.Main();
+            
 
 
 
