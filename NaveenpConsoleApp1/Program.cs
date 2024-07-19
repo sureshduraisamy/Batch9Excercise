@@ -19,6 +19,8 @@ using Propertycheck;
 using Programque;
 using Statictype;
 using Extension;
+using Vowelprogram;
+
 
 
 namespace NaveenpConsoleApp1
@@ -270,12 +272,20 @@ namespace NaveenpConsoleApp1
                 
     //    }
     //}
-    class Addingexten
+    //class Addingexten
+    //{
+    //    static void Main(String[] args)
+    //    {
+    //        TestExtension data = new TestExtension();
+    //        data.Testing();
+    //    }
+    //}
+    class program
     {
-        static void Main(String[] args)
+        static void Main(string[] args)
         {
-            TestExtension data = new TestExtension();
-            data.Testing();
+            Separatevowelcount data = new Separatevowelcount();
+            data.Finding();
         }
     }
 }
