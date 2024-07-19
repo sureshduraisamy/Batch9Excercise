@@ -1,4 +1,5 @@
 ﻿using System;
+using Giridharan_BusinessLayer;
 
 namespace GiridharanConsole
 {
@@ -6,7 +7,10 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Statics.Details();
+            Vowelscount obj = new Vowelscount();
+            obj.Vowels();
+
+            //Statics.Details();
        
 
 
