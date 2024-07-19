@@ -1,14 +1,20 @@
 ﻿using System;
+using BusinessLayer;
 namespace Sample.ConsoleApp
 {
     class Program
     {
         static void Main(string[] args)
         {
+
+            var obj = new BusinessLogic();
+
+
+
             ParamandReturnType param = new ParamandReturnType();
-            param.Addition();
-            param.Addition(69, 80);
-            string v = param.Addition(38,'m',"Suresh");
+            //param.Addition();
+            //param.Addition(69, 80);
+            //string v = param.Addition(38,'m',"Suresh");
             Console.WriteLine(v);
 
 
