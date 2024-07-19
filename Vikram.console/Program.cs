@@ -1,21 +1,27 @@
 ﻿using System;
 using Vikram.console;
+using VikramBusinessLayer;
 namespace Vikram.console
 {
     class Program
     {
         static void Main(string[] args)
         {
-            statics.Details();
+            VowelsCount ovj = new();
+            ovj.Vowels();
+
+
+
+           // statics.Details();
            // Iterate obj = new();
-            //obj.RowsandColumns();
-            //obj.RowsandColumns1();
+           //obj.RowsandColumns();
+           //obj.RowsandColumns1();
 
 
 
-           // StudentCalculation obj=new ();
-           //obj.Calculation();
-           //Console.WriteLine("gh");
+            // StudentCalculation obj=new ();
+            //obj.Calculation();
+            //Console.WriteLine("gh");
 
 
             // for_loop obj =new();
