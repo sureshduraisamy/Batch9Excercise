@@ -1,4 +1,5 @@
 ﻿using System;
+using vickyBusinessLayer;
 
 namespace Vicky
 {
@@ -6,15 +7,16 @@ namespace Vicky
     {
         static void Main(string[] args)
         {
+            VowelsCount obj = new();
+            obj.print();
 
-            Loopstatement obj = new();
-
-
-
-
+           
 
 
 
+
+
+           // Loopstatement obj = new();
 
            // Canditate obj = new Canditate();
             //obj.name = Console.ReadLine();
