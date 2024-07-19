@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using praneshconsole;
+using PraneshBusinessLayer;
 
 namespace Praneshconsole
 {
@@ -13,13 +14,14 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            
+            VowelCount obj = new VowelCount();
+            obj.print();
 
 
 
 
           //  Statics obj = new Statics();
-         //  Statics obj1 = new Statics(10);
+          //  Statics obj1 = new Statics(10);
 
             // string str = "ljj";
             //   str.Isvaluepan();
@@ -64,8 +66,8 @@ namespace Praneshconsole
 
 
 
-            //   Vowel obj = new Vowel();
-            // obj.VowelFinder();
+            // Vowel obj = new Vowel();
+            //obj.VowelFinder();
 
 
 

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "praneshconsole", "Praneshconsole\praneshconsole.csproj", "{FDCDE759-1734-41B4-9904-9CD763534994}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraneshBusinessLayer", "PraneshBusinessLayer\PraneshBusinessLayer.csproj", "{85188839-1594-4BDF-9516-A28956720FCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FDCDE759-1734-41B4-9904-9CD763534994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDCDE759-1734-41B4-9904-9CD763534994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDCDE759-1734-41B4-9904-9CD763534994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85188839-1594-4BDF-9516-A28956720FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85188839-1594-4BDF-9516-A28956720FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85188839-1594-4BDF-9516-A28956720FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85188839-1594-4BDF-9516-A28956720FCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
