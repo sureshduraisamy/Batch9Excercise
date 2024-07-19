@@ -7,7 +7,7 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            VowelsCount ovj = new();
+            VowelsCount2 ovj = new();
             ovj.Vowels();
 
 
