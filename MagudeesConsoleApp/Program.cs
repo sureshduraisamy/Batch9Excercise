@@ -10,25 +10,21 @@ namespace MagudeesConsoleApp
 
         static void Main(string[] args)
         {
-            VowelsCount obj = new ();
-            obj.count();
+
+            Childclass obj = new();
+            obj.studentdetails();
 
 
 
 
+
+
+
+            //VowelsCount obj = new ();
+            //obj.count();
             //Statics.detail();
-
-
-
-
-
-
-
             //  Constructor obj = new();
             //Constructor obj2 = new();
-
-
-
             //  LoopStatement obj = new LoopStatement();
 
             // Candidates obj = new Candidates();
