@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using praneshconsole;
 using PraneshBusinessLayer;
-
+ 
 namespace Praneshconsole
 {
 
@@ -14,8 +14,13 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            VowelCount obj = new VowelCount();
-            obj.print();
+            ChilledClassT obj = new ChilledClassT();
+            obj.studentdetals();
+
+
+
+            //VowelCount obj = new VowelCount();
+            //obj.print();
 
 
 

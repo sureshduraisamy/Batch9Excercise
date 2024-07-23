@@ -6,8 +6,8 @@ namespace PraneshBusinessLayer
     {
         public void print() 
         {
-            string a = " i a ranjith";
-            string vowel = "pranesh";
+            string a = " i a pranesh";
+            string vowel = "ranjith";
             int counter = 0;
 
 
@@ -43,6 +43,7 @@ namespace PraneshBusinessLayer
 
 
         
+
 
 
             
