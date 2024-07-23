@@ -7,8 +7,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            IndividuallVowel obj = new();
-            obj.print();
+            // IndividuallVowel obj = new();
+            // obj.print();
             //  Arithmetic obj = new Arithmetic();
             // obj.multiplication();
 
@@ -85,9 +85,17 @@ namespace ConsoleApp
                    Console.WriteLine(l[i].age);
                }
             */
-          //  Test obj = new Test();
-          //  obj.call();
+            //  Test obj = new Test();
+            //  obj.call();
 
+            //  TwoDimensionalArray var = new TwoDimensionalArray();
+            // var.Display();
+
+            C obj = new C();
+            obj.M1();
+
+            DerivedClass obj1 = new DerivedClass();
+            obj1.M1();
             
         }
     }
