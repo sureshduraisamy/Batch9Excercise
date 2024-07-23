@@ -7,8 +7,13 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Vowelscount obj = new Vowelscount();
-            obj.Vowels();
+            Childclass obj = new Childclass();
+            obj.Studentdetails();
+
+
+
+            //Vowelscount obj = new Vowelscount();
+            //obj.Vowels();
 
             //Statics.Details();
        
