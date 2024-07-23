@@ -20,6 +20,8 @@ using Programque;
 using Statictype;
 using Extension;
 using Vowelprogram;
+using OOPSCONCEPT;
+using Polymorphism;
 
 
 
@@ -269,7 +271,7 @@ namespace NaveenpConsoleApp1
     //        A obj = new A();
     //        A obj1 = new A(10, 20);
 
-                
+
     //    }
     //}
     //class Addingexten
@@ -280,15 +282,39 @@ namespace NaveenpConsoleApp1
     //        data.Testing();
     //    }
     //}
+    //class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Separatevowelcount data = new Separatevowelcount();
+    //        data.Finding();
+    //    }
+    //}
+    //class program
+    //{
+    //   static void Main(string[] args)
+    //    {
+    //        Multilevel data = new Multilevel();
+    //        data.multileveling();
+           
+
+    //    }
     class program
     {
         static void Main(string[] args)
         {
-            Separatevowelcount data = new Separatevowelcount();
-            data.Finding();
+            overridingconc data = new overridingconc();
+            data.Names();
+            Nextstep data1 = new Nextstep();
+            data1.Names();
+            Laststep data2 = new Laststep();
+            data2.Names();
         }
     }
-}
+ }
+
+   
+
     
 
     
