@@ -8,9 +8,9 @@ namespace kavivarman.console
     {
         static void Main(string[] args)
         {
-
-            ExtentionTest obj = new ExtentionTest();
-            obj.number();
+            
+           // ExtentionTest obj = new ExtentionTest();
+            //obj.number();
           //  ProgramQuestion obj = new ProgramQuestion();
             //obj.Program();
 
