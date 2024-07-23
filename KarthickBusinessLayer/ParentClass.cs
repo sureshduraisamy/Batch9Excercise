@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp
+namespace KarthickBusinessLayer
 {
-    class MultiLevelInheritance
-    {
-        class ParentClass
+    
+       public class ParentClass
         {
+         public ParentClass()
+        {
+            Console.WriteLine("Constructor for parents class");
+        }
             public virtual void M1()
             {
                 Console.WriteLine("M1 is method in parentClass it is called using" +
@@ -17,17 +20,18 @@ namespace ConsoleApp
             }
         }
 
-        class C : ParentClass
+      public  class C : ParentClass
         {
 
         }
-        class DerivedClass : ParentClass
+    public   class DerivedClass : ParentClass
         {
             public override void M1()
             {
+           
               Console.WriteLine("Parent class M1 method overide by derived class" +
                     "M1 method and printed in console app");
             }
         }
-    }
+    
 }

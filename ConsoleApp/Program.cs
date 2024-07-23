@@ -96,7 +96,7 @@ namespace ConsoleApp
 
             DerivedClass obj1 = new DerivedClass();
             obj1.M1();
-            
+
         }
     }
 }
