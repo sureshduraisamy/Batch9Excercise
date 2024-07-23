@@ -7,15 +7,20 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            VowelsCount2 ovj = new();
-            ovj.Vowels();
+            Derivedclass obj = new();
+            obj.StudentDetails();
 
 
 
-           // statics.Details();
-           // Iterate obj = new();
-           //obj.RowsandColumns();
-           //obj.RowsandColumns1();
+           //VowelsCount2 ovj = new();
+           // ovj.Vowels();
+
+
+
+            // statics.Details();
+            // Iterate obj = new();
+            //obj.RowsandColumns();
+            //obj.RowsandColumns1();
 
 
 
