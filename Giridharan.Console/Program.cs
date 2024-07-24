@@ -7,8 +7,13 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Childclass obj = new Childclass();
-            obj.Studentdetails();
+            Child obj = new Child();
+            obj.M2(10);
+            
+
+
+           // Childclass obj = new Childclass();
+           // obj.Studentdetails();
 
 
 
