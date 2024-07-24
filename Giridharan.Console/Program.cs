@@ -7,8 +7,12 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Child obj = new Child();
-            obj.M2(10);
+            Biggestnumber obj = new();
+            obj.Biggest();
+
+
+           // Child obj = new Child();
+            //obj.M2(10);
             
 
 
