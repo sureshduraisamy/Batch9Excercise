@@ -21,7 +21,9 @@ using Statictype;
 using Extension;
 using Vowelprogram;
 using OOPSCONCEPT;
-using Polymorphism;
+//using Polymorphism;
+using Polyexecrise;
+using Biggestcheck;
 
 
 
@@ -303,12 +305,23 @@ namespace NaveenpConsoleApp1
     {
         static void Main(string[] args)
         {
-            overridingconc data = new overridingconc();
-            data.Names();
-            Nextstep data1 = new Nextstep();
-            data1.Names();
-            Laststep data2 = new Laststep();
-            data2.Names();
+            //overridingconc data = new overridingconc();
+            //data.Names();
+            //Nextstep data1 = new Nextstep();
+            //data1.Names();
+            //Laststep data2 = new Laststep();
+            //data2.Names();
+            //polyexam data = new polyexam();
+            //data.Mainfun();
+            //Nextstep data = new Nextstep();
+            //data.Submain(10);
+            //string ww = (data.Submain(10));
+            //Console.WriteLine(ww);
+            Biggestnofind data = new Biggestnofind();
+            data.checking();
+            //ternarycheck data1 = new ternarycheck();
+            //data1.Checkternary();
+
         }
     }
  }
