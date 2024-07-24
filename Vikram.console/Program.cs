@@ -7,8 +7,14 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            Derivedclass obj = new();
-            obj.StudentDetails();
+            ChildClass obj = new();
+            obj.M2(10);
+          
+
+
+
+           // Derivedclass obj = new();
+          //  obj.StudentDetails();
 
 
 
