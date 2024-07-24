@@ -1,6 +1,7 @@
 ﻿using System;
 using GradeSystem;
 using kavivarman.console;
+using kavivarmanBusinesslayer;
 
 namespace kavivarman.console
 {
@@ -8,6 +9,16 @@ namespace kavivarman.console
     {
         static void Main(string[] args)
         {
+
+            // B obj = new B();
+            //obj.M2(10);
+            BiggestNumber obj = new BiggestNumber();
+            obj.Checking();
+            
+ 
+           
+
+
             
            // ExtentionTest obj = new ExtentionTest();
             //obj.number();

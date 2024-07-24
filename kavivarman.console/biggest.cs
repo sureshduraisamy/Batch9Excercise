@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace kavivarman.console
 {
-    class Biggest_Number
+    class Biggest
 
     {
         int a;
