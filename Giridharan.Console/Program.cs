@@ -7,8 +7,17 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Reversenumber obj = new();
-            obj.Numbers();
+            Wordcount obj = new();
+            obj.Reversewords("h");
+            obj.Countwords("j");
+            
+            
+
+
+
+
+           // Reversenumber obj = new();
+           // obj.Numbers();
 
 
            // Biggestnumber obj = new();
