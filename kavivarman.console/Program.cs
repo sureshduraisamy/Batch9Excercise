@@ -9,21 +9,20 @@ namespace kavivarman.console
     {
         static void Main(string[] args)
         {
-
+            WordReverse obj = new WordReverse();
+            obj.Words();
             // B obj = new B();
             //obj.M2(10);
-            BiggestNumber obj = new BiggestNumber();
-            obj.Checking();
-            
- 
-           
 
-
-            
+            //  NumberReverse obj = new NumberReverse();
+            //obj.numbers();
+            //CountingWords obj = new CountingWords();
+            //obj.Words();
+          //  obj.countind();
            // ExtentionTest obj = new ExtentionTest();
             //obj.number();
-          //  ProgramQuestion obj = new ProgramQuestion();
-            //obj.Program();
+         // ProgramQuestion obj = new ProgramQuestion();
+           // obj.Program();
 
             // Class1 obj = new Class1();
             // obj.addition();

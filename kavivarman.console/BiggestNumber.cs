@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace kavivarman.console
 {
-    class Biggest
+    class BiggestNumber
 
     {
         int a;
         int b;
-        public void BiggestNumber()
+        public void Number()
 
         {
             Console.WriteLine("enter the value for A variabel");
