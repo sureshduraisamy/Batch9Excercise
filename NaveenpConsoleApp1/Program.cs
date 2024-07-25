@@ -24,6 +24,9 @@ using OOPSCONCEPT;
 //using Polymorphism;
 using Polyexecrise;
 using Biggestcheck;
+using numberreverse;
+using Wordcount;
+using Wordreverse;
 
 
 
@@ -317,10 +320,23 @@ namespace NaveenpConsoleApp1
             //data.Submain(10);
             //string ww = (data.Submain(10));
             //Console.WriteLine(ww);
-            Biggestnofind data = new Biggestnofind();
-            data.checking();
+            //Biggestnofind data = new Biggestnofind();
+            //data.checking();
             //ternarycheck data1 = new ternarycheck();
             //data1.Checkternary();
+            //numReversing data = new numReversing();
+            //data.Numberev();
+            //Counting data = new Counting();
+            //data.wordcou();
+            //countingwoin datas = new countingwoin();
+            //datas.countsword();
+            //Reversing data = new Reversing();
+            //data.wordcou();
+            Reversingwosplit data1 = new Reversingwosplit();
+            data1.words();
+
+
+
 
         }
     }

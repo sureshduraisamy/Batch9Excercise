@@ -42,7 +42,7 @@ namespace Biggestcheck
     {
         public void Checkternary()
         {
-           int a = 45;
+           int a = 4;
            int b = 25;
             int c = a > b ? a : b;
             Console.WriteLine(c);
