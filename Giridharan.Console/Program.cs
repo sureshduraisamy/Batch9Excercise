@@ -7,8 +7,12 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Biggestnumber obj = new();
-            obj.Biggest();
+            Reversenumber obj = new();
+            obj.Numbers();
+
+
+           // Biggestnumber obj = new();
+            //obj.Biggest();
 
 
 
