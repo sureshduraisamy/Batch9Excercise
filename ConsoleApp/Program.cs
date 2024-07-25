@@ -91,11 +91,20 @@ namespace ConsoleApp
             //  TwoDimensionalArray var = new TwoDimensionalArray();
             // var.Display();
 
-            C obj = new C();
-            obj.M1();
+            /* C obj = new C();
+             obj.M1();
 
-            DerivedClass obj1 = new DerivedClass();
-            obj1.M1();
+             DerivedClass obj1 = new DerivedClass();
+             obj1.M1();*/
+          //  NumberReverse obj = new NumberReverse();
+          //  obj.IntVarReverse();
+
+           // CountingWords obj1 = new CountingWords();
+           // obj1.Counting();
+
+           // Palindrome obj = new Palindrome();
+            WordReverse ob = new WordReverse();
+            ob.Word_Reverse();
 
         }
     }
