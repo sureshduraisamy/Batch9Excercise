@@ -28,6 +28,13 @@ namespace Giridharan_BusinessLayer
             }
             Console.WriteLine(Numbers[Numbers.Length-1]);
         }
+        public void Ternary()
+        {
+            int a = 30;
+            int b = 50;
+            int c = a > b ? a : b;
+            Console.WriteLine(c);
+        }
          
     }
 }
