@@ -7,19 +7,24 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            ChildClass obj = new();
-            obj.M2(10);
-          
+            BiggestNumberTernary data = new BiggestNumberTernary();
+            data.Checked();
+            data.Checkternary();
+
+
+           // ChildClass obj = new();
+           //obj.M2(10);
 
 
 
-           // Derivedclass obj = new();
-          //  obj.StudentDetails();
+
+            // Derivedclass obj = new();
+            //  obj.StudentDetails();
 
 
 
-           //VowelsCount2 ovj = new();
-           // ovj.Vowels();
+            //VowelsCount2 ovj = new();
+            // ovj.Vowels();
 
 
 
