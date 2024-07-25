@@ -7,13 +7,18 @@ namespace Vicky
     {
         static void Main(string[] args)
         {
-            VowelsCount obj = new();
-            obj.print();
-
-           
+        
 
 
+            //  VowelsCount obj = new();
+            // obj.print();
 
+            // Childclass obj = new();
+            // obj.m2(10);
+
+
+           // ReverseNumber obj = new ReverseNumber();
+          //  obj.numbers();
 
 
            // Loopstatement obj = new();
