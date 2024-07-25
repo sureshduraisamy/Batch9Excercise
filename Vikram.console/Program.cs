@@ -7,9 +7,13 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            BiggestNumberTernary data = new BiggestNumberTernary();
-            data.Checked();
-            data.Checkternary();
+
+
+            ReverseNumber obj = new ReverseNumber();
+            obj.numbers();
+           // BiggestNumberTernary data = new BiggestNumberTernary();
+            //data.Checked();
+            //data.Checkternary();
 
 
            // ChildClass obj = new();
