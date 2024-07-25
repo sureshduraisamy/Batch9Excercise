@@ -14,82 +14,95 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            ChilledClassT obj = new ChilledClassT();
-            obj.studentdetals();
 
-
-
-            //VowelCount obj = new VowelCount();
-            //obj.print();
-
-
-
-
-          //  Statics obj = new Statics();
-          //  Statics obj1 = new Statics(10);
-
-            // string str = "ljj";
-            //   str.Isvaluepan();
-
-            // Forloop data = new Forloop();
-            //data.method();
-
-            //Constitution obj = new Constitution();
-
-
-            //   StudentCalculation obj = new StudentCalculation();
-
-
-
-
-            //     StudentMark obj = new StudentMark();
-
-
-
-            //    StudentMark obj = new();
-
-
-
-            //  LoopingStatement obj = new LoopingStatement();
-
-
-            //   ArrayValue obj = new();
+            ReversNumber obj = new ReversNumber();
+            obj.Number();
+            StringRevers data = new StringRevers();
+                   data.Revers();
+     
 
 
 
 
 
 
+                //  ChilledClassT obj = new ChilledClassT();
+
+                //obj.studentdetals();
+
+
+
+                //VowelCount obj = new VowelCount();
+                //obj.print();
+
+
+
+
+                //  Statics obj = new Statics();
+                //  Statics obj1 = new Statics(10);
+
+                // string str = "ljj";
+                //   str.Isvaluepan();
+
+                // Forloop data = new Forloop();
+                //data.method();
+
+                //Constitution obj = new Constitution();
+
+
+                //   StudentCalculation obj = new StudentCalculation();
+
+
+
+
+                //     StudentMark obj = new StudentMark();
+
+
+
+                //    StudentMark obj = new();
+
+
+
+                //  LoopingStatement obj = new LoopingStatement();
+
+
+                //   ArrayValue obj = new();
 
 
 
 
 
-            //  EvenorOdd obj = new ();
 
 
 
 
 
-            // Vowel obj = new Vowel();
-            //obj.VowelFinder();
 
-
-
-
-            //     ParameterRetunType obj = new ParameterRetunType();
-            //  obj.method1();
-            //obj.method2(55,65,75,"total" ,55,75,85 );
-            // Console.WriteLine(obj.method3());
+                //  EvenorOdd obj = new ();
 
 
 
 
 
-            //StudentReport obj = new StudentReport();
-            //obj.totalmark();
-            // obj.markcheck();
-        }
+                // Vowel obj = new Vowel();
+                //obj.VowelFinder();
+
+
+
+
+                //     ParameterRetunType obj = new ParameterRetunType();
+                //  obj.method1();
+                //obj.method2(55,65,75,"total" ,55,75,85 );
+                // Console.WriteLine(obj.method3());
+
+
+
+
+
+                //StudentReport obj = new StudentReport();
+                //obj.totalmark();
+                // obj.markcheck();
+            }
 
 
 
