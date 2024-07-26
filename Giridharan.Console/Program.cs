@@ -7,10 +7,10 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            Wordcount obj = new();
-            obj.Reversewords("h");
-            obj.Countwords("j");
-            
+            WordCount obj = new();
+            Counting obj1 = new();
+            obj.Count();
+            obj1.Countsword();
             
 
 

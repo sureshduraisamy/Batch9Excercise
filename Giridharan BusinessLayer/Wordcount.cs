@@ -6,52 +6,30 @@ using System.Threading.Tasks;
 
 namespace Giridharan_BusinessLayer
 {
-  public  class Wordcount
+   public class WordCount
     {
-        string b = "I am giri";
-        char v = 'b';
-        public string Reversewords(string a)
+        string A = "I am Giri";
+        public void Count()
         {
-            
-            string result = "";
-            string currentword = "";
-            for(int i = 0; i < b.Length; i++)
-            {
-                if (b[i] != v)
-                {
-                    currentword = b[i] + currentword;
-                }
-                else
-                {
-                    result += currentword;
-                    currentword = "";
-                }
-                
-            }
-            result += currentword;
-            return result;
-          
+            string[] result = A.Split(' ');
+            Console.WriteLine(result.Length);
         }
-        public int Countwords(string a)
+         
+    }
+    public class Counting
+    {
+        string A = "Hi I am giri";
+        int count;
+        public void Countsword()
         {
-            int count = 0;
-            bool inword = false;
-            for (int i = 0; i < b.Length; i++)
+            for(int i = 0; i < A.Length; i++)
             {
-                if (b[i] != v)
+                if(A[i]==' ')
                 {
-                    if (!inword)
-                    {
-                        count++;
-                        inword = true;
-                    }
-                }
-                else
-                {
-                    inword = false;
+                    count++;
                 }
             }
-            return count;
+            Console.WriteLine(count + 1);
         }
     }
 }
