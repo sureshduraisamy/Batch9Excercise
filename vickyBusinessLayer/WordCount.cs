@@ -6,28 +6,31 @@ using System.Threading.Tasks;
 
 namespace vickyBusinessLayer
 {
-class Wordcount
-    {
-        static void Main()
+  public  class WordCount
+  {
+        string A = "I am Vicky";
+        public void count()
         {
-            Console.WriteLine("Enter a sentence to count words:");
-            string input = Console.ReadLine();
-
-            // Call the function to count words
-            int wordCount = CountWords(input);
-
-            Console.WriteLine($"Word count: {wordCount}");
+            string[] result = A.Split(' ');
+            Console.WriteLine(result.Length);
         }
-
-        static int CountWords(string input)
+  }
+    public class counting
+    {
+        string A = "I am Vicky";
+        int count;
+        public void countword()
         {
-            // Split the input string by spaces
-            string[] words = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            // Return the number of words
-            return words.Length;
+            for (int i = 0; i < A.Length; i++)
+            {
+                if(A[i]==' ')
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine(count + 1);
         }
     }
 
+    
 }
-
