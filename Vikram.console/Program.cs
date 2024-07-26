@@ -7,17 +7,26 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
+            WordCount obj = new WordCount();
+            countingword ovj = new countingword();
+            obj.source();
+            ovj.countsword();
+
+           
+            
+                
 
 
-            ReverseNumber obj = new ReverseNumber();
-            obj.numbers();
-           // BiggestNumberTernary data = new BiggestNumberTernary();
-            //data.Checked();
-            //data.Checkternary();
+
+          //  ReverseNumber obj = new ReverseNumber();
+          // obj.numbers();
+          // BiggestNumberTernary data = new BiggestNumberTernary();
+          //data.Checked();
+          //data.Checkternary();
 
 
-           // ChildClass obj = new();
-           //obj.M2(10);
+            // ChildClass obj = new();
+            //obj.M2(10);
 
 
 
