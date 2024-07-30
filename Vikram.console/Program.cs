@@ -7,27 +7,11 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            WordReverse obj = new WordReverse();
-            ReverseSplit ovj = new ReverseSplit();
-            obj.wordcount();
-            ovj.words();
 
 
-
-           // WordCount obj = new WordCount();
-           //countingword ovj = new countingword();
-           //obj.source();
-           //ovj.countsword();
-
-
-
-
-
-
-
-            //  ReverseNumber obj = new ReverseNumber();
-            // obj.numbers();
-            // BiggestNumberTernary data = new BiggestNumberTernary();
+            ReverseNumber obj = new ReverseNumber();
+            obj.numbers();
+           // BiggestNumberTernary data = new BiggestNumberTernary();
             //data.Checked();
             //data.Checkternary();
 
