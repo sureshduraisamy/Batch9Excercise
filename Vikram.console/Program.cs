@@ -11,7 +11,7 @@ namespace Vikram.console
 
             ReverseNumber obj = new ReverseNumber();
             obj.numbers();
-           // BiggestNumberTernary data = new BiggestNumberTernary();
+            // BiggestNumberTernary data = new BiggestNumberTernary();
             //data.Checked();
             //data.Checkternary();
 
@@ -171,6 +171,16 @@ namespace Vikram.console
 
             // IndiaTeam ovj = new IndiaTeam();
             //ovj.Rohit();
+            try
+            {
+                Exceptions source = new Exceptions();
+                source.words();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("this is wrong");
+            }
+            
 
 
         }
