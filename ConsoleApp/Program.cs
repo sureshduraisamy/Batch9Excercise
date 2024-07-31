@@ -96,15 +96,24 @@ namespace ConsoleApp
 
              DerivedClass obj1 = new DerivedClass();
              obj1.M1();*/
-          //  NumberReverse obj = new NumberReverse();
-          //  obj.IntVarReverse();
+            //  NumberReverse obj = new NumberReverse();
+            //  obj.IntVarReverse();
 
-           // CountingWords obj1 = new CountingWords();
-           // obj1.Counting();
+            // CountingWords obj1 = new CountingWords();
+            // obj1.Counting();
 
-           // Palindrome obj = new Palindrome();
-            WordReverse ob = new WordReverse();
-            ob.Word_Reverse();
+            // Palindrome obj = new Palindrome();
+            //  WordReverse ob = new WordReverse();
+            //  ob.Word_Reverse();
+            try { 
+            UserRegisteration onbj = new UserRegisteration(9);
+            onbj.M1();
+            onbj.Task();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+            }
 
         }
     }
