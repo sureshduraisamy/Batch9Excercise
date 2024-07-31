@@ -7,10 +7,22 @@ namespace GiridharanConsole
     {
         static void Main(string[] args)
         {
-            WordReverse obj = new();
-            Reversing obj1 = new();
-            obj.Reverse();
-            obj1.Word();
+            try
+            {
+                EmployeesDetails obj = new();
+                obj.Details();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("something went wrong");
+            }
+
+
+
+           // WordReverse obj = new();
+            //Reversing obj1 = new();
+            //obj.Reverse();
+            //obj1.Word();
 
 
 
