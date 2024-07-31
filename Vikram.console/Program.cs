@@ -7,13 +7,16 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
+            EmployeeDetails data = new EmployeeDetails();
+            data.Details();
 
 
-            ReverseNumber obj = new ReverseNumber();
-            obj.numbers();
-            // BiggestNumberTernary data = new BiggestNumberTernary();
-            //data.Checked();
-            //data.Checkternary();
+
+          //  ReverseNumber obj = new ReverseNumber();
+          //obj.numbers();
+          // BiggestNumberTernary data = new BiggestNumberTernary();
+          //data.Checked();
+          //data.Checkternary();
 
 
             // ChildClass obj = new();
@@ -171,16 +174,16 @@ namespace Vikram.console
 
             // IndiaTeam ovj = new IndiaTeam();
             //ovj.Rohit();
-            try
-            {
-                Exceptions source = new Exceptions();
-                source.words();
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("this is wrong");
-            }
-            
+            //  try
+            //{
+            //  Exceptions source = new Exceptions();
+            //source.words();
+            // }
+            //catch(Exception e)
+            //{
+            //  Console.WriteLine("this is wrong");
+            //}
+
 
 
         }
