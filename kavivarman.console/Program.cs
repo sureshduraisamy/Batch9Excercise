@@ -9,11 +9,13 @@ namespace kavivarman.console
     {
         static void Main(string[] args)
         {
-            WordReverse obj = new WordReverse();
-            obj.Words();
+            Collectionexample obj = new Collectionexample();
+            obj.GenericCollection();
+            obj.NonGenericCollection();
+          //  WordReverse obj = new WordReverse();
+          //  obj.Words();
             // B obj = new B();
             //obj.M2(10);
-
             //  NumberReverse obj = new NumberReverse();
             //obj.numbers();
             //CountingWords obj = new CountingWords();
