@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NaveenpConsoleApp1", "NaveenpConsoleApp1\NaveenpConsoleApp1.csproj", "{33D562E8-F142-482B-9031-540BAD5A04BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naveenbusinesslayer", "Naveenbusinesslayer\Naveenbusinesslayer.csproj", "{0B38D4B3-9DA7-4F37-B2D0-5CBF10BD9A37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Naveenbusinesslayer", "Naveenbusinesslayer\Naveenbusinesslayer.csproj", "{0B38D4B3-9DA7-4F37-B2D0-5CBF10BD9A37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

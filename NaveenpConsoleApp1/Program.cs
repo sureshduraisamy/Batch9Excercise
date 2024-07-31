@@ -27,6 +27,7 @@ using Biggestcheck;
 using numberreverse;
 using Wordcount;
 using Wordreverse;
+using ExceptionalHandling;
 
 
 
@@ -332,8 +333,17 @@ namespace NaveenpConsoleApp1
             //datas.countsword();
             //Reversing data = new Reversing();
             //data.wordcou();
-            Reversingwosplit data1 = new Reversingwosplit();
-            data1.words();
+            //Reversingwosplit data1 = new Reversingwosplit();
+            //data1.words();
+            try
+            {
+                Exceptional data = new Exceptional();
+                data.words();
+            }
+            catch (Exception A)
+            {
+                Console.WriteLine("the input is wrong");
+            }
 
 
 

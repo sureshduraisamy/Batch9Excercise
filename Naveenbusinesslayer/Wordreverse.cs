@@ -28,7 +28,7 @@ namespace Wordreverse
         string s;
         public void words()
         {
-            for(int i = A.Length-1; i > 0; i--)
+            for(int i = A.Length-1; i >= 0; i--)
             {
                 c = c + A[i ];
                 if (A[i] == ' ' || i == 0)
@@ -37,14 +37,16 @@ namespace Wordreverse
                     {
                         d = d + c[j];
                     }
+                    
                     c = " ";
+                    s = d;
 
                 }
                 
             }
 
 
-            Console.WriteLine(c);
+            Console.WriteLine(s);
         }
     }
 }
