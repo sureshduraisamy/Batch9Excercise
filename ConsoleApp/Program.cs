@@ -115,6 +115,9 @@ namespace ConsoleApp
                 Console.WriteLine(e.StackTrace);
             }
 
+            Collection obj = new Collection();
+            obj.GenericCollection();
+            obj.EmployeeList();
         }
     }
 }
