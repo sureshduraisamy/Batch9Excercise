@@ -34,7 +34,6 @@ namespace BusinessLayer
             }
         }
 
-
         public void GenericCollection()
         {
             List<int> studentNumbers = new List<int>();
@@ -86,8 +85,47 @@ namespace BusinessLayer
             Stack<int> st = new Stack<int>();
 
 
-        }
+            Dictionary<string, int> result = new Dictionary<string, int>();
+            result.Add("Male", 3456);
+            result.Add("Female", 3456);
 
+            Dictionary<string, List<int>> results = new Dictionary<string, List<int>>();
+            List<int> listOfMaleEmployess = new List<int>();
+            listOfMaleEmployess.Add(5678);
+            listOfMaleEmployess.Add(5688);
+            results.Add("Male", listOfMaleEmployess);
+
+            List<int> listOfFeMaleEmployess = new List<int>();
+            listOfFeMaleEmployess.Add(5678);
+            listOfFeMaleEmployess.Add(5688);
+            results.Add("Female", listOfFeMaleEmployess);
+
+
+            foreach(string key  in results.Keys)
+            {
+               var gender = results[key];
+            }
+
+            foreach (List<int> value in results.Values)
+            {
+                
+                foreach(int a in value)
+                {
+                    Console.WriteLine(a);
+                }
+
+            }
+
+
+            Dictionary<int, List<Product>> products = new Dictionary<int, List<Product>>();
+            List<Product> productList3 = new List<Product>();
+            productList.Add(prod1);
+            Product prod4 = new Product();
+            productList.Add(prod4);
+            products.Add(2, productList3);
+            products.Add(1, new List<Product>());
+            products[1].AddRange(productList3);
+        }
 
         public void NonGenericCollection()
         {
@@ -114,6 +152,10 @@ namespace BusinessLayer
 
 
             Stack stcklist = new Stack();
+
+            Hashtable table = new Hashtable();
+            table.Add("1", new List<int>());
+            table.Add(1, 1);
         }
     }
 }
