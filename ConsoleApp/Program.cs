@@ -105,19 +105,24 @@ namespace ConsoleApp
             // Palindrome obj = new Palindrome();
             //  WordReverse ob = new WordReverse();
             //  ob.Word_Reverse();
-            try { 
-            UserRegisteration onbj = new UserRegisteration(9);
-            onbj.M1();
-            onbj.Task();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.StackTrace);
-            }
+            /*  try { 
+              UserRegisteration onbj = new UserRegisteration(9);
+              onbj.M1();
+              onbj.Task();
+              }
+              catch (Exception e)
+              {
+                  Console.WriteLine(e.StackTrace);
+              }
 
-            Collection obj = new Collection();
-            obj.GenericCollection();
-            obj.EmployeeList();
+              Collection obj = new Collection();
+              obj.GenericCollection();
+              obj.EmployeeList();*/
+            //  LinqFind obj = new LinqFind();
+            //obj.Num();
+
+            Sorting obj = new Sorting();
+            obj.BubbleSort();
         }
     }
 }
