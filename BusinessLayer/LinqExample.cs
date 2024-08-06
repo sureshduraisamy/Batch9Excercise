@@ -18,10 +18,10 @@ namespace BusinessLayer
             studentNumbers.AddRange(studentNumbers);
 
             bool isfound = false;
-            foreach(int a in studentNumbers)
+            foreach (int a in studentNumbers)
             {
 
-                if(a == 12)
+                if (a == 12)
                 {
                     isfound = true;
                     break;
@@ -33,10 +33,11 @@ namespace BusinessLayer
             else
                 Console.WriteLine("Not Found");
 
-           if( studentNumbers.Exists(item=> item == 12 ))
+            if (studentNumbers.Exists(item => item == 12))
             {
                 Console.WriteLine("Found");
-            }else
+            }
+            else
             {
                 Console.WriteLine("Not Found");
 
@@ -59,11 +60,38 @@ namespace BusinessLayer
             productsArray[1].Price = 456.23;
 
 
-            var value = productsArray.ToList().Exists(item => item.Name == "Cake" || item.Name == "OIL" );
-           int count = productsArray.ToList().Where(item => item.Name == "oil").Count();
+            var value = productsArray.ToList().Exists(item => item.Name == "Cake" || item.Name == "OIL");
+            int count = productsArray.ToList().Where(item => item.Name == "oil").Count();
             List<Product> list = productsArray.ToList().Where(item => item.Name == "oil").ToList();
 
-            
+           
+
+            //Find
+            //FindALL
+
+            //First
+            //Firtordefault
+
+            //foreach
+            //sum
+            //min
+            //max
+            //avg
+
+            //orderby
+            //orderbydecending
+
+            //select
+            //selectmany
+
+            //single
+            //singleordefault
+
+            //Any
+            //All
+
+
+
 
         }
     }
