@@ -9,4 +9,8 @@
     <ProjectReference Include="..\VikramBusinessLayer\VikramBusinessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SQL QUERY\" />
+  </ItemGroup>
+
 </Project>
