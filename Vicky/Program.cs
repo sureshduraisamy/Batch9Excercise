@@ -7,10 +7,18 @@ namespace Vicky
     {
         static void Main(string[] args)
         {
-            WordCount obj = new();
-            counting obj1 = new();
-            obj.count();
-            obj1.countword();
+
+            EmployeeDetails obj = new();
+            obj.Details();
+            
+            
+            
+            
+            
+            // WordCount obj = new();
+            //counting obj1 = new();
+           // obj.count();
+           // obj1.countword();
                      
             //  VowelsCount obj = new();
             // obj.print();
