@@ -28,6 +28,8 @@ using numberreverse;
 using Wordcount;
 using Wordreverse;
 using ExceptionalHandling;
+using GenericList;
+using System.Collections.Generic;
 
 
 
@@ -335,14 +337,30 @@ namespace NaveenpConsoleApp1
             //data.wordcou();
             //Reversingwosplit data1 = new Reversingwosplit();
             //data1.words();
+            //try
+            //{
+            //    Exceptional data = new Exceptional();
+            //    data.words();
+            //}
+            //catch (Exception A)
+            //{
+            //    Console.WriteLine("the input is wrong");
+            //}
             try
             {
-                Exceptional data = new Exceptional();
-                data.words();
+                ListExe Info = new ListExe();
+                List<Employee> Last = Info.Details();
+                for (int j = 0; j < Last.Count; j++)
+                {
+                    Console.WriteLine("-----------------Employee Detail-----------------");
+                    Console.WriteLine($"Employee Name:{Last[j].Name}");
+                    Console.WriteLine($"Employee Name:{Last[j].Age}");
+                    Console.WriteLine($"Employee Location:{Last[j].Location}");
+                }
             }
-            catch (Exception A)
+            catch(Exception A)
             {
-                Console.WriteLine("the input is wrong");
+                Console.WriteLine(A);
             }
 
 

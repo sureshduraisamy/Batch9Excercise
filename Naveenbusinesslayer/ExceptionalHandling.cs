@@ -22,11 +22,5 @@ namespace ExceptionalHandling
         }
     }
 
-    public abstract class Baseref
-    {
-        public abstract Baseref()
-        {
-
-        }
-    }
+   
 }
