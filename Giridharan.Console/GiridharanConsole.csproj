@@ -9,4 +9,8 @@
     <ProjectReference Include="..\Giridharan BusinessLayer\Giridharan BusinessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SQL\" />
+  </ItemGroup>
+
 </Project>
