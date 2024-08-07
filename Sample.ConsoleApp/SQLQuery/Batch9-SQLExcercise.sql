@@ -59,6 +59,7 @@ truncate table registration
 ----Keywords
 --top
 select top 10 * from registration
+
 --LOgical operatior 
 --and, or ,not
 Select 
