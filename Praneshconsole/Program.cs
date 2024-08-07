@@ -14,8 +14,13 @@ namespace Praneshconsole
     {
         static void Main(string[] args)
         {
-            EmployeeDetails data = new EmployeeDetails();
-            data.Details();
+
+            ReadeWrite data = new ReadeWrite();
+            data.reading();
+
+
+            //EmployeeDetails data = new EmployeeDetails();
+            //data.Details();
 
 
 
