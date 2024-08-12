@@ -7,63 +7,55 @@ namespace Vicky
     {
         static void Main(string[] args)
         {
-
-            EmployeeDetails obj = new();
-            obj.Details();
-            
-            
-            
-            
-            
-            // WordCount obj = new();
-            //counting obj1 = new();
-           // obj.count();
-           // obj1.countword();
-                     
-            //  VowelsCount obj = new();
-            // obj.print();
-
-            // Childclass obj = new();
-            // obj.m2(10);
-
-
-            // ReverseNumber obj = new ReverseNumber();
-            //  obj.numbers();
-
-
-            // Loopstatement obj = new();
-
-            // Canditate obj = new Canditate();
-            //obj.name = Console.ReadLine();
-
-
-            //Constitution s = new Constitution();
-            //Canditate[] c = s.Enterdetails(obj);
-
-
-
-            //for (int i = 0; i < s.count; i++)
-            //{
-            //  Console.WriteLine(c[i].name);
-            //Console.WriteLine(c[i].constitution);
-            //Console.WriteLine(c[i].age);
-            //}
+            try
+            {
+                RegistrationService resSer = new RegistrationService();
+                resSer.GetUserRegistrationInformation();
 
 
 
 
 
-
-
-            //Array obj = new Array();
-
-            //EvenOrOdd obj = new EvenOrOdd();
+                // EmployeeDetails obj = new();
+                //  obj.Details();
 
 
 
 
-            //Vowel obj = new Vowel();
-            //obj.VowelFinder();
+
+                // WordCount obj = new();
+                //counting obj1 = new();
+                // obj.count();
+                // obj1.countword();
+
+                //  VowelsCount obj = new();
+                // obj.print();
+
+                // Childclass obj = new();
+                // obj.m2(10);
+
+
+                // ReverseNumber obj = new ReverseNumber();
+                //  obj.numbers();
+
+
+                // Loopstatement obj = new();
+
+                // Canditate obj = new Canditate();
+                //obj.name = Console.ReadLine();
+
+
+                //Constitution s = new Constitution();
+                //Canditate[] c = s.Enterdetails(obj);
+
+
+
+                //for (int i = 0; i < s.count; i++)
+                //{
+                //  Console.WriteLine(c[i].name);
+                //Console.WriteLine(c[i].constitution);
+                //Console.WriteLine(c[i].age);
+                //}
 
 
 
@@ -71,22 +63,43 @@ namespace Vicky
 
 
 
-            //ParameterandReturntype obj = new ParameterandReturntype();
-            //obj.method1();
-            //obj.method2(45, 55, 65);
-            //Console.WriteLine(obj.method3());
+                //Array obj = new Array();
+
+                //EvenOrOdd obj = new EvenOrOdd();
+
+
+
+
+                //Vowel obj = new Vowel();
+                //obj.VowelFinder();
 
 
 
 
 
-            // studentgrade obj = new();
-            // obj.totalmark();
 
 
-            // Bignumber obj = new();
-            //obj.large();
-            //obj.big();
+                //ParameterandReturntype obj = new ParameterandReturntype();
+                //obj.method1();
+                //obj.method2(45, 55, 65);
+                //Console.WriteLine(obj.method3());
+
+
+
+
+
+                // studentgrade obj = new();
+                // obj.totalmark();
+
+
+                // Bignumber obj = new();
+                //obj.large();
+                //obj.big();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+            }
         }
     }
 }

@@ -6,11 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
     <ProjectReference Include="..\vickyBusinessLayer\vickyBusinessLayer.csproj" />
+    <ProjectReference Include="..\VigneshDataAccessLayer\VigneshDataAccessLayer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="SQL Query\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
 </Project>

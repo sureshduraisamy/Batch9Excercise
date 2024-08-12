@@ -13,6 +13,7 @@ namespace Sample.ConsoleApp
                 RegistrationService resSer = new RegistrationService();
                 resSer.GetUserRegistrationInformation();
 
+
                 //MemberResgirtation ob = new MemberResgirtation(8, "syre");
                 //ob.RegisterUser();
 
