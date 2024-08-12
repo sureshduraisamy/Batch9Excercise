@@ -9,12 +9,14 @@ namespace GiridharanConsole
         {
             try
             {
-                EmployeesDetails obj = new();
-                obj.Details();
+                RegistrationService resser = new RegistrationService();
+                resser.GetUserRegistrationInformation();
+               // EmployeesDetails obj = new();
+                //obj.Details();
             }
             catch(Exception e)
             {
-                Console.WriteLine("something went wrong");
+                Console.WriteLine(e.StackTrace);
             }
 
 

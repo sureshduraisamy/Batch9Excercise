@@ -7,10 +7,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Giridharan BusinessLayer\Giridharan BusinessLayer.csproj" />
+    <ProjectReference Include="..\GiridharanDataAcessLayer\GiridharanDataAcessLayer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="SQL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
 </Project>
