@@ -41,6 +41,9 @@ namespace Kavi.console
             //Pattern obj()= new;
 
 
+            // Vowelsopt obj = new();
+            //obj.Main();
+
             Vowelsopt obj = new();
             obj.Main();
             
