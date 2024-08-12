@@ -30,6 +30,8 @@ using Wordreverse;
 using ExceptionalHandling;
 using GenericList;
 using System.Collections.Generic;
+using Naveenbusinesslayer;
+
 
 
 
@@ -346,21 +348,35 @@ namespace NaveenpConsoleApp1
             //{
             //    Console.WriteLine("the input is wrong");
             //}
+            //try
+            //{
+            //    ListExe Info = new ListExe();
+            //    List<Employee> Last = Info.Details();
+            //    for (int j = 0; j < Last.Count; j++)
+            //    {
+            //        Console.WriteLine("-----------------Employee Detail-----------------");
+            //        Console.WriteLine($"Employee Name:{Last[j].Name}");
+            //        Console.WriteLine($"Employee Name:{Last[j].Age}");
+            //        Console.WriteLine($"Employee Location:{Last[j].Location}");
+            //    }
+            //}
+            //catch(Exception A)
+            //{
+            //    Console.WriteLine(A);
+
+            //}
             try
             {
-                ListExe Info = new ListExe();
-                List<Employee> Last = Info.Details();
-                for (int j = 0; j < Last.Count; j++)
-                {
-                    Console.WriteLine("-----------------Employee Detail-----------------");
-                    Console.WriteLine($"Employee Name:{Last[j].Name}");
-                    Console.WriteLine($"Employee Name:{Last[j].Age}");
-                    Console.WriteLine($"Employee Location:{Last[j].Location}");
-                }
+                RegistrationServicenk data = new RegistrationServicenk();
+                data.GetUserInfo();
             }
-            catch(Exception A)
+            catch(Exception ex)
             {
-                Console.WriteLine(A);
+                Console.WriteLine("something went wrong");
+            }
+            finally
+            {
+
             }
 
 

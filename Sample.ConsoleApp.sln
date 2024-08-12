@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{60DC48BC-2186-4E0B-84E4-1D1719DD4CF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{73B0DB10-8621-4B77-94C9-FF72DECD0940}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{73B0DB10-8621-4B77-94C9-FF72DECD0940}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NaveenpConsoleApp1", "NaveenpConsoleApp1\NaveenpConsoleApp1.csproj", "{33D562E8-F142-482B-9031-540BAD5A04BE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Naveenbusinesslayer", "Naveenbusinesslayer\Naveenbusinesslayer.csproj", "{0B38D4B3-9DA7-4F37-B2D0-5CBF10BD9A37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayerNaveen", "DataAccessLayerNaveen\DataAccessLayerNaveen.csproj", "{C1D0BE64-C6F2-4101-9743-0471DE282DE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0B38D4B3-9DA7-4F37-B2D0-5CBF10BD9A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B38D4B3-9DA7-4F37-B2D0-5CBF10BD9A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B38D4B3-9DA7-4F37-B2D0-5CBF10BD9A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D0BE64-C6F2-4101-9743-0471DE282DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D0BE64-C6F2-4101-9743-0471DE282DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D0BE64-C6F2-4101-9743-0471DE282DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D0BE64-C6F2-4101-9743-0471DE282DE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
