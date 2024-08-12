@@ -7,16 +7,29 @@ namespace Vikram.console
     {
         static void Main(string[] args)
         {
-            EmployeeDetails data = new EmployeeDetails();
-            data.Details();
+            try
+            {
+                RegistrationService data = new RegistrationService();
+                data.GetUserRegistrationInformation();
+
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                
+            }
+
+            
+           // EmployeeDetails data = new EmployeeDetails();
+           //data.Details();
 
 
 
-          //  ReverseNumber obj = new ReverseNumber();
-          //obj.numbers();
-          // BiggestNumberTernary data = new BiggestNumberTernary();
-          //data.Checked();
-          //data.Checkternary();
+            //  ReverseNumber obj = new ReverseNumber();
+            //obj.numbers();
+            // BiggestNumberTernary data = new BiggestNumberTernary();
+            //data.Checked();
+            //data.Checkternary();
 
 
             // ChildClass obj = new();
