@@ -10,13 +10,30 @@ using PraneshBusinessLayer;
 namespace Praneshconsole
 {
 
-    class Program 
+   public class Program 
     {
         static void Main(string[] args)
         {
+            try
+            {
+                RegistrationService obj = new RegistrationService();
+                obj.GetUserRegistrationInformation();
 
-            ReadeWrite data = new ReadeWrite();
-            data.reading();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+
+            }
+
+
+           
+
+
+
+            //ReadeWrite data = new ReadeWrite();
+            //data.reading();
 
 
             //EmployeeDetails data = new EmployeeDetails();

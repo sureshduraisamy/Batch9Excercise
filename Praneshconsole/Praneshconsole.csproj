@@ -7,10 +7,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PraneshBusinessLayer\PraneshBusinessLayer.csproj" />
+    <ProjectReference Include="..\PraneshDataAcessLayer\PraneshDataAcessLayer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="SQL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
   </ItemGroup>
 
 </Project>
