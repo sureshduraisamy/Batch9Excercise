@@ -15,8 +15,8 @@ namespace PraneshDataAcessLayer {
         {
             try
             {
-                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber})";
-                var connectionString = "server=DESKTOP-8VD1A1F\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
+                var insertQuery = $"insert into Registration(UserName,Password,Email) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}')";
+                var connectionString = "server=DESKTOP-BLBGEHJ\\SQLEXPRESS;database=Bach9;user Id =sa;password=Anaiyaan@123;TrustServerCertificate=True;";
                 SqlConnection con = new SqlConnection(connectionString);
                 con.Open();
                 con.Execute(insertQuery);

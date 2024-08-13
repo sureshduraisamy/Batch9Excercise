@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Entity;
+﻿
+using DataAccessLayer.Entity;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;

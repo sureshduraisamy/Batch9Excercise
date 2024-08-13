@@ -8,7 +8,7 @@ using PraneshDataAcessLayer;
 
 
 public  class RegistrationService
-    {
+{ 
         public void GetUserRegistrationInformation()
         {
             try
@@ -40,8 +40,8 @@ public  class RegistrationService
 
             }
         }
-    }
-
+    
+}
 
 
 
