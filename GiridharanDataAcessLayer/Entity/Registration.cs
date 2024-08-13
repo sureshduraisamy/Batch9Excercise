@@ -13,5 +13,6 @@ namespace GiridharanDataAcessLayer.Entity
         public string Password { get; set; }
         public string Email { get; set; }
         public long MobileNumber { get; set; }
+        public string Adress { get; set; }
     }
 }

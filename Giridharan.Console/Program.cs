@@ -10,7 +10,7 @@ namespace GiridharanConsole
             try
             {
                 RegistrationService resser = new RegistrationService();
-                resser.GetUserRegistrationInformation();
+               resser.MenuDriven();
                // EmployeesDetails obj = new();
                 //obj.Details();
             }

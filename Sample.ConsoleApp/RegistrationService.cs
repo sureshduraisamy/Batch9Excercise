@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,13 +43,14 @@ namespace BusinessLayer
                     case 2:
                         GetUserRegistrationInformation();
                             break;
+     
                 }
 
 
             } while (input < 5);
 
         }
-
+     
 
 
         public void ShowAllUsersInformation()
