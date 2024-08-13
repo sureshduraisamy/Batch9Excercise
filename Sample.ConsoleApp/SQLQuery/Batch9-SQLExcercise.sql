@@ -149,7 +149,7 @@ username in ( select username from registration where email like 'S%_r' )
 --3. Primary Key - It will not allow duplicats and null vlues ( Not null + unique)
 --4. Foreign Key - It is used to relate the records between the parent and child tables 
 Select * from Registration
-delete from Registration
+
 select * from PersonDetails
 delete from PersonDetails
 --5. Check - Used to restorcy the data based on the Condition
