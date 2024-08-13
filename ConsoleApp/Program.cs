@@ -121,8 +121,17 @@ namespace ConsoleApp
             //  LinqFind obj = new LinqFind();
             //obj.Num();
 
-            Sorting obj = new Sorting();
-            obj.BubbleSort();
+            //  Sorting obj = new Sorting();
+            //  obj.BubbleSort();
+            try {
+                RegistrationService obj = new RegistrationService();
+                obj.GetUserRegistrationInformation();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+            }
+            
         }
     }
 }

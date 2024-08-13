@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebAPI", "Sample.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{60DC48BC-2186-4E0B-84E4-1D1719DD4CF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{73B0DB10-8621-4B77-94C9-FF72DECD0940}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{73B0DB10-8621-4B77-94C9-FF72DECD0940}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{8CD00445-AEFD-46DE-81D0-5E3C2EC0F9BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarthickBusinessLayer", "KarthickBusinessLayer\KarthickBusinessLayer.csproj", "{E07261D6-0A9A-4160-8AF6-9A2799F920B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KarthickBusinessLayer", "KarthickBusinessLayer\KarthickBusinessLayer.csproj", "{E07261D6-0A9A-4160-8AF6-9A2799F920B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarthickDataAccess", "KarthickDataAccess\KarthickDataAccess.csproj", "{2829F588-4952-45A2-AA4A-F108A2EE98A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{E07261D6-0A9A-4160-8AF6-9A2799F920B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E07261D6-0A9A-4160-8AF6-9A2799F920B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E07261D6-0A9A-4160-8AF6-9A2799F920B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2829F588-4952-45A2-AA4A-F108A2EE98A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2829F588-4952-45A2-AA4A-F108A2EE98A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2829F588-4952-45A2-AA4A-F108A2EE98A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2829F588-4952-45A2-AA4A-F108A2EE98A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
