@@ -125,7 +125,8 @@ namespace ConsoleApp
             //  obj.BubbleSort();
             try {
                 RegistrationService obj = new RegistrationService();
-                obj.GetUserRegistrationInformation();
+                //obj.GetUserRegistrationInformation();
+                obj.MenuOption();
             }
             catch (Exception e)
             {

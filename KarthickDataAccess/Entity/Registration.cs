@@ -12,6 +12,7 @@ namespace KarthickDataAccess.Entity
         public string userName { get; set; }
         public string password { get; set; }
         public string email { get; set; }
+        public string address { get; set; }
         public long mobileNumber { get; set; }
     }
 }
