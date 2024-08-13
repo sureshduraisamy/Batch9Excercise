@@ -35,6 +35,7 @@ using Naveenbusinesslayer;
 
 
 
+
 namespace NaveenpConsoleApp1
 {
 
@@ -368,7 +369,7 @@ namespace NaveenpConsoleApp1
             try
             {
                 RegistrationServicenk data = new RegistrationServicenk();
-                data.GetUserInfo();
+                data.Menudrive();
             }
             catch(Exception ex)
             {

@@ -88,6 +88,7 @@ namespace BusinessLayer
 
                 regRepObj.RegisterUser(userRegData);
 
+
             }catch(Exception ex)
             {
                 throw;
