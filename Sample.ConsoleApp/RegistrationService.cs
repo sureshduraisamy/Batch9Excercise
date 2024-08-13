@@ -10,7 +10,60 @@ namespace BusinessLayer
 {
     public class RegistrationService
     {
+        RegistrationRepository regRepObj = null;
+        public RegistrationService()
+        {
+            regRepObj = new RegistrationRepository();
+        }
 
+
+        public void MenuDriven()
+        {
+
+            int input = 0;
+            do
+            {
+
+                Console.WriteLine("Please select any option below ");
+                Console.WriteLine("1.Select ALL User");
+                Console.WriteLine("2.Insert");
+                Console.WriteLine("3.update");
+                Console.WriteLine("4.delete");
+                Console.WriteLine("5.exist");
+
+               input = Convert.ToInt32(Console.ReadLine());
+
+               switch(input)
+                {
+                    case 1:
+
+                        ShowAllUsersInformation();
+                        break;
+                    case 2:
+                        GetUserRegistrationInformation();
+                            break;
+                }
+
+
+            } while (input < 5);
+
+        }
+
+
+
+        public void ShowAllUsersInformation()
+        {
+
+
+            var users = regRepObj.SelectALLUser();
+
+            Console.WriteLine($"RegistrationID --Username--Password--Email--MobileNumber--Address");
+            foreach (Registration reg in users)
+            {
+                Console.WriteLine($"{reg.RegsitrationId} --{reg.UserName}--{reg.PassWord}--{reg.Email}--{reg.MobileNumber}--{reg.Address}");
+            }
+
+        }
 
 
         public void GetUserRegistrationInformation()
@@ -33,9 +86,7 @@ namespace BusinessLayer
                 userRegData.Email = email;
                 userRegData.MobileNumber = mobileNumber;
 
-                var obj = new RegistrationRepository();
-
-                obj.RegisterUser(userRegData);
+                regRepObj.RegisterUser(userRegData);
 
             }catch(Exception ex)
             {
