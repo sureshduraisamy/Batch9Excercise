@@ -10,7 +10,7 @@ namespace Vikram.console
             try
             {
                 RegistrationService data = new RegistrationService();
-                data.GetUserRegistrationInformation();
+                data.MenuDriven();
 
             }
             catch(Exception e)

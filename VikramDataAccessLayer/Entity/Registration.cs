@@ -14,5 +14,6 @@ namespace VikramDataAccessLayer.Entity
         public string PassWord { get; set; }
         public string Email { get; set; }
         public long MobileNumber { get; set; }
+        public string Address { get; set; }
     }
 }
