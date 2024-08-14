@@ -35,10 +35,25 @@ namespace GiridharanConsole
                     case 3:
                         GetUserUpdateInformation();
                         break;
-                   
+                    case 4:
+                        GetUserDeleteInformation();
+                        break;
                 }
 
             } while (input > 5);
+        }
+        public void GetUserDeleteInformation()
+        {
+            try
+            {
+                var userRegData = new Registration();
+                Console.WriteLine("Enter the Registration--ID--to delete:");
+                userRegData.RegistrationID = Convert.ToInt64(Console.ReadLine());
+                regRepobj.DeleteUser(userRegData);
+            }catch(Exception ex)
+            {
+                throw;
+            }
         }
         public void GetUserUpdateInformation()
         {
@@ -55,9 +70,9 @@ namespace GiridharanConsole
                 Console.WriteLine("Enter Mobile");
                 var mobileNumber = Convert.ToInt64(Console.ReadLine());
 
-               
-                
+
                 var userRegData = new Registration();
+
                 userRegData.RegistrationID = registrationId;
                 userRegData.Username = username;
                 userRegData.Password = password;
@@ -76,12 +91,19 @@ namespace GiridharanConsole
         }
         public void ShowAllUserInformation()
         {
-            var users = regRepobj.SelectAllUser();
-            Console.WriteLine($"RegistrationID --Username--Password--Email--MobileNumber--Address");
-            foreach(Registration reg in users)
+            try
             {
-                Console.WriteLine($"{reg.RegistrationID}--{reg.Username}--{reg.Password}--{reg.Email}--{reg.Adress}");
+                var users = regRepobj.SelectAllUser();
+                Console.WriteLine($"RegistrationID --Username--Password--Email--MobileNumber--Address");
+                foreach (Registration reg in users)
+                {
+                    Console.WriteLine($"{reg.RegistrationID}--{reg.Username}--{reg.Password}--{reg.Email}--{reg.Adress}");
+                }
+            }catch(Exception ex)
+            {
+                throw;
             }
+           
         }
        public void GetUserRegistrationInformation()
         {

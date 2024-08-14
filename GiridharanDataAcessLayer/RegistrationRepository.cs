@@ -79,7 +79,7 @@ namespace GiridharanDataAcessLayer
                     {
 
 
-                        var updateQuery = $"update registration set Username='{reg.Username}',Password='{reg.Password}',Email='{reg.Email}',mobilenumber={reg.MobileNumber} Where registration Id={reg.RegistrationID}";
+                        var updateQuery = $"update registration set Username='{reg.Username}',Password='{reg.Password}',Email='{reg.Email}',mobilenumber={reg.MobileNumber} Where registrationId={reg.RegistrationID}";
                         // var ConnectionString = "server=DESKTOP-UCPA9BN;database=Batch9;user Id=sa;password=Anaiyaan@123;";                    
                         con.Open();
                         con.Execute(updateQuery);
@@ -90,13 +90,13 @@ namespace GiridharanDataAcessLayer
                         throw;
                     }
                 }
-                public void DeleteUser(long regID)
+                public void DeleteUser(Registration regID)
                 {
                     try
                     {
 
 
-                        var deleteQuery = $"Delete from registration Where registration Id={regID}";
+                        var deleteQuery = $"Delete from registration Where registrationId={regID.RegistrationID}";
                         // var ConnectionString = "server=DESKTOP-UCPA9BN;database=Batch9;user Id=sa;password=Anaiyaan@123;";                    
                         con.Open();
                         con.Execute(deleteQuery);
