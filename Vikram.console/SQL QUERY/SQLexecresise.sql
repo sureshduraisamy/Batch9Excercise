@@ -4,6 +4,7 @@ Values('Vikram','@vikram421','vikram@mail.com',6383500480,'Address')
 Insert into Registration(UserName,Password,Email,MobileNumber)
 Values('Gokul','@Gokul421','gokul@gmail.com',8970765443)
 
+
 --Update
 update Registration
 SET
@@ -35,9 +36,11 @@ Email nvarchar(100) not null,
 MobileNumber bigint not null,
 Address nvarchar(300) null
 )
+select * from Registration
 drop table Registration
 --Drop
 drop table Registration
+truncate table Registration
 --Alter - drop
 Alter table Registration
 drop column address
@@ -117,6 +120,27 @@ select Min(registrationID) from registration
 select Max(registrationID) from registration
 select Avg(registrationID) from registration
 select sum(registrationID) from registration
+
+--16.08.2024
+select*from Registration
+order by username asc
+create table PersonDetails
+(
+PersonDetailsid bigint not null identity(1,1),
+PanNumber nvarchar(13) not null unique,
+AadhaarNumber nvarchar(12) not null unique,
+RegistrationId bigint not null
+)
+select*from PersonDetails
+drop table PersonDetails
+select*from Registration
+insert into PersonDetails
+values('VGHMG9689K',455795432254,1)
+
+
+Select * from Registration
+ full outer join PersonDetails
+on Registration.RegistrationId=PersonDetails.RegistrationId
 
 
 
