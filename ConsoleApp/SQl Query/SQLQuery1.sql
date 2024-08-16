@@ -6,7 +6,7 @@ Insert into Registration(UserName,password,Email,MobileNumber,address)
 values ('karthick','karthick@7777','karthickkarthick065@gmail.com',7373236264,'new');
 
 Insert into Registration(UserName,password,Email,MobileNumber,address) 
-values ('karthick.S','karthick@7777','karthickkarthick065@gmail.com',7373236264,'new');
+values ('ten','ten','ten@gmail.com',867473766,'new');
 
 Update Registration set Address='odc' where UserName='karthick';
 Update Registration set Address='odc',MobileNumber=9965654725 where UserName='karthick';
@@ -21,7 +21,7 @@ Select UserName from Registration;
 --DDl
 --create
 create table registration (
-RegistrationId int identity(1,1),
+RegistrationId int identity(1,1) primary key,
 UserName nvarchar(100),
 Password varchar(20),
 Email varchar(150),
@@ -102,4 +102,32 @@ select Max(registrationID) from registration
 select Avg(registrationID) from registration
 select sum(registrationID) from registration
 
+
+--Create personDetail table
+create table PersonDetail (
+PersonDetailID  bigInt not null,AdhaarNumber bigint  not null unique,
+PanNumber nvarchar(10) not null unique,RegsiterationId int not null foreign key REFERENCES 
+registration(RegistrationId)
+)
+drop table PersonDetail ;
+select * from PersonDetail
+select * from registration
+insert into  PersonDetail(PersonDetailID,AdhaarNumber,PanNumber,RegsiterationId ) values
+(1,11555577111,'SDRFF2331F',3)
+
+select * from
+registration as R inner Join PersonDetail as PD  on R.RegistrationId=Pd.RegsiterationId
+--where UserName='karthick'
+--order By userName asc
+
+
+
+select * from
+registration as R  right outer  join  PersonDetail as PD  on R.RegistrationId=Pd.RegsiterationId
+
+select * from
+registration as R  left outer  join  PersonDetail as PD  on R.RegistrationId=Pd.RegsiterationId
+
+select * from
+registration as R  full outer  join  PersonDetail as PD  on R.RegistrationId=Pd.RegsiterationId
 
