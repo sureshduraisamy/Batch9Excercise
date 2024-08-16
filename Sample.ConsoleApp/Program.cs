@@ -10,8 +10,11 @@ namespace Sample.ConsoleApp
             try
             {
 
-                MemberResgirtation ob = new MemberResgirtation(8, "syre");
-                ob.RegisterUser();
+                RegistrationService resSer = new RegistrationService();
+                resSer.MenuDriven();
+
+                //MemberResgirtation ob = new MemberResgirtation(8, "syre");
+                //ob.RegisterUser();
 
                 //ParamandReturnType param = new ParamandReturnType();
                 //param.Addition();

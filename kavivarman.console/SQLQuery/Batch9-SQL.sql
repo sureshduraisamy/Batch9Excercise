@@ -32,7 +32,7 @@ create table registration
  Address nvarchar(300) null
 )
 --Drop
-drop table 	registration
+drop table 	PersonDetails
 --Alter	  Drop
 alter table registration
 drop column Address
@@ -107,3 +107,57 @@ select Min(registrationID) from registration
 select max(registrationID) from registration
 select avg(registrationID) from registration
 select sum(registrationID) from registration
+
+--joins
+create table PersonDetails
+(
+ PersonDetailsID bigint not null identity(1,1),
+ Aadhaar bigint not null,
+ PanNumber varchar(20) not null,
+ registrationID bigint not null 
+ 
+)
+drop table 	PersonDetails
+Select * from Registration
+Select * from  PersonDetails
+
+ Insert into Registration(UserName,Password,Email,MobileNumber)
+ values('kavi','msd','kavi msd',1234567890)
+Insert into Registration(UserName,Password,Email,MobileNumber) 
+  values('ajith','hai','ajith',0987654321)
+ Insert into Registration(UserName,Password,Email,MobileNumber)
+ values('vijay','vj','vijayvj',1234509876)
+Insert into Registration(UserName,Password,Email,MobileNumber) 
+  values('sam','sams','sam@gamil',0987651234)
+
+  insert into PersonDetails(Aadhaar,PanNumber,registrationID)
+  values(12345678901,'kavi123',1)
+  insert into PersonDetails(Aadhaar,PanNumber,registrationID)
+  values(09876543210,'ASDHFJJ234R',2)
+	 --	inner join
+	 select
+	 	*
+		from
+		registration as r inner join persondetails as pd on r.registrationID=pd.registrationID
+		where
+		r.UserName='kavi'
+  --left outer join
+   select
+	 	*
+		from
+		registration as r left outer join persondetails as pd on r.registrationID=pd.registrationID
+  --right join
+   select
+	 	*
+		from
+		registration as rs right join persondetails as pd on r.registrationID=pd.registrationID
+	--outer join
+	 select
+	 	*
+		from
+		registration as r full outer join persondetails as pd on r.registrationID=pd.registrationID
+		
+		
+		
+
+		
