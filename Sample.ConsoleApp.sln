@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GiridharanConsole", "Giridh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Giridharan BusinessLayer", "Giridharan BusinessLayer\Giridharan BusinessLayer.csproj", "{C29A2984-EBED-41A1-BEF2-B14269B7F308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiridharanDataAcessLayer", "GiridharanDataAcessLayer\GiridharanDataAcessLayer.csproj", "{C6EA52FD-4939-4AD7-A2E2-15A67BAE41C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GiridharanDataAcessLayer", "GiridharanDataAcessLayer\GiridharanDataAcessLayer.csproj", "{C6EA52FD-4939-4AD7-A2E2-15A67BAE41C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiridharanWebAPI", "GiridharanWebAPI\GiridharanWebAPI.csproj", "{DEE73824-49B5-4137-B90D-A29CED893335}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{C6EA52FD-4939-4AD7-A2E2-15A67BAE41C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6EA52FD-4939-4AD7-A2E2-15A67BAE41C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6EA52FD-4939-4AD7-A2E2-15A67BAE41C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE73824-49B5-4137-B90D-A29CED893335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE73824-49B5-4137-B90D-A29CED893335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE73824-49B5-4137-B90D-A29CED893335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE73824-49B5-4137-B90D-A29CED893335}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
