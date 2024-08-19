@@ -2,6 +2,7 @@
 using GradeSystem;
 using kavivarman.console;
 using kavivarmanBusinesslayer;
+using DataAccesslayerkavi;
 
 namespace kavivarman.console
 {
@@ -9,22 +10,28 @@ namespace kavivarman.console
     {
         static void Main(string[] args)
         {
-            Collectionexample obj = new Collectionexample();
-            obj.GenericCollection();
-            obj.NonGenericCollection();
-          //  WordReverse obj = new WordReverse();
-          //  obj.Words();
+            RegistrationService obj = new RegistrationService();
+            obj.MenuDriven();
+
+
+
+
+            // Collectionexample obj = new Collectionexample();
+            //obj.GenericCollection();
+            //obj.NonGenericCollection();
+            //  WordReverse obj = new WordReverse();
+            //  obj.Words();
             // B obj = new B();
             //obj.M2(10);
             //  NumberReverse obj = new NumberReverse();
             //obj.numbers();
             //CountingWords obj = new CountingWords();
             //obj.Words();
-          //  obj.countind();
-           // ExtentionTest obj = new ExtentionTest();
+            //  obj.countind();
+            // ExtentionTest obj = new ExtentionTest();
             //obj.number();
-         // ProgramQuestion obj = new ProgramQuestion();
-           // obj.Program();
+            // ProgramQuestion obj = new ProgramQuestion();
+            // obj.Program();
 
             // Class1 obj = new Class1();
             // obj.addition();
@@ -57,7 +64,6 @@ namespace kavivarman.console
             //Console.WriteLine(l[i].age);
 
         }
-        
 
 
 
@@ -73,7 +79,8 @@ namespace kavivarman.console
 
 
 
-        }
+
+    }
             
 
 

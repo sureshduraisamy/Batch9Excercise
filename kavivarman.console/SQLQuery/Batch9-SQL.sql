@@ -32,7 +32,7 @@ create table registration
  Address nvarchar(300) null
 )
 --Drop
-drop table 	PersonDetails
+drop table 	 registration
 --Alter	  Drop
 alter table registration
 drop column Address
