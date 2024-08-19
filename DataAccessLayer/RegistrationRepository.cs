@@ -33,5 +33,24 @@ namespace DataAccessLayer
             }
         }
 
+        public object selectalluser()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void deleteuser(global::PraneshDataAcessLayer.Entity.Registration userinput)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Registeruser(global::PraneshDataAcessLayer.Entity.Registration userinput)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Updateuser(global::PraneshDataAcessLayer.Entity.Registration userinput)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

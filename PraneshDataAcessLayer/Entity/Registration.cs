@@ -13,8 +13,7 @@ namespace PraneshDataAcessLayer.Entity
         public string PassWord { get; set; }
         public string Email { get; set; }
         public long MobileNumber { get; set; }
-
-
-
+        public object RegistrationId { get; internal set; }
+        public object Address { get; set; }
     }
 }
