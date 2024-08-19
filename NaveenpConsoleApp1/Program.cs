@@ -373,7 +373,7 @@ namespace NaveenpConsoleApp1
             }
             catch(Exception ex)
             {
-                Console.WriteLine("something went wrong");
+                Console.WriteLine(ex);
             }
             finally
             {

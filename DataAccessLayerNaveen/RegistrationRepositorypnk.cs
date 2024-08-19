@@ -49,6 +49,12 @@ namespace DataAccessLayerNaveen
                 throw;
             }
         }
+
+        public void deleteuser(string username)
+        {
+            throw new NotImplementedException();
+        }
+
         public void deleteuser(Registrationnk reg)
         {
             try
