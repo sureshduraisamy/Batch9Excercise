@@ -41,6 +41,14 @@ namespace kavivarman.console
                     case 2:
                         GetUserRegistrationInformation();
                         break;
+                    case 3:
+                        GetUserUpdateInformation();
+                        break;
+                    case 4:
+                        RemoveRecord();
+                        break;
+
+
                 }
 
 
@@ -63,6 +71,55 @@ namespace kavivarman.console
             }
 
         }
+        public void RemoveRecord()
+        {
+            try
+            {
+                RegistrationRepository regRepObj = new RegistrationRepository();
+                var userRegData = new Registration();
+                Console.WriteLine("Enter the registeration -- id --  to delete ");
+                userRegData.RegsitrationId = Convert.ToInt32(Console.ReadLine());
+                regRepObj.DeleteUser(userRegData.RegsitrationId);
+            }
+            catch (Exception e)
+            {
+                throw ;
+            }
+
+        }
+        public void GetUserUpdateInformation()
+        {
+            try
+            {
+                Console.WriteLine("enter registeration Id");
+                var RegisterationId = Convert.ToInt64(Console.ReadLine());
+                Console.WriteLine("enter username");
+                var username = Console.ReadLine();
+                Console.WriteLine("enter password");
+                var password = Console.ReadLine();
+                Console.WriteLine("enter email");
+                var email = Console.ReadLine();
+                Console.WriteLine("enter mobile number");
+                var mobileNumber = Convert.ToInt64(Console.ReadLine());
+
+                var userRegData = new Registration();
+                userRegData.UserName = username;
+                userRegData.PassWord = password;
+                userRegData.Email = email;
+                userRegData.MobileNumber = mobileNumber;
+                userRegData.RegsitrationId = (int)RegisterationId;
+
+                RegistrationRepository obj = new RegistrationRepository();
+                obj.UpdateUser(userRegData);
+
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+        }
+
+
 
 
         public void GetUserRegistrationInformation()
@@ -90,7 +147,7 @@ namespace kavivarman.console
             }
             catch (Exception ex)
             {
-                throw;
+                throw ;
 
             }
         }

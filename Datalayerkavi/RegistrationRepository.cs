@@ -73,7 +73,7 @@ namespace DataAccesslayerkavi
         {
             try
             {
-                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber} where registrationID={reg.RegsitrationId}";
+                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber},Address='{reg.Address}' where registrationID={reg.RegsitrationId}";
            
 
                 con.Open();
@@ -92,7 +92,7 @@ namespace DataAccesslayerkavi
         {
             try
             {
-                var updateQuery = $"Delete from Registration where regsitrationId={regId}";
+                var updateQuery = $"Delete from Registration where registrationID={regId}";
                 con.Open();
                 con.Execute(updateQuery);
                 con.Close();

@@ -24,7 +24,7 @@ namespace Sample.WebAPI.Controllers
         [HttpGet]
         public IEnumerable<Registration> Get()
         {
-           return  reg.SelectALLUser();
+            return reg.SelectALLUser();
         }
 
         // GET api/<RegistrationController>/5

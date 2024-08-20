@@ -118,7 +118,7 @@ create table PersonDetails
  
 )
 drop table 	PersonDetails
-Select * from Registration
+ Select * from Registration
 Select * from  PersonDetails
 
  Insert into Registration(UserName,Password,Email,MobileNumber)
