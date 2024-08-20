@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vikram.console", "Vikram.co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VikramBusinessLayer", "VikramBusinessLayer\VikramBusinessLayer.csproj", "{E9D4592D-60D9-41ED-81EA-A51022057883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationRepository.cs", "RegistrationRepository.cs\RegistrationRepository.cs.csproj", "{349AAF19-2D35-4CFF-8884-6FA0958E72EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistrationRepository.cs", "RegistrationRepository.cs\RegistrationRepository.cs.csproj", "{349AAF19-2D35-4CFF-8884-6FA0958E72EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VikramDataAccessLayer", "VikramDataAccessLayer\VikramDataAccessLayer.csproj", "{97D09338-F41B-4FDA-9006-E987841AAB91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VikramDataAccessLayer", "VikramDataAccessLayer\VikramDataAccessLayer.csproj", "{97D09338-F41B-4FDA-9006-E987841AAB91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VikramWebApi", "VikramWebApi\VikramWebApi.csproj", "{8EE50D4F-A543-4557-ACC2-FB842A97644C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{97D09338-F41B-4FDA-9006-E987841AAB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97D09338-F41B-4FDA-9006-E987841AAB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97D09338-F41B-4FDA-9006-E987841AAB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE50D4F-A543-4557-ACC2-FB842A97644C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE50D4F-A543-4557-ACC2-FB842A97644C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE50D4F-A543-4557-ACC2-FB842A97644C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE50D4F-A543-4557-ACC2-FB842A97644C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
