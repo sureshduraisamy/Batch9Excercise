@@ -9,29 +9,98 @@ namespace VigneshDataAccessLayer.Entity
 {
     public class RegistrationRepository
     {
-       public RegistrationRepository()
-        {
+        string connectionString = "server=DESKTOP-1U0BM0H\\SQLEXPRESS;database=Batch9;user Id =sa;password=Anaiyaan@123;";
+        SqlConnection con = null;
+      
 
+        public RegistrationRepository()
+        {
+            con = new SqlConnection(connectionString);
         }
 
+        public List<Registration> SelectALLUser()
+        {
+            try
+            {
+                var selectQuery = $"select registrationid as Registrationid, username,password,email,mobileNumber,address from registration";
+                con.Open();
+                List<Registration> result = con.Query<Registration>(selectQuery).ToList();
+                con.Close();
+
+                return result;
+            }
+            catch(Exception ex)
+            {
+                throw; 
+            }
+
+        }
+        public Registration SelectUserbyUserName(string username)
+        {
+            try
+            {
+               var selectQuery = $"select username,password,email,mobileNumber,address from registration where username ='{username}'";
+                con.Open();
+                Registration result = con.QueryFirstOrDefault<Registration>(selectQuery);
+                con.Close();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+        }
         public void RegisterUser(Registration reg)
         {
             try
             {
-                var InsertQuery=$"insert into Registration(UserName,Password,Email,MoblieNumber) values('{reg.UserName}','{reg.PassWord},'{reg.Email},{reg.MobileNumber})";
-                var ConnectionString = "server=DESKTOP-1U0BM0H\\SQLEXPRESS;database=Batch9;user Id =sa;password=Anaiyaan@123;";
-
-                SqlConnection con = new SqlConnection(ConnectionString);
+                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber})";
                 con.Open();
-                con.Execute(InsertQuery);
+                con.Execute(insertQuery);
                 con.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw;
             }
-        }
 
-       
+        }
+        public void UpdateUser(Registration reg)
+        {
+            try
+            {
+                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber}, address='{reg.Address}' where registrationID={reg.RegsitrationId}";
+                con.Open();
+                con.Execute(updateQuery);
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+
+        }
+        public void DeletUser(long regId)
+        {
+            try
+            {
+                var updateQuery = $"Delete from Registration where RegistrationID={regId}";
+                con.Open();
+                con.Execute(updateQuery);
+                con.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+
+        }
     }
 }

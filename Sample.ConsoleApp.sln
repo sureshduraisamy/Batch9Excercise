@@ -21,7 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vickyBusinessLayer", "vickyBusinessLayer\vickyBusinessLayer.csproj", "{FE3897CE-0384-42B1-826E-0B3C92AD5810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VigneshDataAccessLayer", "VigneshDataAccessLayer\VigneshDataAccessLayer.csproj", "{80AA2ECC-CDAB-47CB-A107-D94E10CDC739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VigneshDataAccessLayer", "VigneshDataAccessLayer\VigneshDataAccessLayer.csproj", "{80AA2ECC-CDAB-47CB-A107-D94E10CDC739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApi", "MyWebApi\MyWebApi.csproj", "{62205510-0134-45BE-B655-5078B1426379}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{80AA2ECC-CDAB-47CB-A107-D94E10CDC739}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80AA2ECC-CDAB-47CB-A107-D94E10CDC739}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80AA2ECC-CDAB-47CB-A107-D94E10CDC739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62205510-0134-45BE-B655-5078B1426379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62205510-0134-45BE-B655-5078B1426379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62205510-0134-45BE-B655-5078B1426379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62205510-0134-45BE-B655-5078B1426379}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

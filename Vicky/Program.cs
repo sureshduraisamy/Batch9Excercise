@@ -9,10 +9,10 @@ namespace Vicky
         {
             try
             {
-                RegistrationService resSer = new RegistrationService();
-                resSer.GetUserRegistrationInformation();
+               RegistrationService resSer = new RegistrationService();
+               resSer.MenuDriven();
 
-
+                  
 
 
 
