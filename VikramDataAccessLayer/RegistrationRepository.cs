@@ -22,7 +22,7 @@ namespace VikramDataAccessLayer
         {
             try
             {
-                var selectQuery = $"select registrationId as RegistrationId,username,password,email,mobileNumber,address from registration";
+                var selectQuery = $"select registrationId ,username,password,email,mobileNumber,address from registration";
                 con.Open();
                 List<Registration> result = con.Query<Registration>(selectQuery).ToList();
                 con.Close();
@@ -36,11 +36,13 @@ namespace VikramDataAccessLayer
             }
         }
 
+       
+
         public Registration SelectUserByUsername(string username)
         {
             try
             {
-                var selectQuery = $"select username,password,email,mobileNumber,address from registration where username ='{username}'";
+                var selectQuery = $"select username,password,email,mobileNumber,address,registrationid from registration where username ='{username}'";
                 con.Open();
                 Registration result = con.QueryFirstOrDefault<Registration>(selectQuery);
                 con.Close();
@@ -60,7 +62,7 @@ namespace VikramDataAccessLayer
         {
             try
             {
-                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber})";
+                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber,address) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber},'{reg.Address}')";
                 var connectionString = "server=DESKTOP-BLBGEHJ\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
                 SqlConnection con = new SqlConnection(connectionString);
                 con.Open();
@@ -77,7 +79,7 @@ namespace VikramDataAccessLayer
         {
             try
             {
-                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber} where registrationID={reg.RegsitrationId}";
+                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber}',address={reg.Address}where registrationID={reg.RegsitrationId}";
                 //var connectionString = "server=DESKTOP-8VD1A1F\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
 
                 con.Open();

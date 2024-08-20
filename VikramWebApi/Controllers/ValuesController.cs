@@ -14,36 +14,43 @@ namespace VikramWebApi.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET: api/<ValuesController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        RegistrationRepository reg = null;
+        public ValuesController()
         {
-            return new string[] { "value1", "value2" };
+            reg = new RegistrationRepository();
+        }
+        // GET: api/<RegistrationController>
+        [HttpGet]
+
+
+        public IEnumerable<Registration> Get()
+        {
+            return reg.SelectAllUser();
         }
 
         // GET api/<ValuesController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{username}")]
+        public Registration Get(string username)
         {
-            return "value";
+            return reg.SelectUserByUsername(username);
         }
-
-        // POST api/<ValuesController>
+        // POST api/<RegistrationController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Registration regis)
         {
+            reg.RegisterUser(regis);
         }
-
-        // PUT api/<ValuesController>/5
+        // PUT api/<RegistrationController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put([FromBody] Registration value)
         {
+            reg.UpdateUser(value);
         }
-
-        // DELETE api/<ValuesController>/5
+        // DELETE api/<RegistrationController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(long id)
         {
-        }
+            reg.DeleteUser(id);
+        }        
     }
 }

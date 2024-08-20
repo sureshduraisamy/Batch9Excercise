@@ -39,7 +39,7 @@ namespace DataAccessLayer
         {
             try
             {
-                var selectQuery = $"select username,password,email,mobileNumber,address from registration where username ='{username}'";
+                var selectQuery = $"select username,RegistrationId,password,email,mobileNumber,address from registration where username ='{username}'";
                 con.Open();
                 Registration result = con.QueryFirstOrDefault<Registration>(selectQuery);
                 con.Close();
@@ -57,7 +57,7 @@ namespace DataAccessLayer
         {
             try
             {
-                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber})";
+                var insertQuery = $"insert into Registration(registrationId,UserName,Password,Email,MobileNumber,Address) values ('{reg.RegsitrationId}','{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber}',{reg.Address})";
                 con.Open();
                 con.Execute(insertQuery);
                 con.Close();
