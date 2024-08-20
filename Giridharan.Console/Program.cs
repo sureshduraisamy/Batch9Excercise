@@ -1,5 +1,6 @@
 ﻿using System;
 using Giridharan_BusinessLayer;
+using GiridharanDataAcessLayer;
 
 namespace GiridharanConsole
 {
@@ -9,9 +10,11 @@ namespace GiridharanConsole
         {
             try
             {
-                RegistrationService resser = new RegistrationService();
-               resser.MenuDriven();
-               // EmployeesDetails obj = new();
+                RegistrationRepository obj = new RegistrationRepository();
+                obj.SelectUserByUserName("Giri");
+               // RegistrationService resser = new RegistrationService();
+                //resser.MenuDriven();
+                // EmployeesDetails obj = new();
                 //obj.Details();
             }
             catch(Exception e)

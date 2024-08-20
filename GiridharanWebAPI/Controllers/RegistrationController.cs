@@ -27,7 +27,7 @@ namespace GiridharanWebAPI.Controllers
         }
 
         // GET api/<RegistrationController>/5
-        [HttpGet("{UserName}")]
+        [HttpGet("{username}")]
         public Registration Get(string username)
         {
             return reg.SelectUserByUserName(username);
@@ -35,20 +35,23 @@ namespace GiridharanWebAPI.Controllers
 
         // POST api/<RegistrationController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Registration regis)
         {
+            reg.RegisterUser(regis);
         }
 
         // PUT api/<RegistrationController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public void Put( [FromBody] Registration value)
         {
+            reg.UpdateUser(value);
         }
 
         // DELETE api/<RegistrationController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(long id)
         {
+            reg.DeleteUser(id);
         }
     }
 }

@@ -34,18 +34,18 @@ namespace GiridharanDataAcessLayer
                 throw;
             }
         }
-        public Registration SelectUserByUserName(string username)
+        public Registration SelectUserByUserName(string Username)
         {
             try
             {
 
-
-                var selectQuery = $"select registrationId as RegsitrationId, username,password,email,mobileNumber,address from registration Where username='{username}'";
+                
+                var selectQuery = $"select RegistrationID,Username,Password,Email,MobileNumber,Adress from registration where Username='{Username}'";
                 con.Open();
-                Registration result = con.QueryFirstOrDefault<Registration>(selectQuery);
+                Registration userresult = con.QueryFirstOrDefault<Registration>(selectQuery);
                 con.Close();
 
-                return result;
+                return userresult;
 
             }
             catch (Exception ex)
@@ -63,7 +63,7 @@ namespace GiridharanDataAcessLayer
                     {
 
 
-                        var insertQuery = $"Insert into Registration(Username,Password,Email,MobileNumber) values ('{reg.Username}','{ reg.Password}','{reg.Email}',{reg.MobileNumber})";
+                        var insertQuery = $"Insert into Registration(Username,Password,Email,MobileNumber,Adress) values ('{reg.Username}','{ reg.Password}','{reg.Email}',{reg.MobileNumber},'{reg.Adress}')";
                         con.Open();
                         con.Execute(insertQuery);
                         con.Close();
@@ -79,7 +79,7 @@ namespace GiridharanDataAcessLayer
                     {
 
 
-                        var updateQuery = $"update registration set Username='{reg.Username}',Password='{reg.Password}',Email='{reg.Email}',mobilenumber={reg.MobileNumber} Where registrationId={reg.RegistrationID}";
+                        var updateQuery = $"update registration set Username='{reg.Username}',Password='{reg.Password}',Email='{reg.Email}',mobilenumber={reg.MobileNumber},Adress='{reg.Adress}' Where registrationId={reg.RegistrationID}";
                         // var ConnectionString = "server=DESKTOP-UCPA9BN;database=Batch9;user Id=sa;password=Anaiyaan@123;";                    
                         con.Open();
                         con.Execute(updateQuery);
@@ -90,13 +90,13 @@ namespace GiridharanDataAcessLayer
                         throw;
                     }
                 }
-                public void DeleteUser(Registration regID)
+                public void DeleteUser(long regID)
                 {
                     try
                     {
 
 
-                        var deleteQuery = $"Delete from registration Where registrationId={regID.RegistrationID}";
+                        var deleteQuery = $"Delete from registration Where registrationId={regID}";
                         // var ConnectionString = "server=DESKTOP-UCPA9BN;database=Batch9;user Id=sa;password=Anaiyaan@123;";                    
                         con.Open();
                         con.Execute(deleteQuery);

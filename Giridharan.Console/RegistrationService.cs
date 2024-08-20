@@ -49,7 +49,7 @@ namespace GiridharanConsole
                 var userRegData = new Registration();
                 Console.WriteLine("Enter the Registration--ID--to delete:");
                 userRegData.RegistrationID = Convert.ToInt64(Console.ReadLine());
-                regRepobj.DeleteUser(userRegData);
+                regRepobj.DeleteUser(userRegData.RegistrationID);
             }catch(Exception ex)
             {
                 throw;
@@ -69,7 +69,8 @@ namespace GiridharanConsole
                 var email = Console.ReadLine();
                 Console.WriteLine("Enter Mobile");
                 var mobileNumber = Convert.ToInt64(Console.ReadLine());
-
+                Console.WriteLine("Enter Adress:");
+                var address = Console.ReadLine();
 
                 var userRegData = new Registration();
 
@@ -78,6 +79,7 @@ namespace GiridharanConsole
                 userRegData.Password = password;
                 userRegData.Email = email;
                 userRegData.MobileNumber = mobileNumber;
+                userRegData.Adress = address;
 
 
                 regRepobj.UpdateUser(userRegData);
