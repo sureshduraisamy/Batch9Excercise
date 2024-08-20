@@ -1,5 +1,4 @@
 ﻿using DataAccesslayerkavi;
-using DataAccesslayerkavi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
