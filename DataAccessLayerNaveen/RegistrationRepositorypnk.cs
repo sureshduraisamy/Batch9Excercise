@@ -22,7 +22,7 @@ namespace DataAccessLayerNaveen
         {
             try
             {
-                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber})";
+                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber,address) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber},'{reg.Address}')";
 
                 con.Open();
                 con.Execute(insertQuery);
@@ -38,10 +38,27 @@ namespace DataAccessLayerNaveen
         {
             try
             {
-                var UpdateQuery = $"update  Registration set  username ='{reg.UserName}',password ='{reg.PassWord}',email ='{reg.Email}',mobilenumber ={reg.MobileNumber} where registrationid = {reg.RegistrationId}";
+                var UpdateQuery = $"update  Registration set  username ='{reg.UserName}',password ='{reg.PassWord}',email ='{reg.Email}',mobilenumber ={reg.MobileNumber},address = '{reg.Address}' where registrationid = {reg.RegistrationId}";
 
                 con.Open();
                 con.Execute(UpdateQuery);
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+       
+
+        public void deleteuser(long reg)
+        {
+            try
+            {
+                var deleteQuery = $"delete from  Registration where registrationid = {reg}";
+                con.Open();
+                con.Execute(deleteQuery);
                 con.Close();
             }
             catch (Exception ex)
@@ -55,25 +72,11 @@ namespace DataAccessLayerNaveen
             throw new NotImplementedException();
         }
 
-        public void deleteuser(Registrationnk reg)
-        {
-            try
-            {
-                var UpdateQuery = $"delete from  Registration where registrationid = {reg.RegistrationId}";
-                con.Open();
-                con.Execute(UpdateQuery);
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
         public List<Registrationnk> selectalluser()
         {
             try
             {
-                var selectQuery = $"select registrationId as RegsitrationId, username,password,email,mobileNumber,address from registration";
+                var selectQuery = $"select RegistrationId, username,password,email,mobileNumber,address from registration";
                 con.Open();
                 List<Registrationnk> result = con.Query<Registrationnk>(selectQuery).ToList();
                 con.Close();
@@ -85,6 +88,24 @@ namespace DataAccessLayerNaveen
                 throw;
             }
         }
+        public Registrationnk selectuserbyname(string username)
+        {
+            try
+            {
+                var selectQuery = $"select  username,password,email,mobileNumber,address,registrationid from registration where username = '{username}'";
+                con.Open();
+                Registrationnk result = con.QueryFirstOrDefault<Registrationnk>(selectQuery);
+                con.Close();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+
     }
 }
 

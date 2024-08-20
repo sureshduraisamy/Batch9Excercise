@@ -13,6 +13,6 @@ namespace DataAccessLayerNaveen.Entity
         public string Email { get; set; }
         public long MobileNumber { get; set; }
         public string Address { get; set; }
-        public int RegistrationId { get; set; }
+        public long RegistrationId { get; set; }
     }
 }

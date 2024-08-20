@@ -71,15 +71,16 @@ namespace Naveenbusinesslayer
             }
 
         }
+       
 
-            public void Removerecord()
+        public void Removerecord()
             {
                 try
                 {
                     var userinput = new Registrationnk();
-                    Console.WriteLine("enter registration id to delete ");
-                    userinput.RegistrationId = Convert.ToInt32(Console.ReadLine());
-                    Obj.deleteuser(userinput);
+                    Console.WriteLine("enter registration username to delete ");
+                    userinput.RegistrationId =Convert.ToInt32 (Console.ReadLine());
+                    Obj.deleteuser(userinput.RegistrationId);
                 }
                 catch (Exception ex)
                 {
@@ -100,15 +101,19 @@ namespace Naveenbusinesslayer
                     var Email = Console.ReadLine();
                     Console.WriteLine("enter RegistrationId");
                     var registrationId = Convert.ToInt32(Console.ReadLine());
+                   Console.WriteLine("enter address");
+                   var address = Console.ReadLine();   
 
 
 
-                    var userinput = new Registrationnk();
+                var userinput = new Registrationnk();
                     userinput.UserName = username;
                     userinput.PassWord = password;
                     userinput.MobileNumber = mobileno;
                     userinput.Email = Email;
+                    userinput.Address = address;
                     userinput.RegistrationId = registrationId;
+                   
 
 
                     

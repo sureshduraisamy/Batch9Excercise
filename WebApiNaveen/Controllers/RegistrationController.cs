@@ -15,44 +15,48 @@ namespace WebApiNaveen.Controllers
     public class RegistrationController : ControllerBase
     {
         RegistrationRepositorynk reg = null;
-       
+       public RegistrationController()
+        {
+            reg = new RegistrationRepositorynk();
+        }
            
         
         // GET: api/<RegistrationController>
         [HttpGet]
         public IEnumerable<Registrationnk> Get()
         {
-            reg = new RegistrationRepositorynk();
+          
             return reg.selectalluser();
         }
 
         // GET api/<RegistrationController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{username}")]
+        public Registrationnk Get(string  username)
         {
-            return "value";
+            return reg.selectuserbyname(username);
         }
 
         // POST api/<RegistrationController>
         [HttpPost]
         public void Post([FromBody] Registrationnk regist)
         {
-            reg = new RegistrationRepositorynk();
+            
             reg.Registeruser(regist);
         }
 
         // PUT api/<RegistrationController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(  Registrationnk value)
         {
+            reg.Updateuser(value);
         }
 
         // DELETE api/<RegistrationController>/5
-        [HttpDelete("{username}")]
-        public void Delete(string username)
+        [HttpDelete("{id}")]
+        public void Delete(int id )
         {
-            reg = new RegistrationRepositorynk();
-            reg.deleteuser(username);
+
+            reg.deleteuser(id);
         }
     }
 }
