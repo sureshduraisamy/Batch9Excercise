@@ -11,7 +11,7 @@ namespace Sample.ConsoleApp
             {
 
                 RegistrationService resSer = new RegistrationService();
-                resSer.GetUserRegistrationInformation();
+                resSer.MenuDriven();
 
 
                 //MemberResgirtation ob = new MemberResgirtation(8, "syre");
