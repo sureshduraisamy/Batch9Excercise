@@ -21,7 +21,8 @@ namespace KarthickDataAccess
         {
             try
             {
-               var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.userName}','{reg.password}','{reg.email}',{reg.mobileNumber})";
+               var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber,Address)" +
+                    $" values ('{reg.userName}','{reg.password}','{reg.email}',{reg.mobileNumber},'{reg.address}')";
                // var connectionString = "server=desktop-blbgehj\\sqlexpress;database=batch9;user Id =sa;password=Anaiyaan@123;";
                // SqlConnection con = new SqlConnection(connectionString);
                 con.Open();
@@ -39,7 +40,7 @@ namespace KarthickDataAccess
         {
             try
             {
-                var updateQuery = $"update registration set username='{reg.userName}',password='{reg.password}',email='{reg.email}', mobilenumber={reg.mobileNumber} where registrationID={reg.regsitrationId}";
+                var updateQuery = $"update registration set username='{reg.userName}',password='{reg.password}',email='{reg.email}', mobilenumber={reg.mobileNumber},Address='{reg.address}' where registrationID={reg.regsitrationId}";
                 //var connectionString = "server=DESKTOP-8VD1A1F\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
 
                 con.Open();
@@ -79,7 +80,7 @@ namespace KarthickDataAccess
         {
             try
             {
-                var selectQuery = $"select username,password,email,mobileNumber,address from registration where username ='{username}'";
+                var selectQuery = $"select registrationId as RegsitrationId,username,password,email,mobileNumber,address from registration where username ='{username}'";
                 con.Open();
                 Registration result = con.QueryFirstOrDefault<Registration>(selectQuery);
                 con.Close();
@@ -94,11 +95,11 @@ namespace KarthickDataAccess
         }
 
 
-        public void DeleteUserRecord(Registration reg)
+        public void DeleteUserRecord(long regId)
         {
             try
             {
-                var DeleteQuery = $"delete from registration where RegistrationID={reg.regsitrationId}";
+                var DeleteQuery = $"delete from registration where RegistrationID={regId}";
                   con.Open();
                 con.Execute(DeleteQuery);
                 con.Close();

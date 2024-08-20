@@ -50,10 +50,10 @@ namespace WebAPI_Karthick_.Controllers
         }
 
         // DELETE api/<RegisterationController>/5
-        [HttpDelete("{id}")]
-        public void Delete(Registration reg)
+        [HttpDelete("{regId}")]
+        public void Delete(long regId)
         {
-            objReg.DeleteUserRecord(reg);
+            objReg.DeleteUserRecord(regId);
         }
     }
 }

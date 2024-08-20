@@ -16,6 +16,10 @@ namespace KarthickBusinessLayer
             int input = 0;
             do
             {
+                RegistrationRepository regRepObj = new RegistrationRepository();
+                regRepObj.SelectUserByUsername("karthick");
+                Console.WriteLine(regRepObj.SelectUserByUsername("karthick").regsitrationId);
+
                 Console.WriteLine("Please select any option below ");
                 Console.WriteLine("1.Select ALL User");
                 Console.WriteLine("2.Insert");
@@ -65,7 +69,7 @@ namespace KarthickBusinessLayer
                 var userRegData = new Registration();
                 Console.WriteLine("Enter the registeration -- id --  to delete ");
                 userRegData.regsitrationId = Convert.ToInt32(Console.ReadLine());
-                regRepObj.DeleteUserRecord(userRegData);
+                regRepObj.DeleteUserRecord(userRegData.regsitrationId);
             }
             catch (Exception e)
             {

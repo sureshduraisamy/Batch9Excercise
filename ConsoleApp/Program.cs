@@ -124,6 +124,7 @@ namespace ConsoleApp
             //  Sorting obj = new Sorting();
             //  obj.BubbleSort();
             try {
+               
                 RegistrationService obj = new RegistrationService();
                 //obj.GetUserRegistrationInformation();
                 obj.MenuOption();
