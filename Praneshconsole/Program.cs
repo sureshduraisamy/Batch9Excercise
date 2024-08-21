@@ -16,8 +16,8 @@ namespace Praneshconsole
         {
             try
             {
-                RegistrationService obj = new RegistrationService();
-                obj.GetUserRegistrationInformation();
+                RegistrationService obj = new ();
+                obj.MenuOption();
 
 
             }

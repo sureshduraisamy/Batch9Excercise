@@ -8,12 +8,11 @@ namespace PraneshDataAcessLayer.Entity
 {
     public class Registration
     {
-        public long RegsitrationId { get; set; }
-        public string UserName { get; set; }
-        public string PassWord { get; set; }
-        public string Email { get; set; }
-        public long MobileNumber { get; set; }
-        public object RegistrationId { get; internal set; }
-        public object Address { get; set; }
+        public long regsitrationId { get; set; }
+        public string userName { get; set; }
+        public string password { get; set; }
+        public string email { get; set; }
+        public string address { get; set; }
+        public long mobileNumber { get; set; }
     }
 }

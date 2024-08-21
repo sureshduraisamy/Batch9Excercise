@@ -7,12 +7,12 @@ using PraneshDataAcessLayer.Entity;
 
 namespace PraneshDataAcessLayer
 {
-    public class RegisterPasswod
+    public class RegistrationRepository
     {
-        string connectionstring = "server=DESKTOP-BLBGEHJ\\SQLEXPRESS;DATAbase=batch9;user Id=sa;password=Anaiyaan@123";
+        string connectionstring = "server=DESKTOP-BLBGEHJ\\SQLEXPRESS;database=batch9;user Id=sa;password=Anaiyaan@123;TrustServerCertificate=True;";
         SqlConnection con = null;
 
-        public RegisterPasswod()
+        public RegistrationRepository()
         {
             con = new SqlConnection(connectionstring);
         }
@@ -21,7 +21,7 @@ namespace PraneshDataAcessLayer
 
             try
             {
-                var selectQuery = $"select registration as Registration,username,pasword,email,mobialnumber,address from registration";
+                var selectQuery = $"select registrationid ,username,pasword,email,mobialnumber,address from registration";
                 con.Open();
                 List<Registration> result = con.Query<Registration>(selectQuery).ToList();
                 con.Close();
@@ -40,7 +40,7 @@ namespace PraneshDataAcessLayer
             {
                 try
                 {
-                    var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber})";
+                    var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.userName}','{reg.password}','{reg.email}',{reg.mobileNumber})";
 
                     con.Open();
                     con.Execute(insertQuery);
@@ -64,7 +64,7 @@ namespace PraneshDataAcessLayer
         {
             try
             {
-                var UpdateQuery = $"update  Registration set  username ='{reg.UserName}',password ='{reg.PassWord}',email ='{reg.Email}',mobilenumber ={reg.MobileNumber} where registrationid = {reg.RegistrationId}";
+                var UpdateQuery = $"update  Registration set  username ='{reg.userName}',password ='{reg.password}',email ='{reg.email}',mobilenumber ={reg.mobileNumber} where registrationid = {reg.regsitrationId}";
 
                 con.Open();
                 con.Execute(UpdateQuery);
@@ -79,7 +79,7 @@ namespace PraneshDataAcessLayer
         {
             try
             {
-                var UpdateQuery = $"delete from  Registration where registrationid = {reg.RegistrationId}";
+                var UpdateQuery = $"delete from  Registration where registrationid = {reg.regsitrationId}";
                 con.Open();
                 con.Execute(UpdateQuery);
                 con.Close();

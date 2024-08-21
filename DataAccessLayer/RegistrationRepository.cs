@@ -1,56 +1,116 @@
-﻿
-using DataAccessLayer.Entity;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Dapper;
-namespace DataAccessLayer
+using DataAccessLayer.Entity;
+using Microsoft.Data.SqlClient;
+
+namespace DataAcessLayer
 {
     public class RegistrationRepository
     {
+        string connectionstring = "server=DESKTOP-BLBGEHJ\\SQLEXPRESS;DATAbase=batch9;user Id=sa;password=Anaiyaan@123;TrustServerCertificate=True";
+        SqlConnection con = null;
+
         public RegistrationRepository()
         {
-
+            con = new SqlConnection(connectionstring);
         }
+        public List<Registration> selectAlluaer()
+        {
 
-        public void  RegisterUser(Registration reg)
+            try
+            {
+                var selectQuery = $"select registrationid ,username,pasword,email,mobialnumber,address from registration";
+                con.Open();
+                List<Registration> result = con.Query<Registration>(selectQuery).ToList();
+                con.Close();
+                return result;
+
+
+
+            }
+            catch (Exception EX)
+            {
+                throw;
+
+            }
+        }
+        public void Registeruser(Registration reg)
         {
             try
             {
-                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber})";
-                var connectionString = "server=DESKTOP-8VD1A1F\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
-                SqlConnection con = new SqlConnection(connectionString);
+                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord }','{reg.Email}',{reg.MobileNumber})";
+               
+
                 con.Open();
                 con.Execute(insertQuery);
                 con.Close();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
 
-            }catch(Exception ex)
+
+
+        }
+
+        public void RegisterUser(Registration userRegData)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateuserData(Registration reg)
+        {
+            try
+            {
+                var UpdateQuery = $"update  Registration set  username ='{reg.UserName}',password ='{reg.PassWord}',email ='{reg.Email}',mobilenumber ={reg.MobileNumber} where registrationid = {reg.RegsitrationId}";
+
+                con.Open();
+                con.Execute(UpdateQuery);
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+        public void Deleteuser(Registration reg)
+        {
+            try
+            {
+                var UpdateQuery = $"delete from  Registration where registrationid = {reg.RegsitrationId}";
+                con.Open();
+                con.Execute(UpdateQuery);
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+        public List<Registration> Selectalluser()
+        {
+            try
+            {
+                var selectQuery = $"select registrationId as RegsitrationId, username,password,email,mobileNumber,address from registration";
+                con.Open();
+                List<Registration> result = con.Query<Registration>(selectQuery).ToList();
+                con.Close();
+
+                return result;
+            }
+            catch (Exception ex)
             {
                 throw;
             }
         }
 
-        public object selectalluser()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void deleteuser(global::PraneshDataAcessLayer.Entity.Registration userinput)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Registeruser(global::PraneshDataAcessLayer.Entity.Registration userinput)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Updateuser(global::PraneshDataAcessLayer.Entity.Registration userinput)
-        {
-            throw new NotImplementedException();
-        }
     }
+
 }
+
+
+
+
