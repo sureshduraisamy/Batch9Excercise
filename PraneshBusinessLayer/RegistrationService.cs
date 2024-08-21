@@ -55,10 +55,10 @@ namespace PraneshBusinessLayer
             
             var users = regRepObj.Selectalluser();
 
-            Console.WriteLine($"RegistrationID --Username--Password--Email--MobileNumber--Address");
+            Console.WriteLine($"RegestrationID --Username--Password--Email--MobileNumber--Address");
             foreach (Registration reg in users)
             {
-                Console.WriteLine($"{reg.regsitrationId} --{reg.userName}--{reg.password}--{reg.email}--{reg.mobileNumber}--{reg.address}");
+                Console.WriteLine($"{reg.regsitrationId } --{reg.userName}--{reg.password}--{reg.email}--{reg.mobileNumber}--{reg.address}");
             }
 
         }

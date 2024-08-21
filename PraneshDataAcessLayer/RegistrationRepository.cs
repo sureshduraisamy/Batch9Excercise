@@ -21,7 +21,7 @@ namespace PraneshDataAcessLayer
 
             try
             {
-                var selectQuery = $"select registrationid ,username,pasword,email,mobialnumber,address from registration";
+                var selectQuery = $"select RegestrationID as regsitrationId ,username,pasword,email,mobialnumber,address from registration";
                 con.Open();
                 List<Registration> result = con.Query<Registration>(selectQuery).ToList();
                 con.Close();
@@ -55,16 +55,12 @@ namespace PraneshDataAcessLayer
 
             }
 
-        public void RegisterUser(Registration userRegData)
-        {
-            throw new NotImplementedException();
-        }
 
         public void UpdateuserData(Registration reg)
         {
             try
             {
-                var UpdateQuery = $"update  Registration set  username ='{reg.userName}',password ='{reg.password}',email ='{reg.email}',mobilenumber ={reg.mobileNumber} where registrationid = {reg.regsitrationId}";
+                var UpdateQuery = $"update  Registration set  username ='{reg.userName}',password ='{reg.password}',email ='{reg.email}',mobilenumber ={reg.mobileNumber} where RegestrationID = {reg.regsitrationId}";
 
                 con.Open();
                 con.Execute(UpdateQuery);
@@ -79,7 +75,7 @@ namespace PraneshDataAcessLayer
         {
             try
             {
-                var UpdateQuery = $"delete from  Registration where registrationid = {reg.regsitrationId}";
+                var UpdateQuery = $"delete from Registration where RegestrationID = {reg.regsitrationId}";
                 con.Open();
                 con.Execute(UpdateQuery);
                 con.Close();
@@ -93,7 +89,7 @@ namespace PraneshDataAcessLayer
         {
             try
             {
-                var selectQuery = $"select registrationId as RegsitrationId, username,password,email,mobileNumber,address from registration";
+                var selectQuery = $"select RegestrationID as regsitrationId, username,password,email,mobileNumber,address from registration";
                 con.Open();
                 List<Registration> result = con.Query<Registration>(selectQuery).ToList();
                 con.Close();
