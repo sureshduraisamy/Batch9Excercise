@@ -79,7 +79,7 @@ namespace VikramDataAccessLayer
         {
             try
             {
-                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber}',address={reg.Address}where registrationID={reg.RegsitrationId}";
+                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber},address='{reg.Address}'where registrationID={reg.RegistrationId}";
                 //var connectionString = "server=DESKTOP-8VD1A1F\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
 
                 con.Open();
@@ -98,7 +98,7 @@ namespace VikramDataAccessLayer
             try
             {
                 
-                var updateQuery = $"Delete from registration where registrationId={regId.RegsitrationId}";
+                var updateQuery = $"Delete from registration where registrationId={regId.RegistrationId}";
                 con.Open();
                 con.Execute(updateQuery);
                 con.Close();
@@ -115,7 +115,7 @@ namespace VikramDataAccessLayer
         {
             try
             {
-                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber} where registrationID={reg.RegsitrationId}";
+                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber} where registrationID={reg.RegistrationId}";
                 //var connectionString = "server=DESKTOP-8VD1A1F\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
 
                 con.Open();
