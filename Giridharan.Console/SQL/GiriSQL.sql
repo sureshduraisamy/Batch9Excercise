@@ -93,3 +93,6 @@ select* from Registration r left outer join persondetails pd on r.registrationID
 select* from Registration r right outer join persondetails pd on r.registrationID = pd.registrationid
 select* from Registration r full outer join persondetails pd on r.registrationID = pd.registrationid
 order by username asc
+select RegistrationID,Username,Password,Email,MobileNumber,Adress from registration where Username='giri'
+
+select RegistrationID,Username,Password,Email,MobileNumber,Adress from registration where Username='{Username}'

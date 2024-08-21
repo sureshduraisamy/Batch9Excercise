@@ -10,10 +10,9 @@ namespace GiridharanConsole
         {
             try
             {
-                RegistrationRepository obj = new RegistrationRepository();
-                obj.SelectUserByUserName("Giri");
-               // RegistrationService resser = new RegistrationService();
-                //resser.MenuDriven();
+               
+                RegistrationService resser = new RegistrationService();
+                resser.MenuDriven();
                 // EmployeesDetails obj = new();
                 //obj.Details();
             }
