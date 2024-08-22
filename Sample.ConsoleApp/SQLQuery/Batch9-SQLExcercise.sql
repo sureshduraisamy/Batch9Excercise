@@ -157,3 +157,34 @@ delete from PersonDetails
 --7. Index - to speed up the data retrival process
 --Alaias
 select username as Name from registration
+
+--Joins - refer class notes
+
+--Stored procedure
+--Prcoedure without parameter
+create or alter procedure SelectAllUsers 
+as
+begin
+
+select RegistrationId as RegistrationId,Username,Password,Email,MobileNumber,Address
+from 
+Registration 
+end
+
+sp_helptext SelectAllUsers
+
+exec SelectAllUsers
+drop procedure SelectAllUsers
+
+--Prcoedure with parameter
+create or alter procedure InsertUser (@username nvarchar(200),@password nvarchar(200)) 
+as
+begin
+print @username
+print @password
+
+--insert into Registration values(@username)
+end
+
+exec InsertUser 'suresh','password'
+
