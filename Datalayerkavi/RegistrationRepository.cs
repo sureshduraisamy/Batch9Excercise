@@ -6,17 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using Microsoft.Extensions.Configuration;
+
 namespace DataAccesslayerkavi
 {
     public class RegistrationRepository
     {
-        string connectionString = "server=DESKTOP-DDKSO40\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
+        string connectionString = string.Empty; // "server=DESKTOP-DDKSO40\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
         SqlConnection con = null;
-        public RegistrationRepository()
+        public RegistrationRepository(IConfiguration configuration)
         {
+            connectionString = configuration.GetConnectionString("Dbconnectiov");
             con = new SqlConnection(connectionString);
         }
-
         public List<Registration> SelectALLUser()
         {
             try

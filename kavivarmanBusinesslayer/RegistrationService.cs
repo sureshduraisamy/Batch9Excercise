@@ -1,4 +1,5 @@
 ﻿using DataAccesslayerkavi;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,11 @@ namespace kavivarman.console
     public class RegistrationService
     {
         RegistrationRepository regRepObj = null;
-        public RegistrationService()
+        private IConfiguration reg;
+
+        public RegistrationService(IConfiguration reg)
         {
-            regRepObj = new RegistrationRepository();
+            regRepObj = new RegistrationRepository(reg);
         }
 
 
@@ -75,7 +78,7 @@ namespace kavivarman.console
         {
             try
             {
-                RegistrationRepository regRepObj = new RegistrationRepository();
+                RegistrationRepository regRepObj = new RegistrationRepository(reg);
                 var userRegData = new Registration();
                 Console.WriteLine("Enter the registeration -- id --  to delete ");
                 userRegData.RegsitrationId = Convert.ToInt32(Console.ReadLine());
@@ -109,7 +112,7 @@ namespace kavivarman.console
                 userRegData.MobileNumber = mobileNumber;
                 userRegData.RegsitrationId = (int)RegisterationId;
 
-                RegistrationRepository obj = new RegistrationRepository();
+                RegistrationRepository obj = new RegistrationRepository(reg);
                 obj.UpdateUser(userRegData);
 
             }

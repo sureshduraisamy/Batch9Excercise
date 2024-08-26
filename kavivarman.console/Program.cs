@@ -3,14 +3,17 @@ using GradeSystem;
 using kavivarman.console;
 using kavivarmanBusinesslayer;
 using DataAccesslayerkavi;
+using Microsoft.Extensions.Configuration;
 
 namespace kavivarman.console
 {
     class Program
     {
+        private static IConfiguration reg;
+
         static void Main(string[] args)
         {
-            RegistrationService obj = new RegistrationService();
+            RegistrationService obj = new RegistrationService(reg);
             obj.MenuDriven();
 
 

@@ -15,7 +15,7 @@ Insert into Registration(UserName,Password,Email,MobileNumber)
 
   --DQL(Data Query Language)
 
-	Select * from Registration
+	 		Select * from Registration
 	  select UserName,Password from Registration
 
 --07-08-2024
@@ -161,3 +161,4 @@ Insert into Registration(UserName,Password,Email,MobileNumber)
 		
 
 		
+ 

@@ -18,6 +18,7 @@ namespace SampleWabAPI
     {
         public Startup(IConfiguration configuration)
         {
+            var connection = configuration.GetConnectionString("Dbconnection");
             Configuration = configuration;
         }
 
