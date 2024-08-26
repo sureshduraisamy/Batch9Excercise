@@ -6,13 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using KarthickDataAccess.Entity;
+using Microsoft.Extensions.Configuration;
+
 namespace KarthickDataAccess
 {
    public class RegistrationRepository:IRegisterationRepository
     {
         string connectionString = "server=desktop-blbgehj\\sqlexpress;database=batch9;user Id =sa;password=Anaiyaan@123;";
         SqlConnection con = null;
-        public RegistrationRepository() {
+        public RegistrationRepository(IConfiguration configuration) {
+            connectionString =  configuration.GetConnectionString("DbConnection");
             con = new SqlConnection(connectionString);
         }
 

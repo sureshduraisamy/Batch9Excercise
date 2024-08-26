@@ -5,18 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 using KarthickDataAccess;
 using KarthickDataAccess.Entity;
+using Microsoft.Extensions.Configuration;
 
 namespace KarthickBusinessLayer
 {
     public class RegistrationService
     {
+        RegistrationRepository regRepObj = null;
+        public RegistrationService()
+        {
+            IConfiguration configuration = null;
+            regRepObj = new RegistrationRepository(configuration);
+        }
 
         public void MenuOption()
         {
             int input = 0;
             do
             {
-                RegistrationRepository regRepObj = new RegistrationRepository();
+            
                 regRepObj.SelectUserByUsername("karthick");
                 Console.WriteLine(regRepObj.SelectUserByUsername("karthick").regsitrationId);
 
