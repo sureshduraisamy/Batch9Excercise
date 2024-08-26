@@ -58,7 +58,7 @@ namespace KarthickBusinessLayer
     
         public void ShowAllUsersInformation()
         {
-            RegistrationRepository regRepObj = new RegistrationRepository();
+        
 
             var users = regRepObj.SelectALLUser();
 
@@ -72,7 +72,7 @@ namespace KarthickBusinessLayer
 
         public void RemoveRecord(){
             try {
-                RegistrationRepository regRepObj = new RegistrationRepository();
+               
                 var userRegData = new Registration();
                 Console.WriteLine("Enter the registeration -- id --  to delete ");
                 userRegData.regsitrationId = Convert.ToInt32(Console.ReadLine());
@@ -99,15 +99,15 @@ namespace KarthickBusinessLayer
                 Console.WriteLine("enter mobile number");
                 var mobileNumber = Convert.ToInt64(Console.ReadLine());
 
-                var userRegData = new Registration();
-                userRegData.userName = username;
-                userRegData.password = password;
-                userRegData.email = email;
-                userRegData.mobileNumber = mobileNumber;
-                userRegData.regsitrationId = RegisterationId;
+                var userRegData1 = new Registration();
+                userRegData1.userName = username;
+                userRegData1.password = password;
+                userRegData1.email = email;
+                userRegData1.mobileNumber = mobileNumber;
+                userRegData1.regsitrationId = RegisterationId;
 
-                RegistrationRepository obj = new RegistrationRepository();
-                obj.UpdateUser(userRegData);
+
+                regRepObj.UpdateUser(userRegData1);
 
             }
             catch (Exception e)
@@ -137,8 +137,8 @@ namespace KarthickBusinessLayer
                 userRegData.email = email;
                 userRegData.mobileNumber = mobileNumber;
 
-                RegistrationRepository obj = new RegistrationRepository();
-                obj.RegisterUser(userRegData);
+
+                regRepObj.RegisterUser(userRegData);
 
             }
             catch (Exception e)
