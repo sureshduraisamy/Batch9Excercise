@@ -14,10 +14,10 @@ namespace WebAPI_Karthick_.Controllers
     [ApiController]
     public class RegisterationController : ControllerBase
     {
-        RegistrationRepository objReg = null;
-        public RegisterationController()
+        IRegisterationRepository objReg = null;
+        public RegisterationController(IRegisterationRepository register)
         {
-            objReg = new RegistrationRepository();
+            objReg = register;
         }
 
         // GET: api/<RegisterationController>

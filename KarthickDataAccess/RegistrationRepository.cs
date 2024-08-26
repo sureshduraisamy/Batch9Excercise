@@ -8,7 +8,7 @@ using Dapper;
 using KarthickDataAccess.Entity;
 namespace KarthickDataAccess
 {
-   public class RegistrationRepository
+   public class RegistrationRepository:IRegisterationRepository
     {
         string connectionString = "server=desktop-blbgehj\\sqlexpress;database=batch9;user Id =sa;password=Anaiyaan@123;";
         SqlConnection con = null;
@@ -54,7 +54,13 @@ namespace KarthickDataAccess
             }
         }
 
-
+        /*
+          public List<Registration> SelectALLUser();
+         public void UpdateUser(Registration reg);
+         public void RegisterUser(Registration reg);
+          public Registration SelectUserByUsername(string username);
+          public void DeleteUserRecord(long regId);
+         */
 
 
         public List<Registration> SelectALLUser()
