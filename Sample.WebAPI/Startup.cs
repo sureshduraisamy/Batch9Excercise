@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Sample.WebAPI
 {
@@ -19,7 +20,7 @@ namespace Sample.WebAPI
     {
         public Startup(IConfiguration configuration)
         {
-            var cponnection = configuration.GetConnectionString("DbConnection");
+            
 
             var value = configuration.GetSection("Connections:DbConnection").Value;
 
@@ -36,7 +37,11 @@ namespace Sample.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
+            var connection = Configuration.GetConnectionString("DbConnection");
+            services.AddDbContext<SampleDbContext>(options => options.UseSqlServer(connection));
+
             services.AddTransient<IRegistrationRepository, RegistrationRepository>();
+            services.AddTransient<ILocationRepository, LocationRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
