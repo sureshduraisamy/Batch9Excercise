@@ -148,7 +148,7 @@ username in ( select username from registration where email like 'S%_r' )
 --3. Primary Key - It will not allow duplicats and null vlues ( Not null + unique)
 --4. Foreign Key - It is used to relate the records between the parent and child tables 
 Select * from Registration
-delete from Registration
+
 select * from PersonDetails
 delete from PersonDetails
 --5. Check - Used to restorcy the data based on the Condition
@@ -156,3 +156,34 @@ delete from PersonDetails
 --7. Index - to speed up the data retrival process
 --Alaias
 select username as Name from registration
+
+--Joins - refer class notes
+
+--Stored procedure
+--Prcoedure without parameter
+create or alter procedure SelectAllUsers 
+as
+begin
+
+select RegistrationId as RegistrationId,Username,Password,Email,MobileNumber,Address
+from 
+Registration 
+end
+
+sp_helptext SelectAllUsers
+
+exec SelectAllUsers
+drop procedure SelectAllUsers
+
+--Prcoedure with parameter
+create or alter procedure InsertUser (@username nvarchar(200),@password nvarchar(200)) 
+as
+begin
+print @username
+print @password
+
+--insert into Registration values(@username)
+end
+
+exec InsertUser 'suresh','password'
+

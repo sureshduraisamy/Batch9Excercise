@@ -1,3 +1,4 @@
+using DataAccessLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Sample.WebAPI
 {
@@ -18,7 +20,15 @@ namespace Sample.WebAPI
     {
         public Startup(IConfiguration configuration)
         {
+            
+
+            var value = configuration.GetSection("Connections:DbConnection").Value;
+
+            var resut = configuration.GetValue<string>("SMTP:Fromaddress");
+
+
             Configuration = configuration;
+            
         }
 
         public IConfiguration Configuration { get; }
@@ -26,6 +36,12 @@ namespace Sample.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            var connection = Configuration.GetConnectionString("DbConnection");
+            services.AddDbContext<SampleDbContext>(options => options.UseSqlServer(connection));
+
+            services.AddTransient<IRegistrationRepository, RegistrationRepository>();
+            services.AddTransient<ILocationRepository, LocationRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
