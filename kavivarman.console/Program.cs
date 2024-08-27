@@ -13,8 +13,8 @@ namespace kavivarman.console
 
         static void Main(string[] args)
         {
-            RegistrationService obj = new RegistrationService(reg);
-            obj.MenuDriven();
+          //  RegistrationService obj = new RegistrationService(reg);
+            //obj.MenuDriven();
 
 
 
