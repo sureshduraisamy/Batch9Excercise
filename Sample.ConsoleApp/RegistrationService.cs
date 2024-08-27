@@ -10,10 +10,10 @@ namespace BusinessLayer
 {
     public class RegistrationService
     {
-        RegistrationRepository regRepObj = null;
-        public RegistrationService()
+        IRegistrationRepository regRepObj = null;
+        public RegistrationService(IRegistrationRepository res)
         {
-            regRepObj = new RegistrationRepository();
+            regRepObj = res;
         }
 
 
