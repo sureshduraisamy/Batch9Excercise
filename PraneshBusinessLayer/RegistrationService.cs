@@ -53,12 +53,12 @@ namespace PraneshBusinessLayer
         public void ShowAllUsersInformation()
         {
             
-            var users = regRepObj.Selectalluser();
+            var users = regRepObj.selectAlluaer();
 
             Console.WriteLine($"RegestrationID --Username--Password--Email--MobileNumber--Address");
             foreach (Registration reg in users)
             {
-                Console.WriteLine($"{reg.regsitrationId } --{reg.userName}--{reg.password}--{reg.email}--{reg.mobileNumber}--{reg.address}");
+                Console.WriteLine($"{reg.RegestrationID } --{reg.userName}--{reg.password}--{reg.email}--{reg.mobileNumber}--{reg.address}");
             }
 
         }
@@ -70,7 +70,7 @@ namespace PraneshBusinessLayer
                 RegistrationRepository regRepObj = new RegistrationRepository();
                 var userRegData = new Registration();
                 Console.WriteLine("Enter the registeration -- id --  to delete ");
-                userRegData.regsitrationId = Convert.ToInt32(Console.ReadLine());
+                userRegData.RegestrationID = Convert.ToInt32(Console.ReadLine());
                 regRepObj.Deleteuser(userRegData);
             }
             catch (Exception e)
@@ -99,7 +99,7 @@ namespace PraneshBusinessLayer
                 userRegData.password = password;
                 userRegData.email = email;
                 userRegData.mobileNumber = mobileNumber;
-                userRegData.regsitrationId = RegisterationId;
+                userRegData.RegestrationID = RegisterationId;
 
                 RegistrationRepository obj = new RegistrationRepository();
                 obj.UpdateuserData(userRegData);
@@ -133,7 +133,7 @@ namespace PraneshBusinessLayer
                 userRegData.mobileNumber = mobileNumber;
 
                 RegistrationRepository obj = new RegistrationRepository();
-                obj.RegisterUser(userRegData);
+                obj.Registeruser(userRegData);
 
             }
             catch (Exception e)

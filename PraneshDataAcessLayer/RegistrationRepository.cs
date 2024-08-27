@@ -21,7 +21,7 @@ namespace PraneshDataAcessLayer
 
             try
             {
-                var selectQuery = $"select RegestrationID as regsitrationId ,username,pasword,email,mobialnumber,address from registration";
+                var selectQuery = $"select regestrationID as RegestrationId ,username,password,email,mobileNumber,address from Registration";
                 con.Open();
                 List<Registration> result = con.Query<Registration>(selectQuery).ToList();
                 con.Close();
@@ -55,12 +55,14 @@ namespace PraneshDataAcessLayer
 
             }
 
+       
+      
 
         public void UpdateuserData(Registration reg)
         {
             try
             {
-                var UpdateQuery = $"update  Registration set  username ='{reg.userName}',password ='{reg.password}',email ='{reg.email}',mobilenumber ={reg.mobileNumber} where RegestrationID = {reg.regsitrationId}";
+                var UpdateQuery = $"update  Registration set  username ='{reg.userName}',password ='{reg.password}',email ='{reg.email}',mobilenumber ={reg.mobileNumber} where RegestrationID = {reg.RegestrationID}";
 
                 con.Open();
                 con.Execute(UpdateQuery);
@@ -71,11 +73,11 @@ namespace PraneshDataAcessLayer
                 throw;
             }
         }
-        public void Deleteuser(Registration reg)
+        public void Deleteuser(long regId)
         {
             try
             {
-                var UpdateQuery = $"delete from Registration where RegestrationID = {reg.regsitrationId}";
+                var UpdateQuery = $"delete from Registration where RegestrationID = {regId}";
                 con.Open();
                 con.Execute(UpdateQuery);
                 con.Close();
@@ -85,13 +87,13 @@ namespace PraneshDataAcessLayer
                 throw;
             }
         }
-        public List<Registration> Selectalluser()
+        public Registration SelectByUsername(long RegestrationID)
         {
             try
             {
-                var selectQuery = $"select RegestrationID as regsitrationId, username,password,email,mobileNumber,address from registration";
+                var selectQuery = $"select RegestrationID, username,password,email,mobileNumber,address from Registration where RegestrationID = '{RegestrationID}'";
                 con.Open();
-                List<Registration> result = con.Query<Registration>(selectQuery).ToList();
+                Registration result = con.QueryFirstOrDefault<Registration>(selectQuery);
                 con.Close();
 
                 return result;
