@@ -11,7 +11,7 @@ namespace BusinessLayer
 
     public class MemberResgirtation : ExceptionHandling, ICommunication
     {
-        public MemberResgirtation(int c,string j):base(c,j)
+        public MemberResgirtation( int c,string j):base(c,j)
         {
            
             Console.WriteLine($"MemberRegistration----{c}");
