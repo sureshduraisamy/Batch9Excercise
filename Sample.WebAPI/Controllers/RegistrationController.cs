@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using Microsoft.Extensions.Configuration;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Sample.WebAPI.Controllers
@@ -14,10 +14,16 @@ namespace Sample.WebAPI.Controllers
     [ApiController]
     public class RegistrationController : ControllerBase
     {
-        RegistrationRepository reg = null; 
-        public RegistrationController()
+        IRegistrationRepository reg = null;
+        string smtpfromAddress = string.Empty;
+        string smtpPasword = string.Empty;
+
+        public RegistrationController(IConfiguration configuration, IRegistrationRepository regis)
         {
-            reg = new RegistrationRepository();
+            smtpfromAddress = configuration.GetValue<string>("SMTP:Fromaddress");
+            smtpPasword = configuration.GetValue<string>("SMTP:Password");
+
+            reg = regis;
         }
 
         // GET: api/<RegistrationController>
@@ -38,6 +44,7 @@ namespace Sample.WebAPI.Controllers
         [HttpPost]
         public void Post([FromBody] Registration regis)
         {
+            
 
             reg.RegisterUser(regis);
         }

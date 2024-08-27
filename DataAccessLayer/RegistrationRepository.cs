@@ -6,14 +6,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using Microsoft.Extensions.Configuration;
+
 namespace DataAccessLayer
 {
-    public class RegistrationRepository
+
+
+    public interface IRegistrationRepository
     {
-        string connectionString = "server=DESKTOP-8VD1A1F\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
+        public List<Registration> SelectALLUser();
+        public Registration SelectUserByUsername(string username);
+        public void RegisterUser(Registration reg);
+        public void UpdateUser(Registration reg);
+        public void DeleteUser(long regId);
+
+    }
+
+
+    public class RegistrationRepository: IRegistrationRepository
+    {
+        string connectionString = string.Empty; //"server=DESKTOP-8VD1A1F\\SQLEXPRESS;database=batch9;user Id =sa;password=Anaiyaan@123;";
         SqlConnection con = null;
-        public RegistrationRepository()
+        public RegistrationRepository(IConfiguration configuration)
         {
+            connectionString = configuration.GetConnectionString("DbConnection");
             con = new SqlConnection(connectionString);
         }
 
