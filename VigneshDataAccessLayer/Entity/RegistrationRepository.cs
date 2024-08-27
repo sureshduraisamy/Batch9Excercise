@@ -56,7 +56,7 @@ namespace VigneshDataAccessLayer.Entity
         {
             try
             {
-                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber})";
+                var insertQuery = $"insert into Registration(UserName,Password,Email,MobileNumber,Address) values ('{reg.UserName}','{reg.PassWord}','{reg.Email}',{reg.MobileNumber},'{reg.Address}')";
                 con.Open();
                 con.Execute(insertQuery);
                 con.Close();
@@ -71,7 +71,7 @@ namespace VigneshDataAccessLayer.Entity
         {
             try
             {
-                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber}, address='{reg.Address}' where registrationID={reg.RegsitrationId}";
+                var updateQuery = $"update registration set username='{reg.UserName}',password='{reg.PassWord}',email='{reg.Email}', mobilenumber={reg.MobileNumber}, address='{reg.Address}' where registrationID={reg.RegistrationId}";
                 con.Open();
                 con.Execute(updateQuery);
                 con.Close();

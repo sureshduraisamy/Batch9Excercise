@@ -8,7 +8,7 @@ namespace VigneshDataAccessLayer.Entity
 {
   public class Registration
     {
-        public long RegsitrationId { get; set; }
+        public long RegistrationId { get; set; }
         public string UserName { get; set; }
         public string PassWord { get; set; }
         public string Email { get; set; }

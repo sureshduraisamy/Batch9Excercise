@@ -115,7 +115,7 @@ Where username like 'r%r'
 Select 
 	UserName,Password 
 from 
-	Registration
+	Registration 
 Where username like 'r_s_%'
 --Order by
 --asc
