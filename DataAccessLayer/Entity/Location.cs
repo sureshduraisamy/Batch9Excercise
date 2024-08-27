@@ -16,5 +16,7 @@ namespace DataAccessLayer.Entity
 
        public string DistrictName { get; set; }
 
+       public string Description { get; set; }
+
     }
 }
