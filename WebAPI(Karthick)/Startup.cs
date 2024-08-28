@@ -32,7 +32,7 @@ namespace WebAPI_Karthick_
         {
             var connection = Configuration.GetConnectionString("DbConnection");
             services.AddDbContext<LocationDBContext>(options => options.UseSqlServer(connection));
-
+           
             services.AddTransient<IRegisterationRepository,RegistrationRepository>();
             services.AddTransient<ILocationRepository,LocationRepository>();
             services.AddControllers();

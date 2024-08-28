@@ -11,6 +11,7 @@ namespace KarthickDataAccess
     public interface ILocationRepository
     {
         public void InsertLocation(Location loc);
+        public Location GetLocationByName(string name);
         public List<Location> GetAllLocationInfo();
     }
 

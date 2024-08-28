@@ -27,16 +27,23 @@ namespace WebAPI_Karthick_.Controllers
         }
 
         // GET api/<ValuesController>/5
-        [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        [HttpGet("{locationName}")]
+        public IActionResult Get(string locationName)
         {
-            return Ok();
+            return Ok(locate.GetLocationByName(locationName));
         }
 
         // POST api/<ValuesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Location value)
         {
+            try {
+                locate.InsertLocation(value);
+            }catch(Exception e)
+            {
+                throw e;
+            }
+            
         }
 
         // PUT api/<ValuesController>/5
