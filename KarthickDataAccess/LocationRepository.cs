@@ -10,9 +10,11 @@ namespace KarthickDataAccess
 
     public interface ILocationRepository
     {
+        public void UpdateLocation(Location detail);
         public void InsertLocation(Location loc);
         public Location GetLocationByName(string name);
         public List<Location> GetAllLocationInfo();
+        public void DeleteLocation(int id);
     }
 
  public  class LocationRepository: ILocationRepository
@@ -59,6 +61,40 @@ namespace KarthickDataAccess
             {
                 throw;
             }
+
+        }
+
+        public void UpdateLocation(Location detail)
+        {
+          
+            try {
+                DBContext.Location.Update(detail);
+                DBContext.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+           
+        }
+
+        public void DeleteLocation(int id)
+        {
+           
+            try
+            {
+                var locationID = DBContext.Location.Find(id);
+                if (locationID != null)
+                {
+                    DBContext.Location.Remove(locationID);
+                    DBContext.SaveChanges();
+                }
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+
 
         }
     }

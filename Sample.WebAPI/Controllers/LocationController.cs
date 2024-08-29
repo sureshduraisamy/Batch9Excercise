@@ -71,6 +71,7 @@ namespace Sample.WebAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            rep.DeleteLocation();
         }
     }
 }
