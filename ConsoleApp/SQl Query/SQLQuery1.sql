@@ -131,3 +131,21 @@ registration as R  left outer  join  PersonDetail as PD  on R.RegistrationId=Pd.
 select * from
 registration as R  full outer  join  PersonDetail as PD  on R.RegistrationId=Pd.RegsiterationId
 
+alter table registration add  salary bigint 
+
+Update Registration set salary=19000 where UserName like'q%';
+--case
+select 
+USERNAME,
+CASE
+when salary >= 20000 then 'top grade' 
+when  salary > 15000 and salary <20000 then'middle grade' 
+else 'low grade'
+end as grade
+from registration
+--Delete from registration where username =''
+
+select registrationid,username from registration union select RegsiterationId,panNumber from persondetail
+
+select count(salary),salary from registration group by salary
+select salary,username from registration group by salary,username having min(salary)>1
