@@ -108,14 +108,13 @@ select max(registrationID) from registration
 select avg(registrationID) from registration
 select sum(registrationID) from registration
 
---joins
+-- joins
 create table PersonDetails
 (
  PersonDetailsID bigint not null identity(1,1),
  Aadhaar bigint not null,
  PanNumber varchar(20) not null,
- registrationID bigint not null 
- 
+ registrationID bigint not null,
 )
 drop table 	PersonDetails
  Select * from Registration
@@ -156,8 +155,32 @@ Insert into Registration(UserName,Password,Email,MobileNumber)
 	 	*
 		from
 		registration as r full outer join persondetails as pd on r.registrationID=pd.registrationID
-		
-		
+	--Group By
+	select cuont*,pd.PanNumber,
+	from
+	registration as r inner join persondetails as pd on r.registrationID=pd.registrationID
+	where PanNumber like'kavi123'
+	group by pd.PanNumber
+	--case
+	select
+	UserName,Email,
+	case
+	when Email like 'kavi msd' then 'yes'
+	else 'no'
+	end	
+	from Registration
+
+	select
+	count(*),address
+	from
+		 registration
+	group by
+			address;
+	
+
+	 
+	
+
 		
 
 		
