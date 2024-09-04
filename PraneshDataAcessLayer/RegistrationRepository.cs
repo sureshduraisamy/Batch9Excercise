@@ -87,6 +87,12 @@ namespace PraneshDataAcessLayer
                 throw;
             }
         }
+
+        public void Deleteuser(Registration userRegData)
+        {
+            throw new NotImplementedException();
+        }
+
         public Registration SelectByUsername(long RegestrationID)
         {
             try

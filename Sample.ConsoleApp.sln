@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PraneshBusinessLayer", "Pra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PraneshDataAcessLayer", "PraneshDataAcessLayer\PraneshDataAcessLayer.csproj", "{DE1B3B8A-A6C3-4779-BC99-A0A84E1AED07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraneshWebApi", "PraneshWebApi\PraneshWebApi.csproj", "{92C70F7B-FB0C-4EEE-9097-B7DA7466E1F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PraneshWebApi", "PraneshWebApi\PraneshWebApi.csproj", "{92C70F7B-FB0C-4EEE-9097-B7DA7466E1F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{AF244428-42A5-4E9B-9810-CB843647FB4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{92C70F7B-FB0C-4EEE-9097-B7DA7466E1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92C70F7B-FB0C-4EEE-9097-B7DA7466E1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92C70F7B-FB0C-4EEE-9097-B7DA7466E1F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF244428-42A5-4E9B-9810-CB843647FB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF244428-42A5-4E9B-9810-CB843647FB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF244428-42A5-4E9B-9810-CB843647FB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF244428-42A5-4E9B-9810-CB843647FB4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
