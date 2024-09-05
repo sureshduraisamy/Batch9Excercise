@@ -1,0 +1,17 @@
+﻿table{
+  
+    display :flex ;
+    justify-content :center ;
+    background-color :lightblue ;
+    align-items :center ;
+    height :80vh
+  
+}
+h1{
+    background-color :lightblue  ;
+    width :contain ;
+    border :double ;
+    display :flex ;
+    justify-content :center ;
+    height :auto ;
+}
