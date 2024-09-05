@@ -1,0 +1,14 @@
+﻿table#Details {
+    margin:auto;
+    width: 35%;
+    padding: 10px;
+    color:black;
+}
+body {
+    background-image: url(file:///C:/Users/TEC%20BUDDY/AppData/Roaming/Microsoft/Windows/Network%20Shortcuts/Course.webp)
+}
+h1#header {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
