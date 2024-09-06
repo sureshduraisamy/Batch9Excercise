@@ -1,0 +1,16 @@
+﻿table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color:white;
+        
+}
+body {
+    background-image: url(ms-dhoni-team-india-national-cricket-team-shikhar-dhawan-wallpaper-preview.jpg)
+}

@@ -142,6 +142,25 @@ Select * from Registration
  full outer join PersonDetails
 on Registration.RegistrationId=PersonDetails.RegistrationId
 
+---GroupBy
+
+select count(*) ,Username,address
+ 
+from registration
+
+group by Username,address
+
+---Case
+select 
+Username,
+case
+When Username Like 'Vikram' then'yes'
+else'no'
+end
+from registration
+
+
+
 
 
 
