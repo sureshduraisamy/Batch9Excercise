@@ -4,38 +4,118 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        table{
+            color:red;background-color:black;
+        }
+    </style>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script>
+        function save() {
+            debugger;
+            var Name = document.getElementById("user").value;
+            if (Name == null) {
+                alert("please enter the name");
+                return;
+            }
+            debugger;
+            var Degree = document.getElementById("degree").value;
+            if (Degree == null) {
+                alert("please enter the Degree");
+                return;
+            }
+            debugger;
+            var UID = document.getElementById("uid").value;
+            if (UID == null) {
+                alert("please enter the UID ");
+                return;
+            }
+            debugger;
+            var DateofBirth = document.getElementById("date").value;
+            if (DateofBirth == null) {
+                alert("please enter the DateofBirth ");
+                return;
+            }
+            debugger;
+            var HospitalName = document.getElementById("hospital").value;
+            if (HospitalName == null) {
+                alert("please enter the HospitalName ");
+                return;
+            }
+            debugger;
+            var MobileNumber = document.getElementById("mobile").value;
+            if (MobileNumber == null) {
+                alert("please enter the MobileNumber ");
+                return;
+            }
+            var JsonObj = {
+                "Name": Name,
+                "Degree": Degree,
+                "UID": UID,
+                "DateofBirth": DateofBirth,
+                "HospitalName": HospitalName,
+                "MobileNumber": MobileNumber
+            }
+
+
+        }
+      </script>
 </head>
 <body>
     <from>
-        <label for="id">
-            Name:
-        </label><br>
-        <input type="text" id="user" name="id"/><br>
-
-        <label for="dg">
-            Degree:
-        </label><br>
-        <input type="text" id="degree" name="dg" /><br>
-
-        <label for="ui">
-            UID:
-        </label><br>
-        <input type="number" id="uid" name="ui" /><br>
-
-        <labe for="dob">
-            DateofBirth:
-        </labe ><br>
-        <input date="" id="date" name="dob" /> <br>
-
-        <label for="hp">
-            HospitalName:
-        </label><br>
-        <input type="text" id="hospital" name="hp" /><br>
-
-        <label for="mn">
-            MobileNumber:
-        </label><br>
-        <input type="number" id="mobile" name="mn" /><br>
-        </from>
+        degree
+        <div>
+            <h1> DoctorDetails </h1>
+            <table id="Details">
+                <tr>
+                    <td>
+                        <label> Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="user" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Degree: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>UID: </label>
+                    </td>
+                    <td>
+                        <input type="number" id="uid" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <labe> DateofBirth:</labe>
+                    </td>
+                    <td> <input type="date" id="date" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>HospitalName: </label>
+                    </td>
+                    <td><input type="text" id="hospital" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>MobileNumber: </label>
+                    </td>
+                    <td> <input type="number" id="mobile" /></td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td> <input type="button" onclick="save();" value="Submit"/></td>
+                </tr>
+            </table>
+        </div>ss
+    </from>
 </body>
 </html>
