@@ -14,9 +14,33 @@
     <title> </title>
  
     <link rel="stylesheet" href="StyleSheet.css"/>
+    <script>
+        function save() {
+            debugger;
+            var Name = document.getElementById("user").value;
+            if (Name == null) {
+                alter("please enter the name");
+                return;
+            }
+                var Name = document.getElementById("address").value;
+                if (Name == null) {
+                    alter("please enter the address");
+                    return;
+                }
+
+                    var Name = document.getElementById("phonenumber").value;
+                    if (Name == null) {
+                        alter("please enter the phonenumber");
+                        return;
+
+                    }
+  </script>
+    
 </head>
 <body>
+ 
     <h1>  STUDENTS TABLE</h1>
+   
     <div>
         <table>
             <tr>
@@ -37,7 +61,10 @@
 
                 <td> <input type=" number " placeholder=" number" /></td>
             </tr>
-
+            <tr >
+                <td></td>
+                <td > <input type="button" value="save" onclick="save()" placeholder="save"/></td>
+            </tr>
 
         </table>
     </div>
