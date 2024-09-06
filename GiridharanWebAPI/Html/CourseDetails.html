@@ -6,6 +6,53 @@
 
     </style>
     <link href="CourseDetails.css" rel="stylesheet" />
+    <script>
+        alert("Page Load");
+        console.log("true");
+        function Save()
+        {
+            debugger;
+            var name = document.getElementById("PersonName").value;
+            var institutionname = document.getElementById("InstitusionName").value;
+            var enquirynumber = document.getElementById("Number").value;
+            var startdate = document.getElementById("Startdate").value;
+            var enddate = document.getElementById("Enddate").value;
+            if (name == "") {
+
+                alert("Please enter Name");
+                return;
+
+            }
+            else if (institutionname == "") {
+
+                alert("Please enter InstitusionName");
+                return;
+
+            }
+            else if (enquirynumber == "") {
+                alert("Please enter Enquirynumber");
+                return;
+            }
+            else if (startdate == "") {
+                alert("Please enter Startdate");
+                return;
+            }
+            else if (enddate == "")
+            {
+                alert("Please enter Enddate");
+                return;
+            }
+            var jsonobj = {
+                "Name": name,
+                "InstitusionName": institutionname,
+                "Enquirynumber": enquirynumber,
+            }
+            return name;
+            return institutionname;
+            return enquirynumber;
+            
+        }
+    </script>
 </head>
 <body>
     <form>
@@ -15,7 +62,7 @@
                 Welcome to our CourseDetails Website.Kindly submit your respective answers for  the given questions
             </p>
             <hr />
-            <img id="image" />
+            
             <table id="Details" name="" class="" style="" height="25px">
                 <tr>
 
@@ -50,7 +97,7 @@
                 <tr>
                     <td>
                     </td>
-                    <td> <input type="button" name="submit" value="submit" /></td>
+                    <td> <input type="button" name="submit" onclick="Save();" value="submit" /></td>
                 </tr>
 
 
