@@ -4,6 +4,22 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="StyleSheet.css" />
+
+    <script>
+        var vehicleId
+        function getVehicleData() {
+            debugger;
+            vehicleId = document.getElementById("vehicleId").value;
+            if (vehicleId == null) {
+                alert("please enter every detail");
+                return;
+            }
+            var VehicleObject = {
+                "vehicleId": vehicleId
+            }
+        }
+    </script>
+
 </head>
 <body>
     <h1 id="Heading">Delete Vehicle Information</h1>

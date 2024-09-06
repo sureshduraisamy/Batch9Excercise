@@ -12,7 +12,37 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-   <link rel="stylesheet" href="StyleSheet.css"/>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <script>
+        var vehicleName, vehicleNumber, insuranceNumber, driverContactNumber, fCdate, ownerName;
+        // vehicleName,vehicleNumber,insuranceNumber,DriverContactNumber,FcDate,OwnerName
+        function getVehicleData() {
+            debugger;
+            vehicleName = document.getElementById("vehicleName").value;
+            vehicleNumber = document.getElementById("vehicleNumber").value;
+            insuranceNumber = document.getElementById("insuranceNumber").value;
+            driverContactNumber = document.getElementById("DriverContactNumber").value;
+            fCdate = document.getElementById("FcDate").value;
+            ownerName = document.getElementById("OwnerName").value;
+            alert("value passed to json variable");
+
+            if (vehicleName == "" || vehicleNumber == 0 || insuranceNumber == 0 || driverContactNumber == 0 || fCdate == "" || ownerName == "") {
+
+                alert("please enter every detail");
+                return;
+            }
+                var VehicleObject = {
+                    "vehicleName": vehicleName,
+                    "vehicleNumber": vehicleNumber,
+                    "insuranceNumber": insuranceNumber,
+                    "driverContactNumber": driverContactNumber,
+                    "fCdate": fCdate,
+                    "ownerName": ownerName
+
+                }
+            
+        }
+    </script>
 </head>
 <body>
     <h1 id="Heading">vehicle Registeration</h1>
@@ -38,6 +68,16 @@
             </tr>
 
             <tr>
+                <td>
+                    <label> vehicle Number</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="tn37 cb 3636" id="vehicleNumber" name="vehicleNumber" />
+                </td>
+
+            </tr>
+
+            <tr>
                 <td> <label> insurance Number</label></td>
                 <td> <input type="number" placeholder="1234567890" id="insuranceNumber" name="insuranceNumber" />  </td>
             </tr>
@@ -56,15 +96,14 @@
                 <td><label>Owner Name</label></td>
                 <td> <input type="text" placeholder="manikandan" id="OwnerName" name="OwnerName" /></td>
             </tr>
+
         </table>
         <div class="SubmitButtonDiv">
-            <input id="submit"  class="SubmitButton" value="submit" type="button" />
+            <input id="submit"  class="SubmitButton" onclick="getVehicleData()" value="submit" type="button" />
         </div>
     </div>
 
-    <script>
-
-    </script>
+    
 </body>
 
 </html>

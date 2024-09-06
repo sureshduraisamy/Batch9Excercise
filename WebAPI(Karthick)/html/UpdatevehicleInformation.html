@@ -5,6 +5,39 @@
     <title></title>
 
     <link rel="stylesheet" href="StyleSheet.css" />
+
+    <script>
+        var vehicleId,vehicleName, vehicleNumber, insuranceNumber, driverContactNumber, fCdate, ownerName;
+        // vehicleName,vehicleNumber,insuranceNumber,DriverContactNumber,FcDate,OwnerName
+        function getVehicleData() {
+            debugger;
+            vehicleId = document.getElementById("vehicleId").value;
+            vehicleName = document.getElementById("vehicleName").value;
+            vehicleNumber = document.getElementById("vehicleNumber").value;
+            insuranceNumber = document.getElementById("insuranceNumber").value;
+            driverContactNumber = document.getElementById("DriverContactNumber").value;
+            fCdate = document.getElementById("FcDate").value;
+            ownerName = document.getElementById("OwnerName").value;
+
+            if (vehicleId==null&&vehicleName == null && vehicleNumber == null && insuranceNumber == null && driverContactNumber == null && fCdate == null && ownerName == null) {
+                alert("please enter every detail");
+                return;
+
+                var VehicleObject = {
+                    "vehicleId": vehicleId,
+                    "vehicleName": vehicleName,
+                    "vehicleNumber": vehicleNumber,
+                    "insuranceNumber": insuranceNumber,
+                    "driverContactNumber": driverContactNumber,
+                    "fCdate": fCdate,
+                    "ownerName": ownerName
+
+                }
+            }
+        }
+    </script>
+
+
 </head>
 <body>
 
