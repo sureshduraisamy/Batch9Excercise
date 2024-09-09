@@ -1,12 +1,84 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <script>
+        function Save() {
+            debugger;
+            var CricketerName = document.getElementById("CricketerName").value;
+            var Totalinnings = document.getElementById("Totalinnigs").value;
+            var TotalScore = document.getElementById("TotalScore").value;
+            var DateofBirth = document.getElementById("DateofBirth").value;
+            var NumberofFifties = document.getElementById("NumberofFifties".value);
+            var NumberofHundreds = document.getElementById("NumberofHundreds").value;
+            var HighestScore = document.getElementById("HighestScore").value;
+
+            if (CricketerName == "") {
+                alert("Please enter your Name");
+                return;
+            }
+
+            else if (Totalinnings == "") {
+                alert("Please entre the field Totalinnigs");
+                return;
+            }
+            else if (TotalScore == "") {
+                alert("Please enter the TotalScore");
+            }
+            else if (DateofBirth == "") {
+                alert("Please enter the DateofBirth");
+            }
+            else if (NumberofFifties == "") {
+                alert("Please enter the Fifties");
+
+            }
+            else if (NumberofHundreds == "") {
+                alert("Please enter the Hundreds");
+            }
+            else if (HighestScore == "") {
+                alert("Please enter the HighestScore");
+
+                return false;
+            }
+
+            var JsonObj = {
+                "CricketerName": CricketerName,
+                "Totalinnings": Totalinnings,
+                "TotalScore": TotalScore,
+                "DateofBirth": DateofBirth,
+                "NumberofFifties": NumberofFifties,
+                "NumberofHundreds": NumberofHundreds,
+                "HighestScore": HighestScore
+
+            }
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("POST", "https://localhost:44350/api/CricketersDetails");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                alert("success");
+            };
+
+            xhttp.send(JSON.stringify(JsonObj));
+            
+            
+
+
+            
+
+        }
+    </script>
     <Link href="StyleSheet.css"rel="stylesheet" />
     <meta charset="utf-8" />
     <title></title>
 </head>
+
 <body>
-   <from>
+    
+    
+   <form>
+
        <div>
            <h1>
                Cricketer Details
@@ -17,7 +89,7 @@
                        <label> Name: </label>
                    </td>
                    <td>
-                       <input type="text"id="txt" />
+                       <input type="text"id="CricketerName" />
                    </td>
                </tr>
                <tr>
@@ -26,7 +98,7 @@
 
                    </td>
                    <td>
-                       <input type="text"id="total" />
+                       <input type="text"id="Totalinnigs" />
                    </td>
                </tr>
                <tr>
@@ -34,7 +106,7 @@
                        <label>Totalscore:</label>
                    </td>
                    <td>
-                       <input type="text"id="scr" />
+                       <input type="text"id="TotalScore" />
                    </td>
                </tr>
                <tr>
@@ -42,7 +114,7 @@
                        <label>Date of birth:</label>
                    </td>
                    <td>
-                       <input type="text"id="DoB" />
+                       <input type="text"id="DateofBirth" />
                    </td>
                </tr>
                <tr>
@@ -50,7 +122,7 @@
                        <label>No.Of Fifties:</label>
                    </td>
                    <td>
-                       <input type="text"id="fif" />
+                       <input type="text"id="NumberofFifties" />
                    </td>
                </tr>
                <tr>
@@ -58,7 +130,7 @@
                        <label>No.of Hundreds:</label>
                    </td>
                    <td>
-                       <input type="text"id="Hun" />
+                       <input type="text"id="NumberofHundreds" />
                    </td>
                </tr>
                <tr>
@@ -66,12 +138,14 @@
                        <label>Highestscore:</label>
                    </td>
                    <td>
-                       <input type="text"id="tcs" />
+                       <input type="text"id="HighestScore" />
                    </td>
                </tr>
            </table>
+
        </div>
-   </from>
+       <input value="submit"type="button" onclick="Save()" />
+   </form>
     
     
 </body>
