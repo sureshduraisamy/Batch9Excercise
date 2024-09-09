@@ -17,6 +17,7 @@
             var enquirynumber = document.getElementById("Number").value;
             var startdate = document.getElementById("Startdate").value;
             var enddate = document.getElementById("Enddate").value;
+            var fees = document.getElementById("Fees").value;
             if (name == "") {
 
                 alert("Please enter Name");
@@ -37,24 +38,60 @@
                 alert("Please enter Startdate");
                 return;
             }
-            else if (enddate == "")
-            {
+            else if (enddate == "") {
                 alert("Please enter Enddate");
                 return;
             }
-            var jsonobj = {
-                "Name": name,
-                "InstitusionName": institutionname,
-                "Enquirynumber": enquirynumber,
+            else if (fees == "") {
+                alert("please select your fees");
+                return;
             }
+            var jsonobj = {
+                "name": name,
+                "institutionName": institutionname,
+                "enquiryNumber": enquirynumber,
+                "startdate": startdate,
+                "enddate": enddate,
+                "fees": fees
+            }
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("POST","https://localhost:44304/api/CourseDetails");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                alert("success");
+            };
+
+            xhttp.send(JSON.stringify(jsonobj));
+
             return name;
             return institutionname;
             return enquirynumber;
+            return startdate;
+            return enddate;
+            return fees;
             
+        };
+        function GetUserRecord() {
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", "https://localhost:44304/api/courseDetails");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                var res = JSON.parse(xhttp.response);
+                console.log(res);
+                alert("success");
+            };
+
+            xhttp.send();
         }
     </script>
 </head>
-<body>
+<body onload="GetUserRecord()">
     <form>
         <div>
             <h1 id="header">CourseDetails </h1>
@@ -92,7 +129,11 @@
                 <tr>
 
                     <td width="80px"> <label> Fees </label> </td>
-                    <td> <input type="text" id="Fees" class="txtbox" style="" value="" placeholder="Enter your Fees " /> </td>
+                    <td> <select id="Fees" class="dropdown">
+                         <option>80000</option>
+                         <option>60000</option>
+                         <option>25000</option>
+                         </select> </td>
                 </tr>
                 <tr>
                     <td>
