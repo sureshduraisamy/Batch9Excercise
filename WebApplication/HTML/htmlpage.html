@@ -12,59 +12,86 @@
 
     <meta charset="utf-8" />
     <title> </title>
- 
-    <link rel="stylesheet" href="StyleSheet.css"/>
+    <link rel="stylesheet" href="StyleSheet.css" />
     <script>
         function save() {
             debugger;
-            var Name = document.getElementById("user").value;
-            if (Name == null) {
+
+            var Name = document.getElementById("pranesh").value;
+            if (Name == "") {
                 alter("please enter the name");
                 return;
             }
-                var Name = document.getElementById("address").value;
-                if (Name == null) {
-                    alter("please enter the address");
-                    return;
-                }
+            var adress = document.getElementById("address").value;
+            if (adress == "") {
+                alter("please enter the address");
+                return;
 
-                    var Name = document.getElementById("phonenumber").value;
-                    if (Name == null) {
-                        alter("please enter the phonenumber");
-                        return;
+            }
 
-                    }
-  </script>
-    
+            var phonenumber = document.getElementById("phonenumber").value;
+            if (phonenumber == "") {
+                alter("please enter the phonenumber");
+                return;
+
+            }
+
+            var jsonObj = {
+                "name ": Name,
+                "address": adress,
+                "phoneNumber": phonenumber
+            };
+
+
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("POST", "https://localhost:44373/api/Student");
+
+
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                alert("success");
+            };
+
+            xhttp.send(JSON.stringify(jsonObj));
+        }
+
+            
+        
+                
+    </script>
+
 </head>
 <body>
- 
+
     <h1>  STUDENTS TABLE</h1>
-   
+
     <div>
         <table>
             <tr>
 
                 <td>  <lable> name</lable></td>
 
-                <td> <input type="text" placeholder="pranesh" /></td>
+                <td> <input type="text" placeholder="pranesh" id="pranesh" /></td>
             </tr>
 
             <tr>
                 <td> <label> address</label></td>
 
-                <td> <input type=" text" text " placeholder="palani" /></td>
+                <td> <input type="text"  placeholder="palani"  id="address"/></td>
             </tr>
 
             <tr>
                 <td> <lable>phonenumber</lable></td>
 
-                <td> <input type=" number " placeholder=" number" /></td>
+                <td> <input type="number" placeholder=" number" id="phonenumber" /></td>
             </tr>
-            <tr >
+            <tr>
                 <td></td>
-                <td > <input type="button" value="save" onclick="save()" placeholder="save"/></td>
-            </tr>
+                <td> <input type="button" value="save" onclick="save()" placeholder="save" /></td>
+            </tr>s
 
         </table>
     </div>
