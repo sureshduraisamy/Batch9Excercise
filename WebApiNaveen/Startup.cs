@@ -18,6 +18,7 @@ namespace WebApiNaveen
     {
         public Startup(IConfiguration configuration)
         {
+            var connection = configuration.GetConnectionString("Dbconnection");
             Configuration = configuration;
         }
 

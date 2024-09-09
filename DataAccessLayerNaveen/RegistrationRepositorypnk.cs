@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using DataAccessLayerNaveen.Entity;
+using Microsoft.Extensions.Configuration;
 
 namespace DataAccessLayerNaveen
 {
     public class RegistrationRepositorynk
 
     {
-        string connectionString = "server=DESKTOP-Q9V2K5P\\SQLEXPRESS;database=Batch 9;user Id =sa;password=Anaiyaan@123;";
+        string connectionString = null; //"server=DESKTOP-Q9V2K5P\\SQLEXPRESS;database=Batch 9;user Id =sa;password=Anaiyaan@123;";
         SqlConnection con = null;
-        public RegistrationRepositorynk()
+        public RegistrationRepositorynk(IConfiguration configuration )
         {
+            connectionString = configuration.GetConnectionString("DbConnection");
             con = new SqlConnection(connectionString);
         }
         public void Registeruser(Registrationnk reg)

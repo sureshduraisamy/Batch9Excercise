@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ProductList</title>
+    <link href="StyleSheet.css" rel="stylesheet"/>
+    <script>
+        function save() {
+            debugger;
+            var Name = document.getElementById("ProductName").value;
+            var Price = document.getElementById("ProductPrice").value;
+            var OfferPrice = document.getElementById("Productofferprice").value;
+            var NetWeight = document.getElementById("productweight").value;
+            var ExpiryDate = document.getElementById("prodctexpiry").value;
+            var ManufatureDate = document.getElementById("productmanufacture").value;
+            alert("values passed successfully")
+            if (Name == "" || Price == 0 || OfferPrice == 0 || NetWeight == 0 || ExpiryDate= "" || ManufatureDate="") {
+                alert("enter all the Details")
+                return false;
+            }
+            var JsonObj = {
+                "Name": Name,
+                "Price": Price,
+                "OfferPrice": OfferPrice,
+                "Netweight": NetWeight,
+                "Expirydate": ExpiryDate,
+                "Manufacture": ManufatureDate
+            };
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("POST, "https://localhost:44306/api/Product");
+            xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+                alert("success");
+            };
+            xhttp.send(JSON.stringify(JsonObj));
+
+
+        }
+        
+    </script>
+</head>
+<body>
+<h1 class="product">ProductDetails</h1>
+<form>
+    <table class="one">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" placeholder="Enter Name" id="ProductName" />
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="number" placeholder="Enter Price" id="ProductPrice" />
+        </tr>
+        <tr>
+            <td>OfferPrice:</td>
+            <td><input type="number" placeholder="Enter OfferPrice" id="Productofferprice" />
+        </tr>
+        <tr>
+            <td>NetWeight</td>
+            <td><input type="number" placeholder="Enter Netweight" id="productweight" />
+        </tr>
+        <tr>
+            <td>ExpiryDate:</td>
+            <td><input type="date" placeholder="Enter ExpiryDate" id="prodctexpiry" />
+        </tr>
+        <tr>
+            <td>ManufatureDate:</td>
+            <td><input type="date" placeholder="Enter ManufatureDate " id="productmanufacture" />
+        </tr>
+        <tr>
+            <td><input type="button" onclick="save();" value="Submit" /></td>
+        </tr>
+    </table>
+  </form>
+
+</body>
+</html>
