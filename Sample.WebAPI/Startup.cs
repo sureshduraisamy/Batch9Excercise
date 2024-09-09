@@ -48,6 +48,8 @@ namespace Sample.WebAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sample.WebAPI", Version = "v1" });
             });
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,6 +61,15 @@ namespace Sample.WebAPI
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sample.WebAPI v1"));
             }
+
+            app.UseCors(builder =>
+            {
+                builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            });
+
 
             app.UseHttpsRedirection();
 

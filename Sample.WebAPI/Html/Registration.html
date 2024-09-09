@@ -1,0 +1,176 @@
+<html>
+<head>
+    <title> Anaiyaan </title>
+    <style>
+        table#regg {
+            color: red;
+            background-color: rosybrown;
+            font-size: 12px;
+        }
+
+        p {
+            color: orange;
+        }
+
+        input[type="txt"] {
+            color: aqua !important;
+        }
+    </style>
+    <link href="Basic.css" rel="stylesheet" />
+    <script>
+
+        alert("Page Load");
+        console.log("true");
+
+        var a = 0;
+        var b = 'asdfsf';
+
+        var c = a > b && a > 10;
+
+        if (a > b) {
+
+            console.log("true")
+        } else if (a > 30) {
+            console.log("true")
+        }
+
+        switch (c) {
+            case 1:
+                break;
+        }
+
+        for (var i = 0; i < 10; i++) {
+
+        }
+
+        while (c) {
+
+        }
+
+        var h = 0;
+        do {
+            h++;
+        } while (h < 10);
+
+        var f = [];
+        f.push(10);
+        f.push(20);
+        f.pop();
+
+        var d = {};
+
+
+        
+        
+        function Save() {
+            debugger;
+            var email = document.getElementById("txtEmail").value;
+            if (email.length == 0 || email =='') {
+                alert("Please enter email");
+                return false;
+            }
+
+
+            var JsonObj = {
+                "Email": email,
+                "UserName": email,
+                "PassWord": email,
+                "MobileNumber": 8754481205
+            };
+
+
+            const xhttp = new XMLHttpRequest();
+            
+            xhttp.open("POST", "https://localhost:44330/api/Registration");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                alert("success");
+            };
+
+            xhttp.send(JSON.stringify(JsonObj) );
+
+
+            return email;
+        }
+
+
+        function GetUserRecord() {
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", "https://localhost:44330/api/Registration");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                var res = JSON.parse(xhttp.response);
+                console.log(res);
+                alert("success");
+            };
+
+            xhttp.send();
+        }
+
+    </script>
+
+    <script>
+
+        
+
+    </script>
+</head>
+<body  onload="GetUserRecord()"  >
+    <form>
+        <div>
+            <h1> Registration</h1>
+            <hr />
+            <table id="reg" name="" class="" style="" height="25px">
+                <tr>
+                    <td width="120px"> <label> Email </label> </td>
+                    <td> <input type="text" id="txtEmail" class="txtbox" style="" value="" placeholder="Enter Email" /> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Phone Number </label>
+
+                    </td>
+                    <td> <input type="text" id="txtPhonNo" class="txtbox" placeholder="PhoneNumber" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Username </label>
+
+                    </td>
+                    <td width="40px"> <input type="text" class="txtbox" id="txtUserName" placeholder="Username" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Password </label>
+
+                    </td>
+                    <td> <input type="password" id="password" class="txtbox" placeholder="password" /></td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td> <input type="button" name="submit" onclick="Save();"   value="submit" /></td>
+                </tr>
+
+            </table>
+
+
+
+        </div>
+
+
+    </form>
+
+
+    <hr />
+    <br />
+
+   
+
+
+</body>
+</html>
