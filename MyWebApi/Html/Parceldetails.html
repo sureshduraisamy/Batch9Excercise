@@ -10,15 +10,85 @@
         alert("Page Load");
         console.log("True");
         function Save() {
+            debugger;
+            var FromAddress = document.getElementById("FromAddress").value;
+            var ToAddress = document.getElementById("ToAddress").value;
+            var NetWeight = document.getElementById("NetWeight").value;
+            var Price = document.getElementById("Price").value;
+            var Date = document.getElementById("Date").value;
+            var ParcelServiceName = document.getElementById("ParcelServiceName").value;
+            if (FromAddress == "") {
+                alert("Please enter FromAddress");
+                return;
+            }
+            else if (ToAddress == "") {
+                alert("Please enter ToAddress");
+                return;
+            }
+            else if (NetWeight == "") {
+                alert("please enter NetWeight");
+                return;
+            }
+            else if (Price == "") {
+                alert("Please enter Price");
+                return;
+            }
+            else if (Date == "") {
+                alert("Please enter Date");
+                return;
+            }
+            else if (ParcelServiceName == "") {
+                alert("please enter ParcelServiceName");
+                return;
+            }
+            var Jsonobj = {
+                "fromAddress": FromAddress,
+                "toAddress": ToAddress,
+                "netWeight": NetWeight,
+                "price": Price,
+                "date": Date,
+                "parcelServiceName": ParcelServiceName
+            }
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("POST", "https://localhost:44340/api/Parcel");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                alert("success");
+            };
+
+            xhttp.send(JSON.stringify(Jsonobj));
 
 
 
+            return FromAddress;
+            return ToAddress;
+            return NetWeight;
+            return Price;
+            return Date;
+            return ParcelServiceName;
+        }
+        function GetUserRecord() {
 
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", "https://localhost:44340/api/Parcel");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                var res = JSON.parse(xhttp.response);
+                console.log(res);
+                alert("success");
+            };
+
+            xhttp.send();
         }
 
+       
     </script>
 </head>
-<body>
+<body onload="GetUserRecord()" > 
     <form>
         <div>
             <h1 id="header">Parceldetails</h1>
@@ -29,34 +99,35 @@
             <table id="parcel" name="" class="" style="" height="45px">
                 <tr>
                     <td width="80px"> <label>FromAddress</label> </td>
-                    <td> <input type="text" id="address" style="" value="" placeholder="Enter FromAddress" /> </td>
+                    <td> <input type="text" id="FromAddress" style="" value="" placeholder="Enter FromAddress" /> </td>
                 </tr>
                 <tr>
                     <td width="80px"> <label>ToAddress</label> </td>
-                    <td> <input type="text" id="txtEmail" style="" value="" placeholder="Enter ToAddress" /> </td>
+                    <td> <input type="text" id="ToAddress" style="" value="" placeholder="Enter ToAddress" /> </td>
                 </tr>
                 <tr>
                     <td width="80px"><label>NetWeight</label></td>
-                    <td> <input type="number" id="txtEmail" style="" value="" placeholder="Enter NetWeight" /> </td>
+                    <td> <input type="number" id="NetWeight" style="" value="" placeholder="Enter NetWeight" /> </td>
                 </tr>
                 <tr>
                     <td width="80px"><label>Price</label></td>
-                    <td> <input type="number" id="txtEmail" style="" value="" placeholder="Enter Price" /> </td>
+                    <td> <input type="number" id="Price" style="" value="" placeholder="Enter Price" /> </td>
                 </tr>
                 <tr>
                     <td width="80px"><label>Date</label></td>
-                    <td> <input type="date" id="txtEmail" style="" value="" placeholder="Enter Date" /> </td>
+                    <td> <input type="date" id="Date" style="" value="" placeholder="Enter Date" /> </td>
                 </tr>
                 <tr>
                     <td width="80px"><label>ParcelServiceName</label></td>
-                    <td> <input type="text" id="txtEmail" style="" value="" placeholder="Enter ParcelServiceName" /> </td>
+                    <td> <input type="text" id="ParcelServiceName" style="" value="" placeholder="Enter ParcelServiceName" /> </td>
 
                 </tr>
                 <tr>
-                    
-                    <td> <input type="button" name="Submit" onclick="Save();" value="Submit" /> </td>
-
+                    <td>
+                    </td>
+                    <td> <input type="button" name="submit" onclick="Save();" value="submit" /></td>
                 </tr>
+
             </table>
         </div>
     </form>
