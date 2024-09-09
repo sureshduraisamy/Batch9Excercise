@@ -16,7 +16,8 @@
     <script>
         var vehicleName, vehicleNumber, insuranceNumber, driverContactNumber, fCdate, ownerName;
         // vehicleName,vehicleNumber,insuranceNumber,DriverContactNumber,FcDate,OwnerName
-        function getVehicleData() {
+        function getVehicleData()
+        {
             debugger;
             vehicleName = document.getElementById("vehicleName").value;
             vehicleNumber = document.getElementById("vehicleNumber").value;
@@ -29,7 +30,7 @@
             if (vehicleName == "" || vehicleNumber == 0 || insuranceNumber == 0 || driverContactNumber == 0 || fCdate == "" || ownerName == "") {
 
                 alert("please enter every detail");
-                return;
+                return false;
             }
                 var VehicleObject = {
                     "vehicleName": vehicleName,
@@ -38,13 +39,39 @@
                     "driverContactNumber": driverContactNumber,
                     "fCdate": fCdate,
                     "ownerName": ownerName
+            }
+            const xhttp = new XMLHttpRequest();
 
-                }
+            xhttp.open("POST", "https://localhost:44347/api/VehicleCRUD");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                alert("success");
+            };
+
+            xhttp.send(JSON.stringify(VehicleObject));   
+
+                xhttp.send();
+            }
+        function GetUserRecord() {
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", "https://localhost:44347/api/VehicleCRUD");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                var res = JSON.parse(xhttp.response);
+                debugger;
+                console.log(res);
+                alert("success");
+            };
             
-        }
+        
+        
     </script>
 </head>
-<body>
+<body onload="GetUserRecord()">
     <h1 id="Heading">vehicle Registeration</h1>
     <div>
 
