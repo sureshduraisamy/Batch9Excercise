@@ -65,19 +65,50 @@
         function Save() {
             debugger;
             var email = document.getElementById("txtEmail").value;
-            if (email) {
+            if (email.length == 0 || email =='') {
                 alert("Please enter email");
-                return;
+                return false;
             }
 
 
             var JsonObj = {
-                "email": email,
-
+                "Email": email,
+                "UserName": email,
+                "PassWord": email,
+                "MobileNumber": 8754481205
             };
 
 
+            const xhttp = new XMLHttpRequest();
+            
+            xhttp.open("POST", "https://localhost:44330/api/Registration");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                alert("success");
+            };
+
+            xhttp.send(JSON.stringify(JsonObj) );
+
+
             return email;
+        }
+
+
+        function GetUserRecord() {
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", "https://localhost:44330/api/Registration");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                var res = JSON.parse(xhttp.response);
+                console.log(res);
+                alert("success");
+            };
+
+            xhttp.send();
         }
 
     </script>
@@ -88,7 +119,7 @@
 
     </script>
 </head>
-<body>
+<body  onload="GetUserRecord()"  >
     <form>
         <div>
             <h1> Registration</h1>
