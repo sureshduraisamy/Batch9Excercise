@@ -20,12 +20,17 @@ namespace Sample.MvcApplication.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("index1");
         }
 
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public IActionResult Sample()
+        {
+            return View("Sampletest");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
