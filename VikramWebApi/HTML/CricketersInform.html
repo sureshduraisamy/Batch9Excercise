@@ -8,7 +8,7 @@
             var Totalinnings = document.getElementById("Totalinnigs").value;
             var TotalScore = document.getElementById("TotalScore").value;
             var DateofBirth = document.getElementById("DateofBirth").value;
-            var NumberofFifties = document.getElementById("NumberofFifties".value);
+            var NumberofFifties = document.getElementById("NumberofFifties").value;
             var NumberofHundreds = document.getElementById("NumberofHundreds").value;
             var HighestScore = document.getElementById("HighestScore").value;
 
@@ -59,94 +59,121 @@
 
                 alert("success");
             };
-
+    
             xhttp.send(JSON.stringify(JsonObj));
-            
-            
-
-
-            
-
+       
         }
+
+
+        GetUserRecord();
+        function GetUserRecord() {
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", "https://localhost:44350/api/CricketersDetails");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                var res = JSON.parse(xhttp.response);
+                console.log(res);
+                alert("success");
+            };
+
+            xhttp.send();
+        }
+
+
+
     </script>
     <Link href="StyleSheet.css"rel="stylesheet" />
     <meta charset="utf-8" />
     <title></title>
 </head>
 
-<body>
-    
-    
-   <form>
+<body >
+    <!--
+        {
+      "cricketersID": 0,
+      "cricketerName": "string",
+      "totalinnings": 0,
+      "totalScore": 0,
+      "dateOfBirth": "2024-09-10T04:09:26.383Z",
+      "numberOfFifties": 0,
+      "numberOfHundreds": 0,
+      "highestScore": 0
+    }
+        -->
 
-       <div>
-           <h1>
-               Cricketer Details
-           </h1>
-           <table id="Details">
-               <tr>
-                   <td>
-                       <label> Name: </label>
-                   </td>
-                   <td>
-                       <input type="text"id="CricketerName" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <label>Totalinnings: </label>
+    <form>
 
-                   </td>
-                   <td>
-                       <input type="text"id="Totalinnigs" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <label>Totalscore:</label>
-                   </td>
-                   <td>
-                       <input type="text"id="TotalScore" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <label>Date of birth:</label>
-                   </td>
-                   <td>
-                       <input type="text"id="DateofBirth" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <label>No.Of Fifties:</label>
-                   </td>
-                   <td>
-                       <input type="text"id="NumberofFifties" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <label>No.of Hundreds:</label>
-                   </td>
-                   <td>
-                       <input type="text"id="NumberofHundreds" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <label>Highestscore:</label>
-                   </td>
-                   <td>
-                       <input type="text"id="HighestScore" />
-                   </td>
-               </tr>
-           </table>
+        <div>
+            <h1>
+                Cricketer Details
+            </h1>
+            <table id="Details">
+                <tr>
+                    <td>
+                        <label> Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="CricketerName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Totalinnings: </label>
 
-       </div>
-       <input value="submit"type="button" onclick="Save()" />
-   </form>
-    
-    
+                    </td>
+                    <td>
+                        <input type="number" id="Totalinnigs" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Totalscore:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="TotalScore" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Date of birth:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="DateofBirth" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>No.Of Fifties:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="NumberofFifties" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>No.of Hundreds:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="NumberofHundreds" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Highestscore:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="HighestScore" />
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <input value="submit" type="button" onclick="Save()" />
+    </form>
+
+
 </body>
 </html>
