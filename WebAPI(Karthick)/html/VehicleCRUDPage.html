@@ -51,30 +51,53 @@
 
             xhttp.send(JSON.stringify(VehicleObject));   
 
-                xhttp.send();
-            }
-        function GetUserRecord() {
+                
+        }
+        
 
+        function GetUserRecord()
+        {
+            debugger;
+         
+            
             const xhttp = new XMLHttpRequest();
 
-            xhttp.open("GET", "https://localhost:44347/api/VehicleCRUD");
-            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-            xhttp.onreadystatechange = function () {
-
-                var res = JSON.parse(xhttp.response);
-                debugger;
-                console.log(res);
-                alert("success");
-            };
             
-        
+            xhttp.open("GET", "https://localhost:44347/api/VehicleCRUD");
+
+                xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                xhttp.onreadystatechange = function () {
+                    alert("success");
+                    if (xhttp.response) {
+                        try {
+                            var res = JSON.parse(xhttp.response);
+                            console.log(res);
+                        } catch (error) {
+                            console.log("json is invalid", error)
+                        }
+                    } else {
+                        console.log(xhttp.response);
+                        console.log("respone is empty");
+                    }
+                   
+                       
+                   
+                   
+                   
+
+            };
+            xhttp.send();
+           
+          
+          
+        }
         
     </script>
 </head>
-<body onload="GetUserRecord()">
+<body  >
     <h1 id="Heading">vehicle Registeration</h1>
     <div>
-
+        <input type="button" value="getVehicleInfo"  onclick="GetUserRecord()" />
         <table>
             <tr>
                 <td>
