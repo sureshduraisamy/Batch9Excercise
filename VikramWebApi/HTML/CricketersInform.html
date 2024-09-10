@@ -41,13 +41,13 @@
             }
 
             var JsonObj = {
-                "CricketerName": CricketerName,
-                "Totalinnings": Totalinnings,
-                "TotalScore": TotalScore,
-                "DateofBirth": DateofBirth,
-                "NumberofFifties": NumberofFifties,
-                "NumberofHundreds": NumberofHundreds,
-                "HighestScore": HighestScore
+                "cricketerName": CricketerName,
+                "totalinnings": Totalinnings,
+                "totalScore": TotalScore,
+                "dateOfBirth": DateofBirth,
+                "numberOfFifties": NumberofFifties,
+                "numberOfHundreds": NumberofHundreds,
+                "highestScore": HighestScore
 
             }
 
@@ -61,11 +61,11 @@
             };
     
             xhttp.send(JSON.stringify(JsonObj));
+
+           
        
         }
-
-
-        GetUserRecord();
+        
         function GetUserRecord() {
 
             const xhttp = new XMLHttpRequest();
@@ -90,7 +90,7 @@
     <title></title>
 </head>
 
-<body >
+<body onload="GetUserRecord()" >
     <!--
         {
       "cricketersID": 0,
