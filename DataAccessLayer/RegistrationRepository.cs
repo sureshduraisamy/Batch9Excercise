@@ -55,7 +55,7 @@ namespace DataAccessLayer
         {
             try
             {
-                var selectQuery = $"select username,password,email,mobileNumber,address from registration where username ='{username}'";
+                var selectQuery = $"select registrationId as RegsitrationId, username,password,email,mobileNumber,address from registration where username ='{username}'";
                 con.Open();
                 Registration result = con.QueryFirstOrDefault<Registration>(selectQuery);
                 con.Close();
