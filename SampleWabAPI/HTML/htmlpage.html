@@ -4,50 +4,48 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <style>
-        table{
-            color:red;background-color:black;
-        }
-    </style>
+   
     <link href="StyleSheet.css" rel="stylesheet" />
     <script>
+        
         function save() {
             debugger;
             var Name = document.getElementById("user").value;
-            if (Name == null) {
+            if (Name == "") {
                 alert("please enter the name");
                 return;
             }
             debugger;
             var Degree = document.getElementById("degree").value;
-            if (Degree == null) {
+            if (Degree == "") {
                 alert("please enter the Degree");
                 return;
             }
             debugger;
             var UID = document.getElementById("uid").value;
-            if (UID == null) {
+            if (UID == 0) {
                 alert("please enter the UID ");
                 return;
             }
             debugger;
             var DateofBirth = document.getElementById("date").value;
-            if (DateofBirth == null) {
+            if (DateofBirth == "") {
                 alert("please enter the DateofBirth ");
                 return;
             }
             debugger;
             var HospitalName = document.getElementById("hospital").value;
-            if (HospitalName == null) {
+            if (HospitalName == "") {
                 alert("please enter the HospitalName ");
                 return;
             }
             debugger;
             var MobileNumber = document.getElementById("mobile").value;
-            if (MobileNumber == null) {
+            if (MobileNumber == 0) {
                 alert("please enter the MobileNumber ");
                 return;
             }
+
             var JsonObj = {
                 "Name": Name,
                 "Degree": Degree,
@@ -55,14 +53,45 @@
                 "DateofBirth": DateofBirth,
                 "HospitalName": HospitalName,
                 "MobileNumber": MobileNumber
-            }
+            };
 
 
+
+
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("POST", "https://localhost:44358/api/Details");
+            xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+            xhttp.onreadystatechange = function () {
+
+                alert("success");
+            };
+
+            xhttp.send(JSON.stringify(JsonObj));
         }
+
+            function GetUserRecord() {
+
+                const xhttp = new XMLHttpRequest();
+
+                xhttp.open("GET", "https://localhost:44358/api/Details");
+                xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+                xhttp.onreadystatechange = function () {
+
+                    var res = JSON.parse(xhttp.response);
+                    console.log(res);
+                    alert("success");
+                };
+
+                xhttp.send();
+            }
+        
+
+
       </script>
 </head>
-<body>
-    <from>
+<body onload="GetUserRecord()">
+    <form>
         degree
         <div>
             <h1> DoctorDetails </h1>
@@ -80,7 +109,7 @@
                         <label>Degree: </label>
                     </td>
                     <td>
-                        <input type="text" id="" />
+                        <input type="text" id="degree" />
                     </td>
                 </tr>
                 <tr>
@@ -112,10 +141,10 @@
                 <tr>
                     <td>
                     </td>
-                    <td> <input type="button" onclick="save();" value="Submit"/></td>
+                    <td> <input type="button" onclick="save();" value="Submit" /></td>
                 </tr>
             </table>
-        </div>ss
-    </from>
+        </div>
+    </form>
 </body>
 </html>
