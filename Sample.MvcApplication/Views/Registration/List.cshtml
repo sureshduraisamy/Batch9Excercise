@@ -55,8 +55,9 @@
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @*<a asp-action="edit" asp-route-username="" href=""> Edit</a>*@
+                @Html.ActionLink("Edit", "Edit", new { username = item.UserName }) |
+                @Html.ActionLink("Details", "Details", new { username = item.UserName }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
