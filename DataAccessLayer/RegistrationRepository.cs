@@ -107,7 +107,7 @@ namespace DataAccessLayer
         {
             try
             {
-                var updateQuery = $"Delete from Registration where regsitrationId={regId}";
+                var updateQuery = $"Delete from Registration where registrationID={regId}";
                 con.Open();
                 con.Execute(updateQuery);
                 con.Close();
