@@ -48,9 +48,25 @@ namespace Sample.MvcApplication.Controllers
         {
             try
             {
-                reg.RegisterUser(regis);
+                if (ModelState.IsValid)
+                {
 
-                return RedirectToAction(nameof(List));
+                    var result = reg.SelectUserByUsername(regis.UserName);
+
+                    if(result!= null)
+                    {
+                        ModelState.AddModelError("", "Username Alreaady Exists");
+                        return View("Add", regis);
+                    }
+
+
+                    reg.RegisterUser(regis);
+
+                    return RedirectToAction(nameof(List));
+                }else
+                {
+                    return View("Add", regis);
+                }
             }
             catch
             {
@@ -73,9 +89,17 @@ namespace Sample.MvcApplication.Controllers
         {
             try
             {
-                reg.UpdateUser(regis);
 
-                return RedirectToAction(nameof(List));
+                if (ModelState.IsValid)
+                {
+
+                    reg.UpdateUser(regis);
+
+                    return RedirectToAction(nameof(List));
+                }else
+                {
+                    return View("update", regis);
+                }
             }
             catch
             {
@@ -84,19 +108,22 @@ namespace Sample.MvcApplication.Controllers
         }
 
         // GET: RegistrationController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string username)
         {
-            return View();
+           var details =  reg.SelectUserByUsername(username);
+
+            return View("ConfirmDelete", details);
         }
 
         // POST: RegistrationController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(long RegsitrationId)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                reg.DeleteUser(RegsitrationId);
+                return RedirectToAction(nameof(List));
             }
             catch
             {
