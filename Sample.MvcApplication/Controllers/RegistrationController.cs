@@ -50,7 +50,6 @@ namespace Sample.MvcApplication.Controllers
             {
                 if (ModelState.IsValid)
                 {
-
                     var result = reg.SelectUserByUsername(regis.UserName);
 
                     if(result!= null)
@@ -58,7 +57,6 @@ namespace Sample.MvcApplication.Controllers
                         ModelState.AddModelError("", "Username Alreaady Exists");
                         return View("Add", regis);
                     }
-
 
                     reg.RegisterUser(regis);
 
