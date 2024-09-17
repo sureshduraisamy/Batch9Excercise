@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        @*<form asp-action="Create">*@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 
@@ -43,9 +43,9 @@
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="button" @*onclick="save()"*@ value="Create" id="save" class="btn btn-primary" />
             </div>
-        </form>
+        @*</form>*@
     </div>
 </div>
 
@@ -54,5 +54,74 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+
+
+        $(document).ready(function () {
+
+            alert('loaded');
+
+
+            $("#save").click(function () {
+
+                var JsonObj = {
+                    "Email": "feff",
+                    "UserName": "afdsafds",
+                    "PassWord": "sdafdsf",
+                    "MobileNumber": 8754481205
+                };
+
+                debugger;
+                const xhttp = new XMLHttpRequest();
+
+                var url = "/Registration/create";
+
+                xhttp.open("POST", url);
+                xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+                xhttp.onreadystatechange = function () {
+
+                    alert("success");
+                };
+
+                xhttp.send(JSON.stringify(JsonObj));
+
+                alert('clicked- jQuery');
+
+            });
+
+        });
+
+
+     alert('entered')
+
+     function save() {
+
+
+         var JsonObj = {
+             "Email": "feff",
+             "UserName": "afdsafds",
+             "PassWord": "sdafdsf",
+             "MobileNumber": 8754481205
+         };
+
+         debugger;
+         const xhttp = new XMLHttpRequest();
+
+         var url = "/Registration/create";
+
+         xhttp.open("POST", url);
+         xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+         xhttp.onreadystatechange = function () {
+
+             alert("success");
+         };
+
+         xhttp.send(JSON.stringify(JsonObj));
+
+     }
+
+    </script>
+
+    
 }
