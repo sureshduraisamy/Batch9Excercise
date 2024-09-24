@@ -43,7 +43,7 @@ namespace Sample.MvcApplication.Controllers
 
         // POST: RegistrationController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult Create(Registration regis)
         {
             try
